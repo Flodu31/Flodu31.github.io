@@ -1,6 +1,7 @@
 ---
 title: "[Azure] Erreur OMS Gateway"
 date: "2020-03-02"
+permalink: "/2020/03/02/azure-erreur-oms-gateway/"
 categories: 
   - "oms"
 tags: 
@@ -15,7 +16,9 @@ tags:
 
 En déployant une Gateway OMS, pour Windows Defender ATP, j'ai eu l'erreur suivante:
 
-`2020-02-28 13:19:05 [47] ERROR GatewayLogic - Target host (winatp-gw-uks.microsoft.com) is forbidden. Destination server is not in allowed list. Ensure that the Microsoft Monitoring Agent on your Gateway box and the agents talking to the Gateway, are both connected to the same Log Analytics workspace.`
+```
+2020-02-28 13:19:05 [47] ERROR GatewayLogic - Target host (winatp-gw-uks.microsoft.com) is forbidden. Destination server is not in allowed list. Ensure that the Microsoft Monitoring Agent on your Gateway box and the agents talking to the Gateway, are both connected to the same Log Analytics workspace.
+```
 
 ![](https://cloudyjourney.fr/wp-content/uploads/2020/02/image-1.png)
 
