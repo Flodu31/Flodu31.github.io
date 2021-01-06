@@ -1,6 +1,9 @@
 ---
 title: "[Azure Automation] Update d'un module bloqué sur \"Importing newer version\""
 date: "2018-06-14"
+author: "Florent Appointaire"
+permalink: "/2018/06/14/azure-automation-update-dun-module-bloque-sur-importing-newer-version/"
+summary:
 categories: 
   - "azure-automation"
 tags: 
@@ -9,9 +12,6 @@ tags:
   - "importing-newer-version"
   - "microsoft"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/AzureAutomationLogo.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/AzureAutomationLogo.png)
-
 En voulant mettre à jour le module PowerShell **AzureRM.profile** de mon compte Azure Automation, ce dernier, après 4 heures était bloqué avec le statut **Importing newer version:**
 
 [![](https://cloudyjourney.fr/wp-content/uploads/2018/06/AzureRmProfileStuck01.png)](https://cloudyjourney.fr/wp-content/uploads/2018/06/AzureRmProfileStuck01.png)

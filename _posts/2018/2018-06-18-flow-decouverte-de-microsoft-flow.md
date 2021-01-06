@@ -1,6 +1,9 @@
 ---
 title: "[Flow] Découverte de Microsoft Flow"
 date: "2018-06-18"
+author: "Florent Appointaire"
+permalink: "/2018/06/18/flow-decouverte-de-microsoft-flow/"
+summary:
 categories: 
   - "azure"
 tags: 
@@ -8,9 +11,6 @@ tags:
   - "microsoft"
   - "twitter"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/05/flow-logo.png)](https://cloudyjourney.fr/wp-content/uploads/2018/05/flow-logo.png)
-
 Aujourd'hui, je vais vous présenter un nouveau produit que j'ai découvert il y a un mois maintenant, Microsoft Flow. Pour commencer, allez sur [https://flow.microsoft.com](https://flow.microsoft.com) et complétez les informations tel que la région, etc. Vous allez avoir l'interface suivante:
 
 [![](https://cloudyjourney.fr/wp-content/uploads/2018/06/Flow01.png)](https://cloudyjourney.fr/wp-content/uploads/2018/06/Flow01.png)

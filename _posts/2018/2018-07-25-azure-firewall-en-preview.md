@@ -1,6 +1,9 @@
 ---
 title: "[Azure] Firewall en Preview"
 date: "2018-07-25"
+author: "Florent Appointaire"
+permalink: "/2018/07/25/azure-firewall-en-preview/"
+summary:
 categories: 
   - "reseau"
 tags: 
@@ -8,9 +11,6 @@ tags:
   - "firewall"
   - "microsoft"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/07/firewall-overview.png)](https://cloudyjourney.fr/wp-content/uploads/2018/07/firewall-overview.png)
-
 Microsoft a rendu disponible en Preview, une nouvelle feature sur Azure, Azure Firewall. Ce dernier va vous permettre de protéger votre infrastructure, directement depuis Azure, sans déployer d'appliance virtuel, qui peuvent parfois coûter cher. La documentation complète se trouve ici : [https://docs.microsoft.com/en-us/azure/firewall/](https://docs.microsoft.com/en-us/azure/firewall/)
 
 Pour commencer, il faut activer le RP qui va nous permettre d'utiliser Azure Firewall, avec les commandes suivantes:

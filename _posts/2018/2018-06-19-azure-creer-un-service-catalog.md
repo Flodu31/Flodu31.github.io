@@ -1,6 +1,9 @@
 ---
 title: "[Azure] Créer un Service Catalog"
 date: "2018-06-19"
+author: "Florent Appointaire"
+permalink: "/2018/06/19/azure-creer-un-service-catalog/"
+summary:
 categories: 
   - "azure"
 tags: 
@@ -22,6 +25,7 @@ Le template est composé de 2 fichiers:
 
 Le premier est un template ARM comme quand vous déployez une ressource dans Azure, sans UI. Le second est l'interface utilisateur avec les paramètres qui seront disponibles. Dans l'exemple d'aujourd'hui, nous allons déployer une nouvelle machine virtuel, dans un nouveau réseau. Créez un nouveau fichier nommé **mainTemplate.json** (sensible à la case) et insérez le code suivant:
 
+```
 {
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
@@ -212,9 +216,11 @@ Le premier est un template ARM comme quand vous déployez une ressource dans Azu
         }
     }
 }
+```
 
 Vous pouvez adapter le template avec vos valeurs. Maintenant, créez un second fichier nommé **createUiDefinition.json** et collez le code suivant:
 
+```
 {
     "handler": "Microsoft.Compute.MultiVm",
     "version": "0.1.2-preview",
@@ -335,6 +341,7 @@ Vous pouvez adapter le template avec vos valeurs. Maintenant, créez un second f
         }
     }
 }
+```
 
 Dans la partie **outputs**, la variable doit être identique à celle qui se trouve dans votre main template, sinon, ceci ne fonctionnera pas car il ne recevra pas les bons paramètres. Quand c'est terminé, faites une archive zip de vos 2 fichiers, à la racine du zip:
 
@@ -344,6 +351,7 @@ Dans la partie **outputs**, la variable doit être identique à celle qui se tr
 
 Nous allons maintenant créer un nouveau groupe de ressource dans Azure, qui va héberger le compte de stockage qui va contenir notre template (le fichier zip). Exécutez le script PowerShell suivant pour faire ceci, en adaptant votre numéro de subscription, le nom du groupe de ressource et la localisation. Adaptez également le chemin où se trouve votre fichier zip:
 
+```
 Login-AzureRmAccount
 Select-AzureRmSubscription -SubscriptionId Your Subscription Id
 $rgName = "FloAPPServiceCatalog"
@@ -356,11 +364,13 @@ $ctx = $storageAccount.Context
 
 New-AzureStorageContainer -Name appcontainer -Context $ctx -Permission blob
 Set-AzureStorageBlobContent -File "C:\\Users\\florent.appointaire\\Downloads\\managedvm\\FloAPPWindowsServer.zip" -Container appcontainer -Blob "FloAPPWindowsServer.zip" -Context $ctx
+```
 
 [![](https://cloudyjourney.fr/wp-content/uploads/2018/05/azuresc03.png)](https://cloudyjourney.fr/wp-content/uploads/2018/05/azuresc03.png)
 
 Nous allons maintenant créer l'application qui sera disponible pour vos équipes. Vous pouvez assigner des permissions à un groupe spécifique et choisir quel rôle RBAC vous souhaitez donner, **Contributor** dans mon cas. Donnez un nom à votre application. Cette application sera visible dans votre groupe de ressource. Vous pouvez changer le nom qui sera affiché pour votre équipe, et la description:
 
+```
 $groupID = (Get-AzureRmADGroup -SearchString "ServiceCatalog").Id
 $ownerID = (Get-AzureRmRoleDefinition -Name "Contributor").Id
 
@@ -371,6 +381,7 @@ New-AzureRmManagedApplicationDefinition -Name "ManagedVM" -Location $location \`
   -Description "Managed Azure Virtual Machine" \`
   -Authorization "NULL:$ownerID" \`
   -PackageFileUri $blob.ICloudBlob.StorageUri.PrimaryUri.AbsoluteUri
+```
 
 Si vous avez l'erreur suivante quand vous essayez de déployer votre application:
 
