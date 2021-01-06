@@ -1,6 +1,9 @@
 ---
 title: "[AWS] Connexion à Cloudyn"
 date: "2018-03-21"
+author: "Florent Appointaire"
+permalink: "/2018/03/21/aws-connexion-a-cloudyn"
+summary:
 categories: 
   - "aws"
 tags: 
@@ -8,9 +11,6 @@ tags:
   - "aws"
   - "cloudyn"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/2000px-AmazonWebservices_Logo.svg_.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/2000px-AmazonWebservices_Logo.svg_.png)
-
 Après avoir vu [comment déployer Cloudyn pour Azure](https://cloudyjourney.fr/2018/03/07/azure-deploiement-de-cloudyn/), nous allons voir comment connecter notre subscription AWS à Cloudyn. Ce service est gratuit pour Azure mais vous en coûtera 1% de vos dépenses AWS/Google Cloud par an.
 
 Pour commencer, allez dans Cloudyn, dans la partie **Accounts Management** et choisissez **AWS Accounts**. Cliquez sur **Add new** pour ajouter une nouvelle subscription:

@@ -1,6 +1,9 @@
 ---
 title: "[Intune] Comment tester Windows Autopilot"
 date: "2018-03-15"
+author: "Florent Appointaire"
+permalink: "/2018/03/15/intune-comment-tester-windows-autopilot"
+summary:
 categories: 
   - "azure"
   - "intune"
@@ -10,9 +13,6 @@ tags:
   - "microsoft"
   - "windows-10"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/03/Win10Autopilot.jpg)](https://cloudyjourney.fr/wp-content/uploads/2018/03/Win10Autopilot.jpg)
-
 Microsoft a dévoilé il y a quelques mois maintenant une nouvelle fonctionnalité dans Intune, Windows Autopilot. Ceci vous permet de déployer des ordinateurs, sans qu’il passe par votre Service Desk. En effet, c’est le constructeur qui livre le PC au client, et qui vous envoie sont numéros de série ainsi que d’autres informations. Vous intégrez ceci à Windows Autopilot et l’utilisateur a juste à se connecter avec son compte Azure AD/O365 pour récupérer toutes les informations de la société, ainsi que ses applications, etc. sans que votre Service Desk ne se déplace, plutôt cool non ? ?
 
 Ici, je vais vous montrer comment essayer Windows Autopilot, sans pour autant investir dans du matériel, mais seulement avec une ou plusieurs VMs Hyper-V. La documentation de Microsoft est disponible [ici](https://demos.microsoft.com/materials/195).

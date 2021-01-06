@@ -1,6 +1,9 @@
 ---
 title: "[MVP Summit] Retour sur ces quelques jours…"
 date: "2018-03-08"
+author: "Florent Appointaire"
+permalink: "/2018/03/08/mvp-summit-retour-sur-ces-quelques-jours"
+summary:
 categories: 
   - "conference"
 tags: 
@@ -8,9 +11,6 @@ tags:
   - "microsoft"
   - "mvp-summit"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/mvp.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/mvp.png)
-
 Samedi 3 Mars 2018, à 7h, je me suis envolé pour le rendez-vous annuel des MVP à Seattle, pour suivre 3 jours de conférences, pouvoir discuter avec les différentes équipes produits, et surtout, avoir des informations sur les différentes roadmaps, des démos, etc. le tout, sous NDA.
 
 ![](https://cloudyjourney.fr/wp-content/uploads/2018/03/030818_2142_MVPSummitRe1.jpg)
@@ -48,3 +48,5 @@ Après 3 jours pleins de conférences (départ de l'hôtel vers 7h15 pour un ret
 ![](https://cloudyjourney.fr/wp-content/uploads/2018/03/030818_2142_MVPSummitRe9.jpg)
 
 Voilà que cette édition 2018 se termine, en espérant y retourner pour 2019  Maintenant, place à la détente et aux vacances, pour 2 jours, avec mon pote Romain, direction Las Vegas :)
+
+[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/mvp.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/mvp.png)

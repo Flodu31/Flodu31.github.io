@@ -11,9 +11,6 @@ tags:
   - "cloudyn"
   - "microsoft"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/Azure.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/Azure.png)
-
 Depuis quelques temps maintenant, Microsoft a racheté Cloudyn. Et maintenant, il est gratuit si vous avez un subscription Azure :)
 
 Vous pourrez connecter votre subscription EA, CSP ou autre pour suivre les coûts associés à votre subscription Azure. Il pourra entre autre, vous aider à avoir une vue globale sur vos dépenses, mais aussi, à optimiser vos coûts, etc.

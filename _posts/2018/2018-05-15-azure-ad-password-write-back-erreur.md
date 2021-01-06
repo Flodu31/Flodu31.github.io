@@ -1,6 +1,9 @@
 ---
 title: "[Azure AD] Password Write back erreur"
 date: "2018-05-15"
+author: "Florent Appointaire"
+permalink: "/2018/05/15/azure-ad-password-write-back-erreur/"
+summary:
 categories: 
   - "azure"
 tags: 
@@ -9,9 +12,6 @@ tags:
   - "microsoft"
   - "password-writeback"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/pastedimage1482154059354v1.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/pastedimage1482154059354v1.png)
-
 En voulant utiliser la fonctionnalité de remise à zéro du mot de passe, via la plateforme Microsoft, en utilisant la fonctionnalité Password Write Back de Azure AD Connect, j'ai rencontré l'erreur suivante:
 
 > An unexpected error has occurred during a password set operation...
