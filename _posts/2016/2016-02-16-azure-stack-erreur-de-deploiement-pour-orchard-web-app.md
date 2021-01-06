@@ -1,6 +1,9 @@
 ---
 title: "[Azure Stack] Erreur de déploiement pour Orchard Web App"
 date: "2016-02-16"
+author: "Florent Appointaire"
+permalink: "/2016/02/16/azure-stack-erreur-de-deploiement-pour-orchard-web-app/"
+summary: 
 categories: 
   - "azure-stack"
 tags: 
@@ -8,9 +11,6 @@ tags:
   - "microsoft"
   - "webapp-rp"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/AzureStackLogo02.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/AzureStackLogo02.png)
-
 Aujourd’hui, j’ai essayé de déployer Orchad CMS sur Azure Stack. J’ai eu une erreur et le site web ne fonctionnait pas. J’ai donc regardé les logs de déploiement sur le serveur File Server pour ce site web, dans **appManagerLog.xml**:
 
 [![](https://cloudyjourney.fr/wp-content/uploads/2018/01/image_753F5803.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/image_753F5803.png)

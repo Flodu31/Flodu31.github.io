@@ -1,16 +1,18 @@
 ---
 title: "[Azure Stack] Réinitialiser le mot de passe d’une VM"
 date: "2016-02-22"
+author: "Florent Appointaire"
+permalink: "/2020/02/22/azure-stack-reinitialiser-le-mot-de-passe-dune-vm/"
+summary: 
 categories: 
   - "azure-stack"
 tags: 
   - "azure-stack"
   - "microsoft"
 ---
+Aujourd’hui, j’ai essayé de me connecter à une VM mais j’ai reçu un message d’erreur pour me signifier que le mot de passe n’était pas correct:
 
 [![](https://cloudyjourney.fr/wp-content/uploads/2018/01/image_5BCF2AD5.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/image_5BCF2AD5.png)
-
-Aujourd’hui, j’ai essayé de me connecter à une VM mais j’ai reçu un message d’erreur pour me signifier que le mot de passe n’était pas correct:
 
 [![](https://cloudyjourney.fr/wp-content/uploads/2018/01/image_0BF9064A.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/image_0BF9064A.png)
 

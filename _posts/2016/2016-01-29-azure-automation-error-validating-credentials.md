@@ -1,6 +1,9 @@
 ---
 title: "[Azure Automation] Error Validating Credentials"
 date: "2016-01-29"
+author: "Florent Appointaire"
+permalink: "/2016/01/29/azure-automation-error-validating-credentials/"
+summary: 
 categories: 
   - "azure-automation"
 tags: 
@@ -8,9 +11,6 @@ tags:
   - "azure-automation"
   - "microsoft"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/AzureAutomationLogo.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/AzureAutomationLogo.png)
-
 Aujourd’hui, un de mes clients a rencontré l’erreur suivante dans Azure Automation:
 
 [![](https://cloudyjourney.fr/wp-content/uploads/2018/01/SNAGHTML290be6c4_13B591DB.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/SNAGHTML290be6c4_13B591DB.png)
