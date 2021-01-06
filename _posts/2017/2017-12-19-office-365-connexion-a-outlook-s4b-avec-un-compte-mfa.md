@@ -12,9 +12,6 @@ tags:
   - "office-365"
   - "s4b"
 ---
-
-![](https://cloudyjourney.fr/wp-content/uploads/2018/01/6840.pastedimage1513327969388v1-300x104.jpeg)
-
 Après avoir vu comment activer le MFA sur un compte Office 365, j'ai voulu me connecter à S4B et paramétrer mon compte O365. Seul problème, au moment de rentrer mon mot de passe, j'ai eu une erreur comme quoi le mot de passe n'était pas bon, bizarre... Après quelques recherches, je me suis rendu compte que pour se connecter à Outlook ou S4B, il faut un mot de passe de type **App Password**.
 
 Pour faire ceci, vous devez aller dans vos paramètres dans votre compte O365:
