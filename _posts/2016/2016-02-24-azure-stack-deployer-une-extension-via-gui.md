@@ -2,7 +2,7 @@
 title: "[Azure Stack] Déployer une Extension via GUI"
 date: "2016-02-24"
 author: "Florent Appointaire"
-permalink: "/2020/02/24/azure-stack-deployer-une-extension-via-gui/"
+permalink: "/2016/02/24/azure-stack-deployer-une-extension-via-gui/"
 summary: 
 categories: 
   - "azure-stack"

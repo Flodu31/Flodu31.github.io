@@ -2,7 +2,7 @@
 title: "[Azure Stack] Réinitialiser le mot de passe d’une VM"
 date: "2016-02-22"
 author: "Florent Appointaire"
-permalink: "/2020/02/22/azure-stack-reinitialiser-le-mot-de-passe-dune-vm/"
+permalink: "/2016/02/22/azure-stack-reinitialiser-le-mot-de-passe-dune-vm/"
 summary: 
 categories: 
   - "azure-stack"

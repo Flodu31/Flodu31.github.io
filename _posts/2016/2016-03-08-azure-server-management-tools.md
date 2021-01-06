@@ -1,6 +1,9 @@
 ---
 title: "[Azure] Server Management Tools"
 date: "2016-03-08"
+author: "Florent Appointaire"
+permalink: "/2016/03/08/azure-server-management-tools/"
+summary: 
 categories: 
   - "azure"
 tags: 
@@ -8,9 +11,6 @@ tags:
   - "microsoft"
   - "server-management-tools"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/pastedimage1482154059354v1.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/pastedimage1482154059354v1.png)
-
 Il y a un mois, Microsoft a rendu disponible une nouvelle fonctionnalités dans Azure, **Server Management Tools**.
 
 Cette fonctionnalité vous donne la possibilité de gérer, via votre navigateur web, vos serveurs Windows.

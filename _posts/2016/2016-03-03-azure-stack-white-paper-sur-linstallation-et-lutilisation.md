@@ -2,7 +2,7 @@
 title: "[Azure Stack] White Paper sur l’installation et l’utilisation"
 date: "2016-03-03"
 author: "Florent Appointaire"
-permalink: "/2020/03/03/azure-stack-white-paper-sur-linstallation-et-lutilisation/"
+permalink: "/2016/03/03/azure-stack-white-paper-sur-linstallation-et-lutilisation/"
 summary: 
 categories: 
   - "azure-stack"

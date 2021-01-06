@@ -1,6 +1,9 @@
 ---
 title: "[Azure] Rôle RBAC customisés"
 date: "2016-03-09"
+author: "Florent Appointaire"
+permalink: "/2016/03/09/azure-role-rbac-customises/"
+summary: 
 categories: 
   - "azure"
 tags: 
