@@ -11,9 +11,6 @@ tags:
   - "microsoft"
   - "service-catalog"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/Azure.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/Azure.png)
-
 Microsoft a rendu disponible il y a quelques mois la possibilité de créer son propre service catalogue, pour différentes équipes, directement dans Azure. Avec cette feature, vous pouvez pré construire vos templates, contrôler les paramètres, et donner la possibilité à vos équipes de déployer des applications, sans faire d'erreurs ou sélectionner des grosses VMs qui sont chères.
 
 La documentation est disponible ici : [https://docs.microsoft.com/en-us/azure/managed-applications/](https://docs.microsoft.com/en-us/azure/managed-applications/)

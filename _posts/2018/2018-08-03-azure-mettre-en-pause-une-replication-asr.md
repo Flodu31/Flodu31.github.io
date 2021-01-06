@@ -1,6 +1,9 @@
 ---
 title: "[Azure] Mettre en pause une réplication ASR"
 date: "2018-08-03"
+author: "Florent Appointaire"
+permalink: "/2018/08/03/azure-mettre-en-pause-une-replication-asr/"
+summary:
 categories: 
   - "azure-site-recovery"
 tags: 
@@ -10,9 +13,6 @@ tags:
   - "microsoft"
   - "vmware"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/ASRLogo.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/ASRLogo.png)
-
 Etant en cours de migration pour un de mes clients, de VMWare vers Azure, j'ai utilisé Azure Site Recovery. Le souci est que lorsque vous répliquez une ou plusieurs VMs, la bande passante peut vite être saturée, ce qui est mon cas. Nous sommes bridés à 20 Mbps en continu, ce qui empêche les utilisateurs de pouvoir utiliser Internet, etc. J'ai donc cherché comment mettre en pause les réplications sans devoir recommencer à chaque fois.
 
 J'ai trouvé les 3 services suivants:

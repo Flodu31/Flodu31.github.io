@@ -1,6 +1,9 @@
 ---
 title: "[Azure] Sauvegarde de vos bases de données SQL Server"
 date: "2018-08-02"
+author: "Florent Appointaire"
+permalink: "/2018/08/02/azure-sauvegarde-de-vos-base-de-donnees-sql-server/"
+summary:
 categories: 
   - "azure"
 tags: 
@@ -9,9 +12,6 @@ tags:
   - "microsoft"
   - "sql-server"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/ASRLogo.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/ASRLogo.png)
-
 Microsoft a rendu disponible il y a quelques semaines, une fonctionnalité pour sauvegarder le base de données SQL Server, directement depuis Azure Backup. Vous trouverez plus d'informations sur les prerequis et les limites ici : [https://docs.microsoft.com/en-us/azure/backup/backup-azure-sql-database](https://docs.microsoft.com/en-us/azure/backup/backup-azure-sql-database)
 
 # Backup

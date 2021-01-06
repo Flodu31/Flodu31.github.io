@@ -1,6 +1,9 @@
 ---
 title: "[Azure] Migrez vos sites IIS rapidement et simplement"
 date: "2018-10-17"
+author: "Florent Appointaire"
+permalink: "/2018/10/17/azure-migrez-vos-sites-iis-rapidement-et-simplement/"
+summary:
 categories: 
   - "azure-web-apps"
 tags: 
@@ -10,9 +13,6 @@ tags:
   - "migration"
   - "webapp"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/09/WebApp_Logo.png)](https://cloudyjourney.fr/wp-content/uploads/2018/09/WebApp_Logo.png)
-
 Microsoft fournit un outil très intéressant, qui vous permet de migrer simplement et rapidement vos sites IIS, vers Azure. J'ai déployé pour faire le test, un serveur Windows Server 2019, avec IIS, et un site web:
 
 [![](https://cloudyjourney.fr/wp-content/uploads/2018/10/PaaSMigration01.png)](https://cloudyjourney.fr/wp-content/uploads/2018/10/PaaSMigration01.png)
@@ -71,4 +71,4 @@ Du côté Azure, un nouveau groupe de ressource a été créé, avec mon site we
 
 [![](https://cloudyjourney.fr/wp-content/uploads/2018/10/PaaSMigration14.png)](https://cloudyjourney.fr/wp-content/uploads/2018/10/PaaSMigration14.png)
 
-Ce logiciel va simplifier les migrations des sites web vers Azure. Dans un prochain article, nous verrons comment migrer un site web qui est sous Linux Apache et ensuite, [comment migrer une base de données](https://wp.me/p9yp9C-ps) :)
+Ce logiciel va simplifier les migrations des sites web vers Azure. Dans un prochain article, nous verrons comment migrer un site web qui est sous Linux Apache et ensuite, [comment migrer une base de données](https://cloudyjourney.fr/2018/10/22/azure-migrez-vos-sites-bases-de-donnees-sql-server-rapidement-et-simplement/) :)

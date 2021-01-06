@@ -1,6 +1,9 @@
 ---
 title: "[Azure] Changer la timezone d'une WebApp"
 date: "2018-09-04"
+author: "Florent Appointaire"
+permalink: "/2018/09/04/azure-changer-la-timezone-dune-webapp/"
+summary:
 categories: 
   - "azure-web-apps"
 tags: 
@@ -9,9 +12,6 @@ tags:
   - "timezone"
   - "webapp"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/09/WebApp_Logo.png)](https://cloudyjourney.fr/wp-content/uploads/2018/09/WebApp_Logo.png)
-
 Après avoir migré un serveur IIS vers une WebApp PaaS de chez Azure, il y a eu un souci au niveau des dates. En effet, le code utilisait la date du serveur. Or, dans Azure, par défaut, la WebApp est sur UTC, pour un déploiement en West Eruope, comme vous pouvez le voir ci-dessous:
 
 [![](https://cloudyjourney.fr/wp-content/uploads/2018/09/WebAppTimeZone01.png)](https://cloudyjourney.fr/wp-content/uploads/2018/09/WebAppTimeZone01.png)

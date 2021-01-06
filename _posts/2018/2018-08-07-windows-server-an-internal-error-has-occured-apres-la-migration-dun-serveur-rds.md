@@ -1,6 +1,9 @@
 ---
 title: "[Windows Server] An internal error has occured après la migration d'un serveur RDS"
 date: "2018-08-07"
+author: "Florent Appointaire"
+permalink: "/2018/08/07/windows-server-an-internal-error-has-occured-apres-la-migration-dun-serveur-rds/"
+summary:
 categories: 
   - "autres"
 tags: 
@@ -8,9 +11,6 @@ tags:
   - "microsoft"
   - "remote-desktop-services"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/08/Windows-server-2016_logo.png)](https://cloudyjourney.fr/wp-content/uploads/2018/08/Windows-server-2016_logo.png)
-
 En migrant une VM RDS de On-Premises vers Azure (seul l'adresse IP a changé), je me suis retrouvé dans l'incapacité de me connecter à la VM, via RDS. Toutes les connexions à distance fonctionnaient, sauf le RDP, avec le message suivant:
 
 > An internal error has occured
