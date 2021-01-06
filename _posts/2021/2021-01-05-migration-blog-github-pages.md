@@ -1,21 +1,25 @@
 ---
 title: "Migration vers Github Pages"
-date: "2021-01-05"
+date: "2021-01-07"
 author: "Florent Appointaire"
-permalink: "/2021/01/05/migration-blog-github-pages/"
+permalink: "/2021/01/07/migration-blog-github-pages/"
 summary: 
 categories: 
   - "autres"
 ---
+Comme vous l'aurez remarqué, mon blog vient de migrer de Wordpress vers Github Pages (thanks to Tao for this great idea). [Voici l'article qui m'a fait me décider.](https://blog.tyang.org/2021/01/04/moved-my-blog-to-github-pages/)
 
-Malgré le contexte difficile de cette année 2020, j'espère que vous avez pu vous épanouir personnellement mais aussi professionnellement.
+Le style est simple, et le temps de chargement bien plus rapide qu'avant, étant donné qu'ici, il n'y a pas de base de données.
 
-Pour ma part, malgré le fait de ne pas avoir pu assister à divers évènements physiques, comme le MVP Summit, MMSMOA, etc. j'ai pu faire diverses sessions, en ligne, pour des évenements comme le [Virtual Azure Community Day](https://cloudyjourney.fr/2020/03/27/virtual-azure-community-day/), [Azure Global Virtual](https://cloudyjourney.fr/2020/03/30/conference-azure-global-virtual/), [DevDay](https://cloudyjourney.fr/2020/11/15/conferences-devday-2020/), [IT Pro Dev Connections](https://cloudyjourney.fr/2020/11/30/conferences-it-pro-dev-connections-2020-grece/) et le [Festive Tech Calendar](https://cloudyjourney.fr/2020/12/28/conference-festive-tech-calendar-2020/).
+Pour effectuer cette migration, j'ai suivi plusieurs articles:
 
-J'ai également reçu, pour la 5ème fois, le titre de Microsoft MVP.
+* (https://pages.github.com/)[https://pages.github.com/]
+* (https://mademistakes.com/work/minimal-mistakes-jekyll-theme/)[https://mademistakes.com/work/minimal-mistakes-jekyll-theme/]
 
-2021 sera encore consacré à partager mes connaissances et découvertes avec vous, que ce soit via ce blog, mais aussi lors d'évènements, comme les meetups, mais aussi, le [Virtual Scottish Summit](https://cloudyjourney.fr/2020/12/09/conference-virtual-scottish-summit-2021/).
+Mais surtout, le plus important était la conversion de Wordpress vers Markedown, le language d'écriture pour Github Pages. Avant de ma lancer dans tout ça, j'ai donc cherché et j'ai trouvé ce tuto qui rend la manoeuvre ultra simple: (https://kevq.uk/how-to-convert-wordpress-to-markdown/)[https://kevq.uk/how-to-convert-wordpress-to-markdown/]
 
-Je vous souhaite le meilleur pour cette année 2021, en espérant avoir l'occasion de discuter avec vous, virtuellement, mais aussi, je l'espère, physiquement.
+Après ça, je n'ai eu qu'à configurer les quelques options du thème, mais aussi, d'enregistrer mon nom de domaine dans Github Pages, pour garder la même URL qu'avant.
 
-Florent
+Il m'aura fallu +/- 4 heures pour faire tout ceci, et migrer les 136 articles de l'ancienne plateforme, vers la nouvelle.
+
+N'hésitez pas à poser vos questions si vous avez besoin d'aide, mais aussi donner votre avis :)
