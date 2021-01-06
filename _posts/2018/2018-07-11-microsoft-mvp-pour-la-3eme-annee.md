@@ -1,6 +1,9 @@
 ---
 title: "Microsoft MVP pour la 3ème année"
 date: "2018-07-11"
+author: "Florent Appointaire"
+permalink: "/2018/07/11/microsoft-mvp-pour-la-3eme-annee/"
+summary:
 categories: 
   - "autres"
 tags: 
@@ -8,14 +11,12 @@ tags:
   - "mvp"
   - "mvpbuzz"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/mvp.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/mvp.png)
-
 Bonjour à tous,
 
 Je suis heureux de vous annoncer pour la troisième année consécutive, que j'ai reçu le titre de MVP, dans la catégorie Cloud and Datacenter Management:
 
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/07/MVP201801.png)](https://cloudyjourney.fr/wp-content/uploads/2018/07/MVP201801.png) [![](https://cloudyjourney.fr/wp-content/uploads/2018/07/MVP201802.png)](https://cloudyjourney.fr/wp-content/uploads/2018/07/MVP201802.png)
+[![](https://cloudyjourney.fr/wp-content/uploads/2018/07/MVP201801.png)](https://cloudyjourney.fr/wp-content/uploads/2018/07/MVP201801.png) 
+[![](https://cloudyjourney.fr/wp-content/uploads/2018/07/MVP201802.png)](https://cloudyjourney.fr/wp-content/uploads/2018/07/MVP201802.png)
 
 Je remercie toutes les personnes, qui contribuent à mon évolution de près ou de loin, et surtout, à ma famille, mes amis et mes collègues de l'IT.
 
@@ -24,6 +25,8 @@ Pour cette année qui arrive, je vais continuer d’écrire des articles sur les
 Encore merci à tous ?
 
 Florent
+
+[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/mvp.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/mvp.png)
 
 **EDIT:**
 

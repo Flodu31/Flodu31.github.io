@@ -1,6 +1,9 @@
 ---
 title: "[RDS] Nouvelle interface en HTML5 disponible"
 date: "2018-07-24"
+author: "Florent Appointaire"
+permalink: "/2018/07/24/rds-nouvelle-interface-en-html5-disponible/"
+summary:
 categories: 
   - "autres"
 tags: 
@@ -8,9 +11,6 @@ tags:
   - "microsoft"
   - "remote-desktop-services"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/07/RDSLogo.png)](https://cloudyjourney.fr/wp-content/uploads/2018/07/RDSLogo.png)
-
 Microsoft a rendu disponible le lundi 16 Juillet 2018 la version HTML 5 de son portail vieillissant RDS: [https://cloudblogs.microsoft.com/enterprisemobility/2018/07/16/remote-desktop-web-client-now-generally-available/](https://cloudblogs.microsoft.com/enterprisemobility/2018/07/16/remote-desktop-web-client-now-generally-available/) 
 
 Ce dernier peut cohabiter avec l'ancien portail, ne vous privez donc pas de l'installer. Attention, il ne fonctionne qu'avec les ordinateurs sous Windows 10.

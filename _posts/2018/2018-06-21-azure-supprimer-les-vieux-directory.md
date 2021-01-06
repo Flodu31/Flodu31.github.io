@@ -1,6 +1,9 @@
 ---
 title: "[Azure] Supprimer les vieux directory"
 date: "2018-06-21"
+author: "Florent Appointaire"
+permalink: "/2018/06/21/azure-supprimer-les-vieux-directory/"
+summary:
 categories: 
   - "azure-ad"
 tags: 
@@ -9,11 +12,6 @@ tags:
   - "supprimer-annuaire"
   - "supprimer-directory"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/pastedimage1482154059354v1.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/pastedimage1482154059354v1.png)
-
- 
-
 Avec l'arrivée du GDPR en Europe, Microsoft a publié une nouvelle fonctionnalité, qui vous permet de vous supprimer d'un Azure AD, dont vous ne vous servez plus par exemple. Le seul moyen pour faire ça avant était de contacter un global admin du directory à supprimer, pour qu'il vous supprime manuellement.
 
 Comme avec le GDPR, vous pouvez demander à effacer vos données en 1 clique (droit à l'oubli), Microsoft a ajouté cette fonctionnalité de droit à l'oubli en un clique.
