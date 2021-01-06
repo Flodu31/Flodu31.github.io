@@ -1,9 +1,15 @@
 ---
-layout: post
-title: [Azure] Fixer une IP sur une VM
+title: \[Azure\] Fixer une IP sur une VM
 date: 2015-02-13 08:00:00 +0100
-categories:  [Azure]
-tags: [Azure, Azure IP Fixe, Microsoft]
+autho: Florent Appointaire
+permalink: /2015/02/13/azure-fixer-une-ip-sur-une-vm/
+summary:
+categories:
+  - Azure
+tags:
+  - Azure
+  - Azure IP Fixe
+  - Microsoft
 ---
 
 ![](/wp-content/uploads/2018/01/7217.Windows-Azure-logo-v_6556EF52.png)

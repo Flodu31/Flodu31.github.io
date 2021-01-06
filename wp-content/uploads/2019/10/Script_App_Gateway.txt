@@ -1,0 +1,55 @@
+az group create --name AzureAdventCalendar --location westeurope
+az network vnet create --name AzureVNET --resource-group AzureAdventCalendar --location westeurope --address-prefix 172.16.0.0/16 --subnet-name FE --subnet-prefix 172.16.1.0/24
+az network vnet subnet create --name AG --resource-group AzureAdventCalendar --vnet-name AzureVNET --address-prefix 172.16.2.0/24
+
+gwName=AdventAG
+rg=AzureAdventCalendar
+url=azureadventcalendar.florentappointaire.cloud
+address1="172.16.1.4"
+address2="172.16.1.5"
+
+az network public-ip create --resource-group $rg --name AzureAdventCalendarPIP --allocation-method Static --sku Standard
+
+az network application-gateway create --name $gwName --location westeurope --resource-group $rg \
+  						--capacity 2 --sku WAF_v2 \
+  						--http-settings-cookie-based-affinity Enabled \
+ 						--public-ip-address AzureAdventCalendarPIP --vnet-name AzureVNET \
+  						--subnet AG --servers "$address1" "$address2"
+
+az network application-gateway ssl-cert create --gateway-name $gwName \
+                                               --name wildcard.florentappointaire.cloud \
+                                               --resource-group $rg \
+                                               --cert-file /home/florent/star.florentappointaire.cloud.pfx \
+                                               --cert-password temppass
+
+az network application-gateway frontend-port create --gateway-name $gwName \
+                                                    --name HTTPS \
+                                                    --port 443 \
+                                                    --resource-group $rg
+
+
+az network application-gateway http-listener create --frontend-port HTTPS \
+                                                    --gateway-name $gwName \
+                                                    --name $url \
+                                                    --resource-group $rg \
+                                                    --host-name $url \
+                                                    --ssl-cert wildcard.florentappointaire.cloud
+
+az network application-gateway rule create --gateway-name $gwName \
+                                           --name $url \
+                                           --resource-group $rg \
+					   --address-pool appGatewayBackendPool \
+                                           --http-listener $url \
+                                           --http-settings appGatewayBackendHttpSettings \
+                                           --rule-type Basic
+
+
+az network public-ip show \
+  --resource-group AzureAdventCalendar \
+  --name AzureAdventCalendarPIP \
+  --query [ipAddress] \
+  --output tsv
+
+https://azureadventcalendar.florentappointaire.cloud
+https://azureadvent.florentappointaire.cloud/
+http://azureadvent.florentappointaire.cloud/
