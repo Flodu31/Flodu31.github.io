@@ -1,6 +1,9 @@
 ---
 title: "[PowerShell] Mettre à jour son IP Publique d’un VPN S2S avec une IP dynamique"
 date: "2016-05-30"
+author: "Florent Appointaire"
+permalink: "/2016/05/30/powershell-mettre-a-jour-son-ip-publique-dun-vpn-s2s-avec-une-ip-dynamique/"
+summary: 
 categories: 
   - "azure"
   - "powershell"

@@ -1,6 +1,9 @@
 ---
 title: "[Docker] Docker Datacenter dans Azure"
 date: "2016-06-24"
+author: "Florent Appointaire"
+permalink: "/2016/06/24/docker-docker-datacenter-dans-azure/"
+summary: 
 categories: 
   - "azure"
   - "container"
@@ -9,9 +12,6 @@ tags:
   - "docker-datacenter"
   - "microsoft"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/dockerdatacenterlogo.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/dockerdatacenterlogo.png)
-
 Docker Datacenter sur Azure et AWS a été annoncé ce Mardi 21 Juin 2016 à la [DockerCon](http://2016.dockercon.com/).
 
 ## Docker Datacenter, c’est quoi?

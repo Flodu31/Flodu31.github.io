@@ -1,6 +1,9 @@
 ---
 title: "[pfSense] VPN S2S avec Azure"
 date: "2016-05-31"
+author: "Florent Appointaire"
+permalink: "/2016/05/31/pfsense-vpn-s2s-avec-azure/"
+summary: 
 categories: 
   - "reseau"
 tags: 
@@ -9,9 +12,6 @@ tags:
   - "pfsense"
   - "s2s-vpn"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/pfSenseLogo.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/pfSenseLogo.png)
-
 Voulant avoir un VPN chez moi et pourquoi pas un VPN avec Azure, on m’a conseillé d’utiliser [pfSense](https://www.pfsense.org/). Cette distribution est extrêmement flexible et vous offre la possibilité de connecter votre VM directement en PPPoE mais encore d’avoir un firewall performant, d’effectuer des connexions VPN, en IPSec, L2TP, OpenVPN, etc.
 
 L’idée dans cet article sera donc de créer un VPN S2S avec Azure RM via pfSense.
