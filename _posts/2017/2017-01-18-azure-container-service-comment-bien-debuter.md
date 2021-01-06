@@ -1,6 +1,9 @@
 ---
 title: "[Azure] Container Service, comment bien débuter ?"
 date: "2017-01-18"
+author: "Florent Appointaire"
+permalink: "/2017/01/18/azure-container-service-comment-bien-debuter/"
+summary:
 categories: 
   - "azure-container-service"
 tags: 
@@ -10,9 +13,6 @@ tags:
   - "docker"
   - "microsoft"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/ACSLogo.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/ACSLogo.png)
-
 Azure Container Service est une nouvelle technologie, introduite par Microsoft Azure, et qui vous permet de monter rapidement, avec la technologie ARM, un cluster Docker, orchestré en utilisant Marathon et DC/OS, Docker Swarm, ou Kubernetes pour rendre vos applications hautement disponibles, mais aussi pouvoir déployer des dizaines de nœuds supplémentaire rapidement et sans souci. La documentation Microsoft est disponible ici : [https://docs.microsoft.com/en-us/azure/container-service/container-service-intro](https://docs.microsoft.com/en-us/azure/container-service/container-service-intro)
 
 Dans cet article, j’utiliserai la solution Docker Swarm :

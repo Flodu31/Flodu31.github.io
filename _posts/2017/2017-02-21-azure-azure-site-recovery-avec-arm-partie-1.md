@@ -1,6 +1,9 @@
 ---
 title: "[Azure] Azure Site Recovery avec ARM - Partie 1"
 date: "2017-02-21"
+author: "Florent Appointaire"
+permalink: "/2017/02/21/azure-azure-site-recovery-avec-arm-partie-1/"
+summary:
 categories: 
   - "azure-site-recovery"
 tags: 
@@ -12,9 +15,6 @@ tags:
   - "failover"
   - "microsoft"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/ASRLogo.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/ASRLogo.png)
-
 Aujourd’hui, nous allons voir comment implémenter une solution de DRP, avec Azure Site Recovery. Je vais déployer cette solution, basé sur ARM. ASR peut également servir pour des migrations de VM vers Azure mais aussi de VMWare vers Azure, etc.
 
 Dans mon plan de DRP, le service que j’ai défini comme critique est un site web. Je vais donc répliquer cette VM sur Azure, avec ASR. J’aurais pu faire de même avec une application multi tier.

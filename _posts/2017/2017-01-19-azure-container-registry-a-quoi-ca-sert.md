@@ -1,6 +1,9 @@
 ---
 title: "[Azure] Container Registry, à quoi ça sert ?"
 date: "2017-01-19"
+author: "Florent Appointaire"
+permalink: "/2017/01/19/azure-container-registry-a-quoi-ca-sert/"
+summary:
 categories: 
   - "azure-container-registry"
 tags: 
@@ -10,9 +13,6 @@ tags:
   - "azure-container-registry"
   - "microsoft"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/ACRLogo.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/ACRLogo.png)
-
 Azure Container Registry est un service Azure, qui permet de créer votre propre Registry, pour stocker vos images de façon privée. Ceci à l’avantage de pouvoir déployer bien plus rapidement, car dans le même réseau, vos différentes images. Par défaut, la plateforme Docker propose d’héberger vos images gratuitement de façon publique, sur [https://hub.docker.com](https://hub.docker.com/) mais aussi de façon privée, si vous prenez un abonnement.
 
 Cette registry est disponible avec les clusters de type Docker Swarm, DC/OS, et Kubernetes.

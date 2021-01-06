@@ -1,6 +1,9 @@
 ---
 title: "[Azure AD] Domain Services"
 date: "2017-05-11"
+author: "Florent Appointaire"
+permalink: "/2017/05/11/azure-ad-domain-services/"
+summary: 
 categories: 
   - "azure-ad"
 tags: 
@@ -8,9 +11,6 @@ tags:
   - "azure-ad-domain-services"
   - "microsoft"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/0601.download.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/0601.download.png)
-
 En Octobre 2016, Microsoft a rendu disponible en GA Azure Active Directory Domain Services: [https://blogs.technet.microsoft.com/enterprisemobility/2016/10/12/azuread-domain-services-is-now-ga-lift-and-shift-to-the-cloud-just-got-way-easier/](https://blogs.technet.microsoft.com/enterprisemobility/2016/10/12/azuread-domain-services-is-now-ga-lift-and-shift-to-the-cloud-just-got-way-easier/)
 
 Ce nouveau service vous permet d’avoir un domain controller sur Azure, géré par les équipes Microsoft. Vous aurez donc la possibilité de joindre des ordinateurs aux domains.

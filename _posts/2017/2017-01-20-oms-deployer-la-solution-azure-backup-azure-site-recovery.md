@@ -1,6 +1,9 @@
 ---
 title: "[OMS] Déployer la solution Azure Backup / Azure Site Recovery"
 date: "2017-01-20"
+author: "Florent Appointaire"
+permalink: "/2017/01/20/oms-deployer-la-solution-azure-backup-azure-site-recovery/"
+summary:
 categories: 
   - "azure"
   - "oms"
@@ -12,9 +15,6 @@ tags:
   - "microsoft"
   - "oms"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/6712.pastedimage1505371792894v1.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/6712.pastedimage1505371792894v1.png)
-
 Par défaut, si vous souhaitez avoir une rapide vue de votre Azure Backup / Azure Site Recovery qui fonctionne avec ARM, avec OMS, ce n’est pas possible parce que la solution proposée par Microsoft est pour la version classic. Suite à un PGI (Product Group Information, en tant que MVP), il nous a été présenté la solution **Recovery Services**, disponible sur GitHub ([https://github.com/krnese/AzureDeploy/tree/master/OMS/MSOMS/Solutions/recoveryservices](https://github.com/krnese/AzureDeploy/tree/master/OMS/MSOMS/Solutions/recoveryservices)) et qui supervise la partir ARM de Azure Site Recovery et Azure Backup. Je vous propose donc de voir comment mettre en place cette solution.
 
 Pour déployer cette solution, vous avez besoin de savoir dans quel groupe de ressource tourne votre workspace OMS, le nom du workspace and sa localisation :

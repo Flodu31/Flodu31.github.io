@@ -1,6 +1,9 @@
 ---
 title: "[Azure] Migrer du portail Classic vers ARM"
 date: "2017-02-23"
+author: "Florent Appointaire"
+permalink: "/2017/02/23/azure-migrer-du-portail-classic-vers-arm/"
+summary:
 categories: 
   - "azure"
 tags: 
@@ -9,9 +12,6 @@ tags:
   - "azure"
   - "microsoft"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/pastedimage1482154059354v1.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/pastedimage1482154059354v1.png)
-
 Christophe Lams, Cloud Solution Architect, a publié une série d'article pour migrer depuis la version classic de Azure, vers ARM, en utilisant Azure Site Recovery.
 
 Voici les différents articles qu'il propose:

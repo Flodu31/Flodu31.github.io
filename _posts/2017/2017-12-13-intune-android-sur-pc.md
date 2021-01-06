@@ -1,6 +1,9 @@
 ---
 title: "[Intune] Android sur PC"
 date: "2017-12-13"
+author: "Florent Appointaire"
+permalink: "/2017/12/13/intune-android-sur-pc/"
+summary:
 categories: 
   - "intune"
 tags: 
@@ -9,9 +12,6 @@ tags:
   - "intune"
   - "microsoft"
 ---
-
-![](https://cloudyjourney.fr/wp-content/uploads/2018/01/3005.pastedimage1513177145769v1-300x61.png)
-
 En préparant une démo Intune pour un de mes clients, et n'ayant pas de device Android sous la main, j'ai décidé de faire la démonstration Android via mon PC. Pour faire ceci, il existe plusieurs simulateur Android sur PC. J'ai décidé de choisir BlueStacks:
 
 [https://www.bluestacks.com/](https://www.bluestacks.com/)

@@ -1,6 +1,9 @@
 ---
 title: "[Azure] Sauvegardez vos base de données SQL Server"
 date: "2017-06-06"
+author: "Florent Appointaire"
+permalink: "/2017/06/06/azure-sauvegardez-vos-base-de-donnees-sql-server/"
+summary:
 categories: 
   - "azure"
   - "sql-server"
@@ -10,9 +13,6 @@ tags:
   - "microsoft"
   - "sql-server"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/BCKSQL00.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/BCKSQL00.png)
-
 Si vous souhaitez sauvegarder vos serveur de base de données SQL Server, mais que vous êtes limité en terme de stockage ou que vous ne souhaitez pas investir dans du nouveau matériel ou simplement pour sauvegarder votre LAB, vous avez la solution du backup sur Azure. Pour ceci, c’est très simple, et vous ne payez que le stockage.
 
 ## Prérequis

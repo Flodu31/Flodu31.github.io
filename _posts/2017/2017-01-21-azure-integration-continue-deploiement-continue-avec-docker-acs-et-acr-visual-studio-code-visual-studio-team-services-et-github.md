@@ -1,6 +1,9 @@
 ---
 title: "[Azure] Intégration continue / Déploiement continue avec Docker (ACS et ACR), Visual Studio Code, Visual Studio Team Services et GitHub"
 date: "2017-01-21"
+author: "Florent Appointaire"
+permalink: "/2017/01/21/azure-integration-continue-deploiement-continue-avec-docker-acs-et-acr-visual-studio-code-visual-studio-team-services-et-github/"
+summary:
 categories: 
   - "azure"
   - "azure-container-registry"
@@ -16,9 +19,6 @@ tags:
   - "visual-studio-team-service"
   - "vsts"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/pastedimage1485183036978v1.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/pastedimage1485183036978v1.png)
-
 Une des grandes forces des infrastructures de nos jours, est le fait de pouvoir réaliser, du CI/CD. Comprenez, Continous Integration et Continus Deployment.
 
 En résumé, ces techniques, permettent à vos développeurs, de créer/modifier leur code, de l’envoyer sur Github par exemple, de le compiler avec Visual Studio Team Services (VSTS), de l’enregistrer sur votre registry (Azure Container Registry dans mon cas), de gérer les versions, toujours avec VSTS, de l’envoyer comme container sur votre Docker Swarm et pour finir, d’y accéder par une simple interface web.

@@ -1,6 +1,9 @@
 ---
 title: "[OMS] Créer des rapports dans PowerBI"
 date: "2017-07-18"
+author: "Florent Appointaire"
+permalink: "/2017/07/18/oms-creer-des-rapports-dans-powerbi/"
+summary:
 categories: 
   - "oms"
 tags: 
@@ -8,9 +11,6 @@ tags:
   - "oms"
   - "powerbi"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/7563.OMSPowerBI00.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/7563.OMSPowerBI00.png)
-
 Aujourd'hui nous allons découvrir comment connecté votre workspace OMS à PowerBI. Ceci est actuellement en Preview.
 
 Pour commencer, connectez vous à votre workspace OMS et allez dans **Settings > Preview Features** et activez **PowerBI Integration:**

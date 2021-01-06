@@ -1,6 +1,9 @@
 ---
 title: "[Azure Automation] Migrer vos scripts vers Azure – Partie 2"
 date: "2017-05-19"
+author: "Florent Appointaire"
+permalink: "/2017/05/19/azure-automation-migrer-vos-scripts-vers-azure-partie-2/"
+summary: 
 categories: 
   - "azure-automation"
 tags: 
@@ -8,9 +11,6 @@ tags:
   - "dsc"
   - "microsoft"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/AzureAutomationLogo.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/AzureAutomationLogo.png)
-
 Je me suis récemment intéréssé à Azure Automation, de fond en comble. C’est pourquoi, dans les 2 prochains articles, nous allons voir comment utiliser cette outil, de A à Z:
 
 - [\[Azure Automation\] Découverte de l’interface – Partie 1](https://cloudyjourney.fr/2017/05/09/azure-automation-decouverte-de-linterface-partie-1/) 

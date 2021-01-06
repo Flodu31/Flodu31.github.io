@@ -1,6 +1,9 @@
 ---
 title: "[Azure Automation] Source Control avec Github"
 date: "2017-09-21"
+author: "Florent Appointaire"
+permalink: "/2017/09/21/azure-automation-source-control-avec-github/"
+summary:
 categories: 
   - "azure"
   - "azure-automation"
@@ -11,8 +14,7 @@ tags:
   - "microsoft"
   - "source-control"
 ---
-
-![](https://cloudyjourney.fr/wp-content/uploads/2018/01/1881.pastedimage1505972137711v1-300x119.png) Aujourd'hui je vais vous parler d'une nouvelle feature que j'ai découvert le week-end dernier, lors du PowerShell Saturday User Group à Paris, l'intégration entre Azure Automation et Github. Cette intégration vous permettra d'avoir le contrôle et le versionning de vos sources.
+Aujourd'hui je vais vous parler d'une nouvelle feature que j'ai découvert le week-end dernier, lors du PowerShell Saturday User Group à Paris, l'intégration entre Azure Automation et Github. Cette intégration vous permettra d'avoir le contrôle et le versionning de vos sources.
 
 Pour commencer, allez dans votre compte Azure Automation et allez dans **Source Control**:
 

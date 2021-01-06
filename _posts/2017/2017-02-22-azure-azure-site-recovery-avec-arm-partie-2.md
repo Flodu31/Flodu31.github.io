@@ -1,6 +1,9 @@
 ---
 title: "[Azure] Azure Site Recovery avec ARM - Partie 2"
 date: "2017-02-22"
+author: "Florent Appointaire"
+permalink: "/2017/02/22/azure-azure-site-recovery-avec-arm-partie-2/"
+summary:
 categories: 
   - "azure-site-recovery"
 tags: 
@@ -11,9 +14,6 @@ tags:
   - "failover"
   - "microsoft"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/ASRLogo.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/ASRLogo.png)
-
 Voici donc la deuxième partie de l'implémentation de Azure Site Recovery avec ARM:
 
 - [1er article: Mise en place de la solution Azure Site Recovery](https://cloudyjourney.fr/2017/02/21/azure-azure-site-recovery-avec-arm-partie-1/)

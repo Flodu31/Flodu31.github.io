@@ -1,6 +1,9 @@
 ---
 title: "[OMS] Créer des Customs Fields"
 date: "2017-07-07"
+author: "Florent Appointaire"
+permalink: "/2017/07/07/oms-creer-des-customs-fields/"
+summary:
 categories: 
   - "oms"
 tags: 
@@ -8,9 +11,6 @@ tags:
   - "microsoft"
   - "oms"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/OMS.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/OMS.png)
-
 Une nouvelle fonctionnalité vient d'apparaître depuis quelques mois sur OMS, la possibilité de créer des champs personnalisés (Custom Field). Ceci vous permet de classifier des recherches de façon plus simple et plus rapide que d'effectuer des longues recherches.
 
 Pour commencer, assurez-vous d'avoir un workspace OMS et de récupérer des logs:

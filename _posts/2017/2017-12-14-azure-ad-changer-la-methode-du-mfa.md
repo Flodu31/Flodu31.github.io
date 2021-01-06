@@ -1,6 +1,9 @@
 ---
 title: "[Azure AD] Changer la méthode du MFA"
 date: "2017-12-14"
+author: "Florent Appointaire"
+permalink: "/2017/12/14/azure-ad-changer-la-methode-du-mfa/"
+summary:
 categories: 
   - "azure-ad"
 tags: 
@@ -8,9 +11,6 @@ tags:
   - "mfa"
   - "microsoft"
 ---
-
-![](https://cloudyjourney.fr/wp-content/uploads/2018/01/0601.download-300x158.png)
-
 Par défaut, quand vous activer le MFA à un utilisateur Azure AD, le deuxième facteur d'authentification est l'envoi d'un SMS.
 
 Cette méthode peut ne pas convenir à tout le monde, et il est plus simple de cliquer sur une notification sur son smartphone que de rentrer un code où l'on peut faire des erreurs (oui oui, je suis feignant ? ).
@@ -43,4 +43,4 @@ Sans plus aucune action, vous êtes authentifié:
 
 [![](https://www.cloudyjourney.fr/wp-content/uploads/2018/01/8105.pastedimage1513164147878v8.png)](https://www.cloudyjourney.fr/wp-content/uploads/2018/01/8105.pastedimage1513164147878v8.png)
 
-En espérant vous avoir aidé ?
+En espérant vous avoir aidé :)

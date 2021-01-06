@@ -1,6 +1,9 @@
 ---
 title: "[Office 365] Connexion à Outlook/S4B avec un compte MFA"
 date: "2017-12-19"
+author: "Florent Appointaire"
+permalink: "/2017/12/19/office-365-connexion-a-outlook-s4b-avec-un-compte-mfa/"
+summary:
 categories: 
   - "office-365"
 tags: 

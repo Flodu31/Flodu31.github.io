@@ -1,6 +1,9 @@
 ---
 title: "[Azure] Ajouter un certificat sur une WebApp avec Let's Encrypt"
 date: "2017-12-18"
+author: "Florent Appointaire"
+permalink: "/2017/12/18/azure-ajouter-un-certificat-sur-une-webapp-avec-lets-encrypt/"
+summary:
 categories: 
   - "azure"
   - "azure-web-apps"
@@ -10,9 +13,6 @@ tags:
   - "microsoft"
   - "web-app"
 ---
-
-![](https://cloudyjourney.fr/wp-content/uploads/2018/01/Azure-300x224.png)
-
 Aujourd'hui, j'ai voulu passer mon site qui est hébergé sur une WebApp Azure, en HTTPS. Le seul souci, le prix d'un certificat. Je vous ai déjà parlé de Let's Encrypt plusieurs fois, mais aujourd'hui, j'ai découvert qu'il était possible d'intégrer Let'S Encrypt avec votre site web et de renouveler le certificat automatiquement, car, avec Let's Encrypt, les certificats ne sont valables que 3 mois.
 
 Pour commencer, assurez vous d'avoir un App Service Plan qui support le SSL:

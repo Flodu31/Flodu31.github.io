@@ -1,6 +1,9 @@
 ---
 title: "[PowerShell] Créer un serveur DSC sur Azure"
 date: "2017-05-23"
+author: "Florent Appointaire"
+permalink: "/2017/05/23/powershell-creer-un-serveur-dsc-sur-azure/"
+summary: 
 categories: 
   - "powershell"
 tags: 
@@ -9,9 +12,6 @@ tags:
   - "powershell"
   - "pull-server"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/PowerShell.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/PowerShell.png)
-
 Aujourd’hui, je vais vous montrer comment déployer un serveur DSC sur Azure, qui aura pour fonction d’être le serveur de référence, et donc, de faire office de serveur **PULL.**
 
 Pour commencer, déployez un serveur sur Azure (Windows Server 2016 pour ma part) et autorisez dans le NSG, le port 8080 et 443.

@@ -1,6 +1,9 @@
 ---
 title: "[Starwind] Cloud VTL avec Amazon Web Services and Veeam"
 date: "2017-10-11"
+author: "Florent Appointaire"
+permalink: "/2017/10/11/starwind-cloud-vtl-avec-amazon-web-services-and-veeam/"
+summary:
 categories: 
   - "aws"
   - "starwind"
@@ -13,9 +16,6 @@ tags:
   - "veeam"
   - "vtl"
 ---
-
-![](https://cloudyjourney.fr/wp-content/uploads/2017/10/StarWind_Software.png)
-
 Aujourd’hui nous allons voir comment déployer la solution Starwind VTL et l’utiliser avec Veeam, avec un backup dans Amazon Web Services.
 
 Pour commencer, vous devez avoir les prérequis suivants:

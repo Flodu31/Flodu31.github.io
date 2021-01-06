@@ -1,6 +1,9 @@
 ---
 title: "[Azure] Ajouter plusieurs administrateurs d'un coup"
 date: "2017-02-08"
+author: "Florent Appointaire"
+permalink: "/2017/02/08/azure-ajouter-plusieurs-administrateurs-dun-coup/"
+summary:
 categories: 
   - "azure-ad"
 tags: 
@@ -8,9 +11,6 @@ tags:
   - "microsoft"
   - "owner"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/pastedimage1482154059354v1.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/pastedimage1482154059354v1.png)
-
 J'ai eu la demande d'ajouter plusieurs utilisateurs d'un Azure AD Administrateur de la suscription Azure, en ARM. Etant feignant et ne voulant pas ajouter les 10 utilisateurs à la main, j'ai décidé d'écrire un script PowerShell (au cas où on me demande de le refaire plus tard). Ce script est disponible sur Gallery Technet:
 
 [https://gallery.technet.microsoft.com/Add-multiple-admins-in-an-07c7cf59](https://gallery.technet.microsoft.com/Add-multiple-admins-in-an-07c7cf59)

@@ -1,6 +1,9 @@
 ---
 title: "[StarWind] Déployer Virtual SAN Free sur Azure"
 date: "2017-04-27"
+author: "Florent Appointaire"
+permalink: "/2017/04/27/starwind-deployer-virtual-san-free-sur-azure/"
+summary: 
 categories: 
   - "starwind"
 tags: 
@@ -8,9 +11,6 @@ tags:
   - "microsoft"
   - "starwind"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2017/10/StarWind_Software.png)](https://cloudyjourney.fr/wp-content/uploads/2017/10/StarWind_Software.png)
-
 Aujourd'hui, je vais vous montrer comment utiliser StarWind Virtual SAN Free sur Azure. Ceci vous permet de présenter des LUNs, à des VMs. vous utiliserez donc moins de disque que pour du Storage Space Direct par exemple, si vous n'utilisez pas le produit en HA bien sur.
 
 Vous pouvez télécharger le produit et la licence ici: [https://www.starwindsoftware.com/starwind-virtual-san-free](https://www.starwindsoftware.com/starwind-virtual-san-free)

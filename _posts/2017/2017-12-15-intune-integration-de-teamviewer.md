@@ -1,6 +1,9 @@
 ---
 title: "[Intune] Intégration de TeamViewer"
 date: "2017-12-15"
+author: "Florent Appointaire"
+permalink: "/2017/12/15/intune-integration-de-teamviewer/"
+summary:
 categories: 
   - "intune"
 tags: 
@@ -9,9 +12,6 @@ tags:
   - "microsoft"
   - "teamviewer"
 ---
-
-![](https://cloudyjourney.fr/wp-content/uploads/2018/01/3005.pastedimage1513177145769v1-300x61.png)
-
 Toujours dans ma découverte de Intune, j'ai découvert la possibilité d'intégrer TeamViewer à Intune.
 
 Pour mettre en place ceci, allez dans votre portail Azure, dans la partie **Microsoft Intune > Devices > TeamViewer Connector** et connectez vous à votre compte TeamViewer pour authoriser Intune:

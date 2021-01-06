@@ -1,6 +1,9 @@
 ---
 title: "[Azure] Calculez le coût de votre data center dans Azure"
 date: "2017-09-19"
+author: "Florent Appointaire"
+permalink: "/2017/09/19/azure-calculez-le-cout-de-votre-data-center-dans-azure/"
+summary:
 categories: 
   - "azure"
 tags: 
@@ -9,9 +12,6 @@ tags:
   - "microsoft"
   - "tco"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/7411.MAP00.jpg)](https://cloudyjourney.fr/wp-content/uploads/2018/01/7411.MAP00.jpg)
-
 Pendant l'été, Microsoft a rendu disponible un outil pour calculer le TCO (Total Cost of Ownership). Cet outil est une plateforme en ligne, où vous pouvez y accéder depuis ici: [https://www.tco.microsoft.com/](https://www.tco.microsoft.com/)
 
 Cet outil peut être utilisé de façon manuelle, en fournissant les informations des serveurs manuellement, ou de façon semi-automatiquen en utilisant l'outil MAP: [https://www.microsoft.com/en-us/download/details.aspx?id=7826](https://www.microsoft.com/en-us/download/details.aspx?id=7826)

@@ -1,6 +1,9 @@
 ---
 title: "Microsoft MVP pour la 2ème année"
 date: "2017-07-03"
+author: "Florent Appointaire"
+permalink: "/2017/07/03/microsoft-mvp-pour-la-2eme-annee/"
+summary:
 categories: 
   - "autres"
 tags: 
@@ -8,9 +11,6 @@ tags:
   - "mvp"
   - "mvpbuzz"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/mvp.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/mvp.png)
-
 Bonjour à tous,
 
 Je suis heureux de vous annoncer que j'ai été, pour la deuxième année consécutive, nominé en tant que MVP Cloud and Datacenter Management.
@@ -24,3 +24,5 @@ Le travail paye, ne renoncez jamais...
 Encore merci à tous :)
 
 Florent
+
+[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/mvp.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/mvp.png)

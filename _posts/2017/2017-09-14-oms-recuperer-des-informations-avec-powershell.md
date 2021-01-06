@@ -1,6 +1,9 @@
 ---
 title: "[OMS] Récupérer des informations avec PowerShell"
 date: "2017-09-14"
+author: "Florent Appointaire"
+permalink: "/2017/09/14/oms-recuperer-des-informations-avec-powershell/"
+summary:
 categories: 
   - "azure"
   - "oms"
@@ -10,9 +13,6 @@ tags:
   - "oms-powershell-query"
   - "powershell"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/6712.pastedimage1505371792894v1.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/6712.pastedimage1505371792894v1.png)
-
 Voulant automatiser la classification des agents OMS qui sont connectés à mon workspace, j'ai cherché différentes options pour récupérer le nom des serveurs avec des agents installés. Il y a 2 possibilités:
 
 - PowerShell

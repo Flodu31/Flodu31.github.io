@@ -1,6 +1,9 @@
 ---
 title: "[Azure] Citrix XenApp"
 date: "2017-05-02"
+author: "Florent Appointaire"
+permalink: "/2017/05/02/azure-citrix-xenapp/"
+summary: 
 categories: 
   - "azure"
   - "citrix"
@@ -10,9 +13,6 @@ tags:
   - "microsoft"
   - "xenapp"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/pastedimage1482154059354v1.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/pastedimage1482154059354v1.png)
-
 Aujourd'hui nous allons voir comment déployer une ferme Citrix XenApp sur Azure. Nous allons utiliser le déploiement de type Citrix Cloud Service. Ce modèle fait tourner votre workload sur Azure, mais il est géré par Citrix.
 
 Ceci a été rendu disponible en Mars 2017.

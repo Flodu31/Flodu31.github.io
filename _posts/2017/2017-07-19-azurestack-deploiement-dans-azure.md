@@ -1,6 +1,9 @@
 ---
 title: "[AzureStack] Déploiement dans Azure"
 date: "2017-07-19"
+author: "Florent Appointaire"
+permalink: "/2017/07/19/azurestack-deploiement-dans-azure/"
+summary:
 categories: 
   - "azure-stack"
 tags: 
@@ -9,9 +12,6 @@ tags:
   - "azure-stack"
   - "microsoft"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/3681.AzureStack00.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/3681.AzureStack00.png)
-
 Avec la sortie récente des machines V3 sur Azure, il est maintenant possible de faire du Nested Hyper-V, comprenez donc de faire tourner des VMs dans un VM Azure.
 
 Azure Stack Development Kit venant de sortir, c'est l'occasion pour moi de déployer cette dernière version dans Azure, n'ayant pas le matériel nécessaire pour le faire tourner chez moi. Attention, ce type de déploiement n'est pas supportée par Microsoft et ne peut être utilisé qu'en test.

@@ -1,6 +1,9 @@
 ---
 title: "[Azure] Découverte de KeyVault"
 date: "2017-05-29"
+author: "Florent Appointaire"
+permalink: "/2017/05/29/azure-decouverte-de-keyvault/"
+summary: 
 categories: 
   - "keyvault"
 tags: 
@@ -8,9 +11,6 @@ tags:
   - "keyvault"
   - "microsoft"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/Keyvault.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/Keyvault.png)
-
 Depuis quelques mois déjà, Microsoft a déployé sur la plateforme Azure, **Key Vault.** Cette solution vous permet de stocker, directement sur Azure, vos mots de passes, certificats, et même, de gérer/utiliser directement ces valeurs, via des APIs. Les ressources que vous mettez à disposition dans un Key Vault, peuvent être accèder depuis Azure Automation, Azure AD, etc. mais aussi depuis vos applications personnalisées.
 
 Vous trouverez la documentation ici: [https://docs.microsoft.com/en-us/azure/key-vault/](https://docs.microsoft.com/en-us/azure/key-vault/)
