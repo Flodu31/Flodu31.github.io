@@ -14,6 +14,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Cloudy Journey Blog
+title_separator: "-"
+description : "Blog autour des solutions Cloud de Microsoft (Azure) & Amazon (AWS)."
 email: florent.appointaire@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Blog autour des solutions Cloud de Microsoft (Azure) & Amazon (AWS).
@@ -21,6 +23,7 @@ twitter_username: florent_app
 github_username: flodu31
 minimal_mistakes_skin: dark
 search: true
+locale: "fr-FR"
 
 # Build settings
 markdown: kramdown
