@@ -1,7 +1,9 @@
 ---
 title: "[Azure] Erreur OMS Gateway"
 date: "2020-03-02"
+author: "Florent Appointaire"
 permalink: "/2020/03/02/azure-erreur-oms-gateway/"
+summary: 
 categories: 
   - "oms"
 tags: 
