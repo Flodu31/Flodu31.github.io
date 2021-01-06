@@ -12,15 +12,13 @@ tags:
   - Azure Kubernetes Services
   - Conférence
   - Microsoft
-  - Virtual Scottish Summit
+  - IT Pro Dev Connections
 ---
 
-![](/wp-content/uploads/2020/12/cropped-Social-Media.png)
+![](https://s3.amazonaws.com/us.inevent.files.general/7067/0/845d35c8e323e053fe111ed3c15426a2e39d6219.png)
 
-Bonjour à tous,
+J’ai le plaisir de vous annoncer que je présenterai, en Anglais, une session concernant AKS et Azure Application Gateway:
 
-J’ai le plaisir de vous annoncer, que j’animerai lors du Virtual Scottish Summit 2021 une session, en français, autour de AKS et Azure Application Gateway. Cette session se déroulera le Samedi 27 Février 2021, à 15h.
+AKS and App Gateway: the ideal combo
 
-Les sessions en français sont disponibles ici: [Scottish Summit 2021 Sessions | Scottish Summit](https://scottishsummit.com/scottish-summit-2021-sessions#sz-tab-58662){:target="_blank"}
-
-![](/wp-content/uploads/2020/12/Florent-APPOINTAIRE.png)
+Vous trouverez plus d’informations sur l’évenement, qui sera bien sûr en ligne, ici: [IT PRO | DEV Connections 2020](https://www.itprodevconnections.gr/){:target="_blank"}
