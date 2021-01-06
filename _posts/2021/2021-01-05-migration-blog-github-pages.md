@@ -1,8 +1,8 @@
 ---
 title: "Migration vers Github Pages"
-date: "2021-01-08"
+date: "2021-01-05"
 author: "Florent Appointaire"
-permalink: "/2021/01/08/migration-blog-github-pages/"
+permalink: "/2021/01/05/migration-blog-github-pages/"
 summary: 
 categories: 
   - "autres"
