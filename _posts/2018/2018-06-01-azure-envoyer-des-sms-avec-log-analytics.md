@@ -1,6 +1,9 @@
 ---
 title: "[Azure] Envoyer des SMS avec Log Analytics"
 date: "2018-06-01"
+author: "Florent Appointaire"
+permalink: "/2018/06/01/azure-envoyer-des-sms-avec-log-analytics/"
+summary:
 categories: 
   - "oms"
 tags: 
@@ -10,9 +13,6 @@ tags:
   - "oms"
   - "sms"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/pastedimage1482154059354v1.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/pastedimage1482154059354v1.png)
-
 Vivant en Belgique et souhaitant envoyer des SMS lorsque quelque chose ne va pas sur mon infrastructure, je n'ai d'autre choix que de passer par un provider tier pour envoyer ces SMS, Microsoft ne supportant pas encore la Belgique comme pays pour envoyer des SMS: [https://azure.microsoft.com/en-us/pricing/details/monitor/](https://azure.microsoft.com/en-us/pricing/details/monitor/)
 
 J'ai donc utilisé le service de Twilio pour faire ceci. Pour commencer, créez votre compte sur Twilio, offrez vous un numéro de téléphone (France pour moi) un peu de crédit et c'est parti :)

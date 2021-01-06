@@ -1,6 +1,9 @@
 ---
 title: "[Azure Stack] Exam 70-537"
 date: "2018-06-04"
+author: "Florent Appointaire"
+permalink: "/2018/06/04/azure-stack-exam-70-537/"
+summary:
 categories: 
   - "azure-stack"
 tags: 
@@ -12,9 +15,6 @@ tags:
   - "private-cloud"
   - "retour-dexperience"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/06/Exam-537.png)](https://cloudyjourney.fr/wp-content/uploads/2018/06/Exam-537.png)
-
 Il y a de ça plus ou moins 4 mois (début Février), j'ai passé, en BETA, la nouvelle certification concernant Azure Stack, numérotée **70-537**, et nommée **Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack**. Cette certification vous évalue sur les points suivants:
 
 - Deploying and Integrating an Azure Stack Environment (20-25%)
