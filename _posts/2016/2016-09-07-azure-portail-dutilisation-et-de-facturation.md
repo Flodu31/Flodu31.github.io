@@ -1,6 +1,9 @@
 ---
 title: "[Azure] Portail d’utilisation et de facturation"
 date: "2016-09-07"
+author: "Florent Appointaire"
+permalink: "/2016/09/07/azure-portail-dutilisation-et-de-facturation/"
+summary: 
 categories: 
   - "azure"
 tags: 
@@ -8,9 +11,6 @@ tags:
   - "billing"
   - "microsoft"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/Azure.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/Azure.png)
-
 Microsoft a rendu disponible le 14 Juillet un portail qui vous permet d’afficher, via des graphiques, l’utilisation et la facturation de votre suscription Azure (annonce: [https://azure.microsoft.com/en-us/blog/announcing-the-release-of-the-azure-usage-and-billing-portal/](https://azure.microsoft.com/en-us/blog/announcing-the-release-of-the-azure-usage-and-billing-portal/ "https://azure.microsoft.com/en-us/blog/announcing-the-release-of-the-azure-usage-and-billing-portal/")).
 
 Après quelques jours de vacances, j’ai enfin décidé de tester cette platform.

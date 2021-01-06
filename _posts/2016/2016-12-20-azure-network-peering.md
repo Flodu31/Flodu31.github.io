@@ -1,6 +1,9 @@
 ---
 title: "[Azure] Network Peering"
 date: "2016-12-20"
+author: "Florent Appointaire"
+permalink: "/2016/12/20/azure-network-peering/"
+summary: 
 categories: 
   - "reseau"
 tags: 
@@ -8,9 +11,6 @@ tags:
   - "microsoft"
   - "virtual-network-peering"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/pastedimage1482154059354v1.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/pastedimage1482154059354v1.png)
-
 Le 28 Septembre 2016, Microsoft a rendu disponible en GA, le Virtual Network peering.
 
 Cette nouvelle fonctionnalité vous donne la possibilité de connecter 2 Virtual Network sur Azure ensemble, en utilisant directement le réseau du datacenter Azure. Vous pouvez donc abandonner les VPN S2S pour connecter vos différents sous-réseaux :)

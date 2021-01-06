@@ -1,6 +1,9 @@
 ---
 title: "[Azure AD] Authentification Passthrough et SSO"
 date: "2016-12-14"
+author: "Florent Appointaire"
+permalink: "/2016/12/14/azure-ad-authentification-passthrough-et-sso/"
+summary: 
 categories: 
   - "azure-ad"
 tags: 
@@ -10,9 +13,6 @@ tags:
   - "microsoft"
   - "sso"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/0601.download.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/0601.download.png)
-
 Microsoft a publié une nouvelle version de Azure AD Connect (anciennement DirSync) qui permet de synchroniser votre Active Directory vers Azure AD. 2 nouvelles fonctionnalités sont apparues:
 
 - Passthrough authentication => Permet de vérifier la validité d'un compte (mot de passe, etc.) sans ADFS ni même agent en DMZ.

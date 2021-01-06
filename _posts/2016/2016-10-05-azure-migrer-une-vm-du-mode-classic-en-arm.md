@@ -1,6 +1,9 @@
 ---
 title: "[Azure] Migrer une VM du mode Classic en ARM"
 date: "2016-10-05"
+author: "Florent Appointaire"
+permalink: "/2016/10/05/azure-migrer-une-vm-du-mode-classic-en-arm/"
+summary: 
 categories: 
   - "azure"
 tags: 
@@ -10,9 +13,6 @@ tags:
   - "microsoft"
   - "resource-manager"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/pastedimage1482154059354v1.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/pastedimage1482154059354v1.png)
-
 Un client a déployé aujourd’hui toutes ses VMs en Classic plutôt qu’en ARM (mais aussi un compte de stockage/vm, etc.). Vu la facilité de gestion de facilité de Resource Manager et sa flexibilité ainsi que ses différentes évolutions, je lui ai conseillé de migrer de Azure Classic vers Azure ARM.
 
 Nous avons donc créé un nouveau groupe de ressource dans ARM, ainsi qu’un nouveau réseau. Le client avait déjà commencé à personnaliser ses VMs et voulait éviter de tout refaire. C’est pourquoi, je lui ai proposé de migrer tous les VHDs des comptes de stockages classic vers le modèle RM et aussi, un seul et unique compte de stockage (10 VMs donc assez d’IOPS).

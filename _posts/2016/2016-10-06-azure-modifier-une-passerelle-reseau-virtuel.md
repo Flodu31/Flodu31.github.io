@@ -1,6 +1,9 @@
 ---
 title: "[Azure] Modifier une passerelle réseau virtuel"
 date: "2016-10-06"
+author: "Florent Appointaire"
+permalink: "/2016/10/06/azure-modifier-une-passerelle-reseau-virtuel/"
+summary: 
 categories: 
   - "azure"
   - "reseau"
@@ -8,9 +11,6 @@ tags:
   - "azure"
   - "microsoft"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/pastedimage1482154059354v1.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/pastedimage1482154059354v1.png)
-
 Aujourd’hui, un client m’a demandé de changé le **SKU** de sa Virtual Network Gateway de **Standard** à **Basic.** Pour plus d’information, allez jeter un œil ici: [https://azure.microsoft.com/en-us/documentation/articles/vpn-gateway-about-vpngateways/#gateway-skus](https://azure.microsoft.com/en-us/documentation/articles/vpn-gateway-about-vpngateways/#gateway-skus "https://azure.microsoft.com/en-us/documentation/articles/vpn-gateway-about-vpngateways/#gateway-skus")
 
 Le problème ici, est qu’il n’a pas trouvé comment le faire par l’interface graphique. Ceci n’est pas disponible pour le moment. Le seul moyen de le faire est donc de le faire avec PowerShell

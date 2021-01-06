@@ -6,6 +6,9 @@ permalink: "/2021/01/07/migration-blog-github-pages/"
 summary: 
 categories: 
   - "autres"
+tags:
+  - "Github Pages"
+  - "Wordpress"
 ---
 Comme vous l'aurez remarqué, mon blog vient de migrer de Wordpress vers Github Pages (thanks to Tao for this great idea). [Voici l'article qui m'a fait me décider.](https://blog.tyang.org/2021/01/04/moved-my-blog-to-github-pages/)
 
