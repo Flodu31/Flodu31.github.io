@@ -1,6 +1,9 @@
 ---
 title: "[AWS] Déployer Amazon Connect"
 date: "2018-01-22"
+author: "Florent Appointaire"
+permalink: "/2018/01/22/aws-deployer-amazon-connect"
+summary:
 categories: 
   - "amazon-connect"
   - "aws"
@@ -8,11 +11,6 @@ tags:
   - "amazon-connect"
   - "aws"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/2000px-AmazonWebservices_Logo.svg_.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/2000px-AmazonWebservices_Logo.svg_.png)
-
- 
-
 Etant en train de déployer un call center pour la nouvelle société dans laquel je travaille, nous avons décider d'utiliser Amazon Connect pour sa simplicité (workflow, permissions, etc.) et son tarif plutôt abordable. Pour faire ceci, assurez vous d'avoir déployé la partie [Amazon AD Connector](https://cloudyjourney.fr/2018/01/18/aws-deployer-aws-ad-connector/).
 
 Dans votre portail AWS, allez dans **Services > Customer Engagement > Amazon Connect** et cliquez sur **Add an instance:**

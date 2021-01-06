@@ -1,6 +1,9 @@
 ---
 title: "[Azure] Phpmyadmin dans une WebApp"
 date: "2018-01-19"
+author: "Florent Appointaire"
+permalink: "/2018/01/19/azure-phpmyadmin-dans-une-webapp"
+summary:
 categories: 
   - "azure-web-apps"
 tags: 
@@ -11,9 +14,6 @@ tags:
   - "phpmyadmin"
   - "webapp"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/Azure.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/Azure.png)
-
 Aujourd'hui, un de mes clients m'a demandé si il était possible d'avoir PHPMYADMIN sur une WebApp/VM pour pouvoir administrer sa base de donnée Azure Database for MySQL Server.
 
 Après une rapide recherche dans les extensions de la WebApp, j'ai pu apercevoir qu'il y avait une extension pour PhpMyAdmin. Je l'ai donc installé:

@@ -1,6 +1,9 @@
 ---
 title: "[AWS] Erreur lors de la création d'un AD Connector"
 date: "2018-01-15"
+author: "Florent Appointaire"
+permalink: "/2018/01/15/aws-erreur-lors-de-la-creation-dun-ad-connector"
+summary: 
 categories: 
   - "ad-connector"
   - "aws"
@@ -8,9 +11,6 @@ tags:
   - "ad-connector"
   - "aws"
 ---
-
-![](https://cloudyjourney.fr/wp-content/uploads/2018/01/2000px-AmazonWebservices_Logo.svg_-300x113.png)
-
 En voulant créer un AD Connector sur AWS, avec mon serveur Active Directory, qui se trouve sur AWS EC2, j'ai eu l'erreur suivante:
 
 > Connectivity issues detected: DNS unavailable (TCP port 53) for IP: X.X.X.X. Please ensure that the listed ports are available and retry the operation.

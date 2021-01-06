@@ -1,6 +1,9 @@
 ---
 title: "[AWS] Déployer AWS AD Connector"
 date: "2018-01-18"
+author: "Florent Appointaire"
+permalink: "/2018/01/18/aws-deployer-aws-ad-connector"
+summary:
 categories: 
   - "ad-connector"
   - "aws"
@@ -9,9 +12,6 @@ tags:
   - "ad-connector"
   - "aws"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/2000px-AmazonWebservices_Logo.svg_.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/2000px-AmazonWebservices_Logo.svg_.png)
-
 Aujourd'hui je vais vous montrer comment intégrer votre Active Directory avec AWS. Ceci est très utile si vous devez gérer des ressources sur Azure et sur AWS. En effet, avec un seul et même compte, vous allez pouvoir vous logguer sur votre ordinateur, sur AWS et sur Azure/Office 365 (avec Azure AD Connect).
 
 Vous devez donc avoir, pour commencer:
