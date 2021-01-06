@@ -1,6 +1,9 @@
 ---
 title: "[Azure] Création d'une application PowerApps pour une liste SharePoint"
 date: "2018-11-06"
+author: "Florent Appointaire"
+permalink: "/2018/11/06/azure-creation-dune-application-powerapps-pour-une-liste-sharepoint/"
+summary:
 categories: 
   - "azure"
 tags: 
@@ -12,9 +15,6 @@ tags:
   - "powerapps"
   - "sharepoint"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/10/powerapps-logo.jpg)](https://cloudyjourney.fr/wp-content/uploads/2018/10/powerapps-logo.jpg)
-
 Après avoir vu comment [créer un nouvel utilisateur dans l'Azure AD via une Azure Function](https://cloudyjourney.fr/2018/10/31/azure-creation-dun-utilisateur-avec-azure-function/), puis [appeler cette fonction depuis une liste SharePoint](https://cloudyjourney.fr/2018/11/05/azure-appel-dun-webhook-azure-function-via-une-liste-sharepoint-et-automatise-avec-flow/), nous allons voir comment rendre ça plus "User Friendly".
 
 Pour commencer, allez sur votre liste SharePoint et cliquez sur **Create an app**:

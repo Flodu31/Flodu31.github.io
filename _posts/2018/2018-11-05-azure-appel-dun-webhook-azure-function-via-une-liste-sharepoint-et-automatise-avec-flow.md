@@ -1,6 +1,9 @@
 ---
 title: "[Azure] Appel d'un webhook Azure Function via une liste SharePoint et automatisé avec Flow"
 date: "2018-11-05"
+author: "Florent Appointaire"
+permalink: "/2018/11/05/azure-appel-dun-webhook-azure-function-via-une-liste-sharepoint-et-automatise-avec-flow/"
+summary:
 categories: 
   - "azure"
 tags: 
@@ -12,9 +15,6 @@ tags:
   - "powerapps"
   - "sharepoint"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/10/sharepoint-logo.jpg)](https://cloudyjourney.fr/wp-content/uploads/2018/10/sharepoint-logo.jpg)
-
 Maintenant que l'[on a notre Azure Function qui fonctionne](https://cloudyjourney.fr/2018/10/31/azure-creation-dun-utilisateur-avec-azure-function/), nous allons nous connecter à un site SharePoint Online, et dans **Site contents**, créez une liste, pour gérer l'automatisation de notre process:
 
 [![](https://cloudyjourney.fr/wp-content/uploads/2018/10/SharePointList01.png)](https://cloudyjourney.fr/wp-content/uploads/2018/10/SharePointList01.png)

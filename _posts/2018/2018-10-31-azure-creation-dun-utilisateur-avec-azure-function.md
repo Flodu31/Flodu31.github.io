@@ -1,6 +1,9 @@
 ---
 title: "[Azure] Création d'un utilisateur avec Azure Function"
 date: "2018-10-31"
+author: "Florent Appointaire"
+permalink: "/2018/10/31/azure-creation-dun-utilisateur-avec-azure-function/"
+summary:
 categories: 
   - "azure-web-apps"
 tags: 
@@ -13,16 +16,14 @@ tags:
   - "sharepoint"
   - "web-app"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/10/AzureFunction_Logo.png)](https://cloudyjourney.fr/wp-content/uploads/2018/10/AzureFunction_Logo.png)
-
 Dans les 3 prochains articles, nous allons voir comment automatiser la création d'un utilisateur, via Azure Function, [avec une interface dans SharePoint Online](https://cloudyjourney.fr/2018/11/05/azure-appel-dun-webhook-azure-function-via-une-liste-sharepoint-et-automatise-avec-flow/) et [une application créée avec PowerApps](https://cloudyjourney.fr/2018/11/06/azure-creation-dune-application-powerapps-pour-une-liste-sharepoint/).
 
 Pour commencer ce premier article, voyons comment créer notre utilisateur avec une Azure Function.
 
 Nous allons utiliser le script PowerShell ci-dessous pour cette démonstration:
 
-\# POST method: $req
+```
+# POST method: $req
 $requestBody = Get-Content $req -Raw | ConvertFrom-Json
 $password = $env:Password
 $automationAccount = $env:AutomationAccount
@@ -38,6 +39,7 @@ Connect-AzureAd -Credential $mycreds
 New-AzureADUser -AccountEnabled $true -DisplayName "$firstname $lastname" -UserPrincipalName "$firstname.$lastname@florentappointaire.cloud" -PasswordProfile $PasswordProfile -MailNickName "$firstname.$lastname"
 
 Out-File -Encoding Ascii -FilePath $res -inputObject "Hello $firstname $lastname"
+```
 
 Vous l'aurez compris, vous aurez besoin:
 
@@ -63,10 +65,12 @@ Une fois que vous avez ces prérequis, allez dans la partie **Integrate** de vo
 
 Vous pouvez tester votre fonction, en cliquant sur **Run** et en utilisant le code JSON suivant dans la partie **Request body**:
 
+```
 {
     "firstname": "Test",
     "lastname": "Cloudyjourney"
 }
+```
 
 [![](https://cloudyjourney.fr/wp-content/uploads/2018/10/FunctionApp05.png)](https://cloudyjourney.fr/wp-content/uploads/2018/10/FunctionApp05.png)
 

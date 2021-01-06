@@ -1,6 +1,9 @@
 ---
 title: "[Azure] Migrez vos sites bases de données SQL Server rapidement et simplement"
 date: "2018-10-22"
+author: "Florent Appointaire"
+permalink: "/2018/10/22/azure-migrez-vos-sites-bases-de-donnees-sql-server-rapidement-et-simplement/"
+summary:
 categories: 
   - "azure-sql"
 tags: 
@@ -10,9 +13,6 @@ tags:
   - "migration"
   - "sql-server"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/10/Azure-SQL-Database-Logo.png)](https://cloudyjourney.fr/wp-content/uploads/2018/10/Azure-SQL-Database-Logo.png)
-
 Après avoir vu [comment migrer rapidement et simplement vos sites IIS](https://cloudyjourney.fr/2018/10/17/azure-migrez-vos-sites-iis-rapidement-et-simplement/), on va découvrir comment migrer les bases de données SQL Server, avec un temps réduit d'indisponibilité, vers Azure SQL. Attention, cette fonctionnalité est encore en preview.
 
 J'ai pour cette démonstartion, une base de données **learningsql** qui tourne sur SQL Server 2017 Standard, sur Windows Server 2019, avec des données dedant:
