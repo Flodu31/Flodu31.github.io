@@ -7,4 +7,4 @@ Ayant ouvert ma société début 2017, je propose mes services dans la consultan
 
 Vous trouverez plus d'informations ici: [http://www.falaconsulting.be/](http://www.falaconsulting.be/)
 
-!()[/assets/images/FALAconsulting.jpg]
+![](/assets/images/FALAconsulting.jpg)

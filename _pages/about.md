@@ -9,4 +9,4 @@ Depuis Février 2017, je suis freelance et aide les entreprises à migrer vers l
 
 N’hésitez pas à me contacter si vous avez des questions/requêtes 🙂
 
-!()[/assets/images/FALAconsulting.jpg]
+![](/assets/images/FALAconsulting.jpg)
