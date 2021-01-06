@@ -8,3 +8,5 @@ title: "À Propos"
 Depuis Février 2017, je suis freelance et aide les entreprises à migrer vers le Cloud. N’hésitez donc pas à me contacter si vous avez besoin de conseils/aides, en visitant mon site web.
 
 N’hésitez pas à me contacter si vous avez des questions/requêtes 🙂
+
+!()[/assets/images/FALAconsulting.jpg]
