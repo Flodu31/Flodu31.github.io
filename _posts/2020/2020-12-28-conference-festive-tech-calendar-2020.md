@@ -1,5 +1,5 @@
 ---
-title: Festive Tech Calendar 2020
+title: \[Conférence\] Festive Tech Calendar 2020
 date: 2020-12-28 08:00:00 +0100
 autho: Florent Appointaire
 permalink: /2020/12/28/conference-festive-tech-calendar-2020/
