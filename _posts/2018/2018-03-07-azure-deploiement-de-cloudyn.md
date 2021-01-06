@@ -1,6 +1,9 @@
 ---
 title: "[Azure] Déploiement de Cloudyn"
 date: "2018-03-07"
+author: "Florent Appointaire"
+permalink: "/2018/03/07/azure-deploiement-de-cloudyn"
+summary:
 categories: 
   - "azure"
 tags: 

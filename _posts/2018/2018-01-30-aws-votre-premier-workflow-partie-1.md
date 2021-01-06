@@ -1,6 +1,9 @@
 ---
 title: "[AWS] Votre premier workflow - Partie 1"
 date: "2018-01-30"
+author: "Florent Appointaire"
+permalink: "/2018/01/30/aws-votre-premier-workflow-partie-1"
+summary:
 categories: 
   - "amazon-connect"
 tags: 
@@ -11,11 +14,6 @@ tags:
   - "routing-profiles"
   - "workflow"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/2000px-AmazonWebservices_Logo.svg_.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/2000px-AmazonWebservices_Logo.svg_.png)
-
- 
-
 Dans les 2 prochains articles, nous allons voir comment enregistrer des agents, les mettre dans des routing profiles, des queues (première partie), et enfin, terminer avec la création d'un workflow ([deuxième partie](https://cloudyjourney.fr/2018/02/12/aws-votre-premier-workflow-partie-2/)) :)
 
 La première étape va être de créer des queues que vous utiliserez pour associer avec vos workflows et routing profiles. Cette queue peut avoir plusieurs paramètres:

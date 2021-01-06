@@ -1,6 +1,9 @@
 ---
 title: "[AWS] Amazon Polly: Texte en Voix"
 date: "2018-01-26"
+author: "Florent Appointaire"
+permalink: "/2018/01/22/aws-amazon-polly-texte-en-voix"
+summary:
 categories: 
   - "amazon-polly"
 tags: 
@@ -9,11 +12,6 @@ tags:
   - "text-to-speech"
   - "texte-en-voix"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/2000px-AmazonWebservices_Logo.svg_.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/2000px-AmazonWebservices_Logo.svg_.png)
-
- 
-
 En continuant le développement de mes workflows pour le service desk, j'ai eu besoin de faire des messages pour les utilisateurs. Le souci de la partie built-in de Amazon Connect est que seulement l'anglais est disponible.
 
 Après quelques recherches, j'ai vu qu'il y avait Amazon Polly qui était disponible sur AWS, et qui permet de faire ceci. Et il est pas mal fourni en langues: [https://docs.aws.amazon.com/polly/latest/dg/voicelist.html](https://docs.aws.amazon.com/polly/latest/dg/voicelist.html)

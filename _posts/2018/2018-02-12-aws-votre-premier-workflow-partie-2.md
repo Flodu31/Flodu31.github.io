@@ -1,6 +1,9 @@
 ---
 title: "[AWS] Votre premier workflow - Partie 2"
 date: "2018-02-12"
+author: "Florent Appointaire"
+permalink: "/2018/02/12/aws-votre-premier-workflow-partie-2"
+summary:
 categories: 
   - "amazon-connect"
 tags: 
@@ -9,11 +12,6 @@ tags:
   - "call-center"
   - "workflow"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/2000px-AmazonWebservices_Logo.svg_.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/2000px-AmazonWebservices_Logo.svg_.png)
-
- 
-
 Après [le premier article](https://cloudyjourney.fr/2018/01/30/aws-votre-premier-workflow-partie-1/) qui a permis de créer une queue, nous allons maintenant créer notre premier workflow, qui permettra de rediriger un appel, vers un agent du call center.
 
 Pour commencer, allez dans **Routing > Contact flows** et cliquez sur **Create contact flow**. Donnez un nom à ce flow:

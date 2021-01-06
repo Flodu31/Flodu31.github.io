@@ -1,6 +1,9 @@
 ---
 title: "[Azure] Créer un Managed Disk avec un VHD"
 date: "2018-02-23"
+author: "Florent Appointaire"
+permalink: "/2018/02/23/azure-creer-un-managed-disk-avec-un-vhd"
+summary:
 categories: 
   - "azure"
   - "azure-storage"
@@ -11,9 +14,6 @@ tags:
   - "storage"
   - "vhd"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/pastedimage1482154059354v1.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/pastedimage1482154059354v1.png)
-
 J'ai du déployé récemment un F5 Big-IP sur Azure, avec une image spécifique qui n'était pas disponible dans le Marketplace de Azure. L'image que j'ai téléchargé est spécifique pour Azure. Je l'ai uploadé.
 
 Comme l'environnement est entièrement en Managed disk, j'ai du créer un Managed disk, basé sur ce VHD. Allez dans **Disks** sur Azure et cliquez sur **Add:**
