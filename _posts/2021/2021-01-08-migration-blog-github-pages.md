@@ -1,0 +1,21 @@
+---
+title: "Migration vers Github Pages"
+date: "2021-01-08"
+author: "Florent Appointaire"
+permalink: "/2021/01/08/migration-blog-github-pages/"
+summary: 
+categories: 
+  - "autres"
+---
+
+Malgré le contexte difficile de cette année 2020, j'espère que vous avez pu vous épanouir personnellement mais aussi professionnellement.
+
+Pour ma part, malgré le fait de ne pas avoir pu assister à divers évènements physiques, comme le MVP Summit, MMSMOA, etc. j'ai pu faire diverses sessions, en ligne, pour des évenements comme le [Virtual Azure Community Day](https://cloudyjourney.fr/2020/03/27/virtual-azure-community-day/), [Azure Global Virtual](https://cloudyjourney.fr/2020/03/30/conference-azure-global-virtual/), [DevDay](https://cloudyjourney.fr/2020/11/15/conferences-devday-2020/), [IT Pro Dev Connections](https://cloudyjourney.fr/2020/11/30/conferences-it-pro-dev-connections-2020-grece/) et le [Festive Tech Calendar](https://cloudyjourney.fr/2020/12/28/conference-festive-tech-calendar-2020/).
+
+J'ai également reçu, pour la 5ème fois, le titre de Microsoft MVP.
+
+2021 sera encore consacré à partager mes connaissances et découvertes avec vous, que ce soit via ce blog, mais aussi lors d'évènements, comme les meetups, mais aussi, le [Virtual Scottish Summit](https://cloudyjourney.fr/2020/12/09/conference-virtual-scottish-summit-2021/).
+
+Je vous souhaite le meilleur pour cette année 2021, en espérant avoir l'occasion de discuter avec vous, virtuellement, mais aussi, je l'espère, physiquement.
+
+Florent
