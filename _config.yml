@@ -281,9 +281,6 @@ defaults:
       share: true
       show_date: true
       related: #true
-
-defaults:
-  # _pages
   - scope:
       path: ""
       type: pages
