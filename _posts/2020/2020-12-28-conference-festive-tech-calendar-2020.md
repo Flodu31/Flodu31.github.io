@@ -1,9 +1,17 @@
 ---
-layout: post
 title: Festive Tech Calendar 2020
 date: 2020-12-28 08:00:00 +0100
-categories:  [Conférences]
-tags: [AKS, Azure Application Gateway, Azure Kubernetes Services, Conférence, Festive Tech Calendar]
+autho: Florent Appointaire
+permalink: /2020/12/28/conference-festive-tech-calendar-2020/
+summary:
+categories:
+  - Conférences
+tags:
+  - AKS
+  - Azure Application Gateway
+  - Azure Kubernetes Services
+  - Conférence
+  - Festive Tech Calendar
 ---
 
 ![](/wp-content/uploads/2020/12/image.png)
