@@ -15,7 +15,7 @@ tags:
   - IT Pro Dev Connections
 ---
 
-![](https://s3.amazonaws.com/us.inevent.files.general/7067/0/845d35c8e323e053fe111ed3c15426a2e39d6219.png)
+![](/wp-content/uploads/2020/11/itprodev.png)
 
 J’ai le plaisir de vous annoncer que je présenterai, en Anglais, une session concernant AKS et Azure Application Gateway:
 
