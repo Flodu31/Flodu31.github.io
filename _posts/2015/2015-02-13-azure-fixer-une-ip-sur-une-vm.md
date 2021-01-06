@@ -11,9 +11,6 @@ tags:
   - Azure IP Fixe
   - Microsoft
 ---
-
-![](/wp-content/uploads/2018/01/7217.Windows-Azure-logo-v_6556EF52.png)
-
 En voulant fixer l’IP d’une VM sur Azure pour un client (sur un CentOS), je me suis apercu qu’apès avoir déployé le VHD avec l’ip donné par Azure, celle-ci ne pouvait pas accéder à internet et je ne pouvait donc me connecter en SSH dessus (la partie HostName dans Azure n’existait pas):
 
 ![](/wp-content/uploads/2018/01/SNAGHTML4c4549a_1D6260A4.png)

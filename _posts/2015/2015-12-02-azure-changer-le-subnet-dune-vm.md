@@ -1,6 +1,9 @@
 ---
 title: "[Azure] Changer le subnet d’une VM"
 date: "2015-12-02"
+author: "Florent Appointaire"
+permalink: "/2015/12/02/azure-changer-le-subnet-dune-vm/"
+summary: 
 categories: 
   - "azure"
   - "reseau"
@@ -8,9 +11,6 @@ tags:
   - "azure"
   - "microsoft"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/pastedimage1482154059354v1.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/pastedimage1482154059354v1.png)
-
 Hier, j’ai créé un VM sur Azure pour SQL Server. Après avoir terminé l’installation et la configuration, j’ai vu que la VM n’était pas dans le bon sous réseau dans mon Virtual Network.
 
 J’ai cherché sur Internet comment changé de subnet et j’ai trouvé [cette documentation](https://azure.microsoft.com/en-us/documentation/articles/virtual-networks-move-vm-role-to-subnet/).
