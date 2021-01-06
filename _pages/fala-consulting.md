@@ -1,6 +1,6 @@
 ---
-title: "FALA Consulting"
 permalink: /falaconsulting/
+title: "FALA Consulting"
 ---
 
 Ayant ouvert ma société début 2017, je propose mes services dans la consultance sur les technologies Cloud.
