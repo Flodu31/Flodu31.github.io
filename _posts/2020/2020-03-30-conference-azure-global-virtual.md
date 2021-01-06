@@ -1,6 +1,9 @@
 ---
 title: "[Conférence] Azure Global Virtual"
 date: "2020-03-30"
+author: "Florent Appointaire"
+permalink: "/2020/03/30/conference-azure-global-virtual/"
+summary: 
 categories: 
   - "conference"
 tags: 
@@ -11,9 +14,6 @@ tags:
   - "microsoft"
   - "waf"
 ---
-
-![](https://i0.wp.com/cloudyjourney.fr/wp-content/uploads/2020/03/gav_logo.png?fit=762%2C587&ssl=1)
-
 Initialement, le Global Azure est un évenement physique, qui se déroule un samedi, partour dans le monde. Mais à l'heure actuelle, et à cause du COVID-19, la majorité des évenements Techs ont été annulés/reportés. Ce qui est le cas du Global Azure, où je devais faire une session, en Belgique: [https://globalazure.be/](https://globalazure.be/)
 
 Du coup, les organisateurs ont décidé de faire cet évenement en ligne, le Global Azure Virtual: [https://virtual.globalazure.net/](https://virtual.globalazure.net/)
@@ -25,3 +25,5 @@ Vous pourrez suivre cet évenement, en direct, le 23 Avril 2020, de 11h à 12h, 
 À la fin de la session, il y aura une partie questions/réponses pour ceux qui le souhaitent.
 
 En espérant vous voir nombreux :)
+
+![](https://i0.wp.com/cloudyjourney.fr/wp-content/uploads/2020/03/gav_logo.png?fit=762%2C587&ssl=1)

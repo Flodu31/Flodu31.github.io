@@ -13,9 +13,6 @@ tags:
   - "oms"
   - "oms-gateway"
 ---
-
-![](https://cloudyjourney.fr/wp-content/uploads/2018/01/Azure.png)
-
 En déployant une Gateway OMS, pour Windows Defender ATP, j'ai eu l'erreur suivante:
 
 ```

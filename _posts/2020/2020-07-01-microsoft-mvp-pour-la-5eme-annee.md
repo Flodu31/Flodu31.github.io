@@ -1,6 +1,9 @@
 ---
 title: "Microsoft MVP pour la 5ème année"
 date: "2020-07-01"
+author: "Florent Appointaire"
+permalink: "/2020/07/01/microsoft-mvp-pour-la-5eme-annee/"
+summary:
 categories: 
   - "autres"
 tags: 
@@ -8,9 +11,6 @@ tags:
   - "microsoft-azure"
   - "mvp"
 ---
-
-![](https://cloudyjourney.fr/wp-content/uploads/2018/01/mvp.png)
-
 Bonjour à tous,
 
 Je suis heureux de vous annoncer pour la cinquième année consécutive (donc le petit anneau bleau des 5 ans :D), que j'ai reçu le titre de MVP, dans la catégorie Microsoft Azure :)
@@ -26,3 +26,5 @@ Pour la prochaine année, je vais continuer d’écrire des articles sur les tec
 Encore merci à tous.
 
 Florent
+
+![](https://cloudyjourney.fr/wp-content/uploads/2018/01/mvp.png)

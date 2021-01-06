@@ -1,6 +1,9 @@
 ---
 title: "[Azure] Failover manuel d'un compte de stockage"
 date: "2020-06-22"
+author: "Florent Appointaire"
+permalink: "/2020/06/22/azure-failover-manuel-dun-compte-de-stockage/"
+summary:
 categories: 
   - "azure-storage"
 tags: 
@@ -11,9 +14,6 @@ tags:
   - "replication"
   - "storage"
 ---
-
-![](https://cloudyjourney.fr/wp-content/uploads/2018/01/Azure.png)
-
 Microsoft a annoncé il y a quelques temps, la possibilité de faire un failover manuel d'un compte de stockage, de la région principale, vers la région secondaire. Depuis ce Mercredi 17 Juin, cette feature est maintenant disponible de façon générale: [https://azure.microsoft.com/en-us/updates/azure-storage-account-failover-ga/](https://azure.microsoft.com/en-us/updates/azure-storage-account-failover-ga/)
 
 Pour commencer, vous devez avoir un compte de stockage avec un SKU suivant:

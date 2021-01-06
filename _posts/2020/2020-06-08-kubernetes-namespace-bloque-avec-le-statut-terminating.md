@@ -1,6 +1,9 @@
 ---
 title: "[Kubernetes] Namespace bloqué avec le statut Terminating"
 date: "2020-06-08"
+author: "Florent Appointaire"
+permalink: "/2020/06/08/kubernetes-namespace-bloque-avec-le-statut-terminating/"
+summary: 
 categories: 
   - "container"
 tags: 
@@ -8,9 +11,6 @@ tags:
   - "kubernetes"
   - "microsoft"
 ---
-
-![](https://cloudyjourney.fr/wp-content/uploads/2020/06/kubernetes_logo.png)
-
 Aujourd'hui, au moment de la suppression d'un namespace Kubernetes, j'ai remarqué qu'il était bloqué sur le statut **Terminating:**
 
 ![](https://cloudyjourney.fr/wp-content/uploads/2020/06/ns01-1.png)

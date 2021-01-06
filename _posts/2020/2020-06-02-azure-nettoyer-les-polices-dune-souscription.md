@@ -1,6 +1,9 @@
 ---
 title: "[Azure] Nettoyer les polices d'une souscription"
 date: "2020-06-02"
+author: "Florent Appointaire"
+permalink: "/2020/06/02/azure-nettoyer-les-polices-dune-souscription/"
+summary: 
 categories: 
   - "azure"
   - "powershell"
@@ -9,9 +12,6 @@ tags:
   - "azure-policy"
   - "microsoft"
 ---
-
-![](https://cloudyjourney.fr/wp-content/uploads/2018/01/Azure.png)
-
 Jouant pas mal avec les blueprints et les polices en ce moment (pour les démos des sessions que je fais), je voulais un moyen simple et rapide d'effacer toutes les polices d'une souscription, pour la démo suivante. Par exemple, j'ai les polices suivantes déployées sur une souscription:
 
 ![](https://i0.wp.com/cloudyjourney.fr/wp-content/uploads/2020/05/AzurePolicy01.png?fit=762%2C273&ssl=1)

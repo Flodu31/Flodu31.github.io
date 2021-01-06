@@ -1,6 +1,9 @@
 ---
 title: "[Azure] Reçevoir les mises à jour de AKS et de Azure"
 date: "2020-08-04"
+author: "Florent Appointaire"
+permalink: "/2020/08/04/azure-recevoir-les-mises-a-jour-de-aks-et-de-azure/"
+summary:
 categories: 
   - "azure"
 tags: 
@@ -8,9 +11,6 @@ tags:
   - "logic-app"
   - "microsoft"
 ---
-
-![](https://cloudyjourney.fr/wp-content/uploads/2018/01/Azure.png)
-
 Aujourd'hui, petit article pour vous montrer comment rester à jour sur Azure, en reçevant les news, directement par email/teams ou encore, comment les twitter.
 
 Pour commencer, on a besoin:
