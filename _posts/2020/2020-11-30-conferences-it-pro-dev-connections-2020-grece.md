@@ -21,4 +21,4 @@ J’ai le plaisir de vous annoncer que je présenterai, en Anglais, une session 
 
 AKS and App Gateway: the ideal combo
 
-Vous trouverez plus d’informations sur l’évenement, qui sera bien sûr en ligne, ici: [IT PRO | DEV Connections 2020](https://www.itprodevconnections.gr/){:target="_blank"}
+Vous trouverez plus d’informations sur l’évenement, qui sera bien sûr en ligne, ici: [IT PRO \| DEV Connections 2020](https://www.itprodevconnections.gr/){:target="_blank"}
