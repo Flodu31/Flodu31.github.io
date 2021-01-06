@@ -41,6 +41,6 @@ Restart-Service OMSGatewayService
 
 Après le redémarrage du service, plus aucune erreur n'est apparue:
 
-![](https://i2.wp.com/cloudyjourney.fr/wp-content/uploads/2020/02/image-3.png?fit=762%2C389&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2020/02/image-3.png)
 
 En espérant vous avoir fait gagner du temps :)

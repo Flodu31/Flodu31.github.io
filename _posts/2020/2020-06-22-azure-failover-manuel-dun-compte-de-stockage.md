@@ -23,7 +23,7 @@ Pour commencer, vous devez avoir un compte de stockage avec un SKU suivant:
 
 Pour vérifier cette information, allez dans votre compte de stockage, et vous aurez l'information directement ici ou dans la partie **Geo-replication**:
 
-![](https://i0.wp.com/cloudyjourney.fr/wp-content/uploads/2020/06/storage01.png?fit=762%2C552&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2020/06/storage01.png)
 
 Et on voit bien les régions disponibles:
 
@@ -50,7 +50,7 @@ az storage account failover --name accountName
 
 - Via le portail, dans le compte de stockage, cliquez sur **Geo-replication** puis sur **Prepare for failover**:
 
-![](https://cloudyjourney.fr/wp-content/uploads/2020/06/storage02-1024x835.png)
+![](https://cloudyjourney.fr/wp-content/uploads/2020/06/storage02.png)
 
 Ici, on a des informations concernant le failover. Ecrivez **yes** pour démarrer le failover:
 
@@ -58,11 +58,11 @@ Ici, on a des informations concernant le failover. Ecrivez **yes** pour démarre
 
 Le failover est en cours:
 
-![](https://i2.wp.com/cloudyjourney.fr/wp-content/uploads/2020/06/storage05.png?fit=762%2C511&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2020/06/storage05.png)
 
 Une fois le failover terminé (après plusieurs minutes), la région principale est maintenant North Europe:
 
-![](https://i2.wp.com/cloudyjourney.fr/wp-content/uploads/2020/06/storage06.png?fit=762%2C619&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2020/06/storage06.png)
 
 On peut voir que le nom DNS pour accéder au compte de stockage reste le même mais que l'IP a changé:
 
@@ -74,6 +74,6 @@ Le compte de stockage est également passé en LRS, vous pouvez le remettre en G
 
 Une fois que c'est fait, vous retrouvez vos 2 régions:
 
-![](https://i1.wp.com/cloudyjourney.fr/wp-content/uploads/2020/06/storage09.png?fit=762%2C620&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2020/06/storage09.png)
 
 ![](https://cloudyjourney.fr/wp-content/uploads/2020/06/storage10.png)
