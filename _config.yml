@@ -281,3 +281,11 @@ defaults:
       share: true
       show_date: true
       related: #true
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      classes: wide
+      author_profile: true
+      read_time: true
