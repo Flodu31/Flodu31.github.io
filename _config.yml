@@ -14,13 +14,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Cloudy Journey Blog
-email:
+email: florent.appointaire@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Blog autour des solutions Cloud de Microsoft (Azure) & Amazon (AWS).
 twitter_username: florent_app
-github_username: username
+github_username: flodu31
 minimal_mistakes_skin: dark
 search: true
 
@@ -58,34 +56,47 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "First Lastname"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  name   : "Florent Appointaire"
+  avatar : "/assets/images/fa-avatar.jpg"
+  bio    : "Freelance, Microsoft MVP Azure."
+  location : "Belgium"
   links:
-    - label: "Website"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:florent.appoiintaire@gmail.com"
+    - label: "FALA Consulting"
       icon: "fas fa-fw fa-link"
-      url: "https://"
+      url: "https://wwww.falaconsulting.be"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+      url: "https://twitter.com/florent_app"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url: "https://facebook.com/FlorentAppointaireFr"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/Flodu31"
 
 footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+      url: "https://twitter.com/florent_app"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url: "https://facebook.com/FlorentAppointaireFr"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/Flodu31"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin-in"
+      url: "https://www.linkedin.com/in/florentappointaire/"
+    - label: "FALA Consulting"
+      icon: "fas fa-fw fa-building"
+      url: "https://www.falaconsulting.be"
+    - label: "MVP"
+      icon: "fab fa-fw fa-microsoft"
+      url: "https://mvp.microsoft.com/en-us/PublicProfile/5001873?fullName=Florent%20APPOINTAIRE"
 
 defaults:
   # _posts
