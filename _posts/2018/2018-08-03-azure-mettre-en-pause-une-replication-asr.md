@@ -27,6 +27,7 @@ Qu'il faut arrêter sur la machine qui réplique. Comme vous le voyez, ma répli
 
 J'ai donc exécuté les commandes suivantes pour arrêter les 3 services:
 
+```
 Get-Service "Azure Site Recovery VSS Provider", "InMage Scout Application Service", "svagents"
 
 Stop-Service "Azure Site Recovery VSS Provider" -Force
@@ -34,6 +35,7 @@ Stop-Service "InMage Scout Application Service" -Force
 Stop-Service "svagents" -Force
 
 Get-Service "Azure Site Recovery VSS Provider", "InMage Scout Application Service", "svagents"
+```
 
 [![](https://cloudyjourney.fr/wp-content/uploads/2018/08/ASRPauseRep02.png)](https://cloudyjourney.fr/wp-content/uploads/2018/08/ASRPauseRep02.png)
 
@@ -49,6 +51,8 @@ Il faudra bien entendu attendre que la queue du serveur Master se vide avant de 
 
 Pour redémarrer ces 3 services pour reprendre la réplication, utilisez les commandes suivantes:
 
+```
 Start-Service "Azure Site Recovery VSS Provider"
 Start-Service "InMage Scout Application Service"
 Start-Service "svagents"
+```
