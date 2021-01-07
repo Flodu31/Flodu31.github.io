@@ -15,7 +15,7 @@ tags:
 ---
 Après avoir vu [comment migrer rapidement et simplement vos sites IIS](https://cloudyjourney.fr/2018/10/17/azure-migrez-vos-sites-iis-rapidement-et-simplement/), on va découvrir comment migrer les bases de données SQL Server, avec un temps réduit d'indisponibilité, vers Azure SQL. Attention, cette fonctionnalité est encore en preview.
 
-J'ai pour cette démonstartion, une base de données **learningsql** qui tourne sur SQL Server 2017 Standard, sur Windows Server 2019, avec des données dedant:
+J'ai pour cette démonstartion, une base de données **learningsql** qui tourne sur SQL Server 2017 Standard, sur Windows Server 2019, avec des données dedans:
 
 ![](https://cloudyjourney.fr/wp-content/uploads/2018/10/PaaS-Migration-SQL-01.png)
 
@@ -28,10 +28,12 @@ Il faut ensuite, avant de lancer le logiciel, vérifier quelques points pour eff
 
 La première chose à vérifier, c'est de savoir si votre SQL Server est supérieur à 2005. Ensuite, le Recovery Model de votre base de données doit être en Full ou Bulk-logged. Vous pouvez vérifier ceci, avec la requête suivante:
 
+```
 SELECT name, recovery\_model\_desc
   FROM sys.databases
     WHERE name = 'learningsql';
 GO
+```
 
 [![](https://cloudyjourney.fr/wp-content/uploads/2018/10/PaaS-Migration-SQL-02.png)](https://cloudyjourney.fr/wp-content/uploads/2018/10/PaaS-Migration-SQL-02.png)
 
@@ -39,9 +41,11 @@ Si vous n'avez pas un des 2 modes, veuillez regarder comment changer ceci, ici:�
 
 Il faut également une sauvegarde full de la base de données. Exécutez la requête suivante pour voir si vous avez déjà fait une sauvegarde full de la base:
 
+```
 SELECT count(type) as result
   FROM msdb.dbo.backupset bk
     WHERE bk.database\_name = 'learningsql' AND type = 'D';
+```
 
 [![](https://cloudyjourney.fr/wp-content/uploads/2018/10/PaaS-Migration-SQL-03.png)](https://cloudyjourney.fr/wp-content/uploads/2018/10/PaaS-Migration-SQL-03.png)
 
@@ -49,10 +53,12 @@ Si le chiffre est 0, alors suivez les instructions qui se trouvent ici: [https:
 
 Un autre point important est que, si les tables n'ont pas de clés primaires, vous devez activer le CDC (Change Data Capture) sur la base et les tables qui n'ont pas de clés primaires. Pour savoir ce qu'il en est, exécutez la requête suivante:
 
+```
 USE learningsql;
 SELECT is\_tracked\_by\_cdc, name AS TableName
   FROM sys.tables WHERE type = 'U' and is\_ms\_shipped = 0 AND
   OBJECTPROPERTY(OBJECT\_ID, 'TableHasPrimaryKey') = 0;
+```
 
 [![](https://cloudyjourney.fr/wp-content/uploads/2018/10/PaaS-Migration-SQL-04.png)](https://cloudyjourney.fr/wp-content/uploads/2018/10/PaaS-Migration-SQL-04.png)
 
@@ -60,10 +66,12 @@ Si vous avez des résultats, regardez par ici: [https://docs.microsoft.com/en-u
 
 Enfin, pour terminer les prérequis, il faut vérifier que le service **SQL Server Replication** est bien installé, avec la requête suivante:
 
+```
 USE master;
 DECLARE @installed int;
 EXEC @installed = sys.sp\_MS\_replication\_installed;
 SELECT @installed as installed;
+```
 
 [![](https://cloudyjourney.fr/wp-content/uploads/2018/10/PaaS-Migration-SQL-05.png)](https://cloudyjourney.fr/wp-content/uploads/2018/10/PaaS-Migration-SQL-05.png)
 
@@ -77,7 +85,9 @@ Revérifiez voir si l'installation est bien détectée:
 
 Regardez ensuite si le rôle de distribution est configuré, avec la commande suivante:
 
+```
 EXEC sp\_get\_distributor;
+```
 
 [![](https://cloudyjourney.fr/wp-content/uploads/2018/10/PaaS-Migration-SQL-08.png)](https://cloudyjourney.fr/wp-content/uploads/2018/10/PaaS-Migration-SQL-08.png)
 
