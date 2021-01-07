@@ -13,7 +13,7 @@ tags:
 ---
 La semaine dernière, je me suis rendu pour la 2ème fois au MMSMOA, pour cette édition 2019, en tant que speaker. Cette conférence est organisée sur 4 jours, avec des sessions qui commencent à 8h le matin et qui terminent à 18h45, une grosse semaine donc en perspective. Le dimanche midi, je suis allé m’enregistré, et j’ai récupéré mes deux chemises pour reconnaitre facilement les speakers ainsi que mon badge. Pour rappel, cette conférence accueille 750 personnes du monde entier:
 
-![](https://cloudyjourney.fr/wp-content/uploads/2019/05/MMS2019_Badge-576x1024.jpeg)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/05/MMS2019_Badge.jpeg)
 
 J'ai une fois de plus rencontré pleins de personnes nouvelles, mais j'ai aussi revu les anciens speakers et pas mal de MVP.
 
@@ -31,8 +31,6 @@ Durant ces 4 jours, j'ai donné 3 sessions (avec des MVPs et des personnes du Pr
 ![](https://cloudyjourney.fr/wp-content/uploads/2019/05/MMS2019_04.jpg)
 
 ![](https://cloudyjourney.fr/wp-content/uploads/2019/05/MMS2019_05.jpg)
-
-![](https://cloudyjourney.fr/wp-content/uploads/2019/05/MMS2019_06.jpg)
 
 Pour résumer, encore une super semaine, avec une super organisation, de supers speakers, bref, je ne peux que vous recommander cette conférence, en espérant y retourner en 2020, en tant que speaker bien sur mais pour l’heure, il est temps de rentrer et de continuer à accompagner les entreprises vers leur transformation vers le Cloud.
 
