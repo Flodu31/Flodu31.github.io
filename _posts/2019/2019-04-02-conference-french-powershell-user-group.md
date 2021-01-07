@@ -1,6 +1,9 @@
 ---
 title: "[Conférence] French PowerShell User Group [Updated]"
 date: "2019-04-02"
+author: "Florent Appointaire"
+permalink: "/2019/04/02/conference-french-powershell-user-group/"
+summary:
 categories: 
   - "conference"
 tags: 
@@ -11,9 +14,6 @@ tags:
   - "meetup"
   - "microsoft"
 ---
-
-![](https://i1.wp.com/cloudyjourney.fr/wp-content/uploads/2019/02/meetup.jpg?fit=762%2C435&ssl=1)
-
 J'ai le plaisir de vous annoncer, que je présenterai le Mercredi 27 Mars prochain, à 20h, un meetup Online, sur le sujet suivant:
 
 ##### Automatiser Azure avec Azure Automation/Sharepoint Online/PowerApps

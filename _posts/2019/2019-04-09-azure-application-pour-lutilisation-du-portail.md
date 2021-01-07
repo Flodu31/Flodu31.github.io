@@ -1,6 +1,9 @@
 ---
 title: "[Azure] Application pour l'utilisation du Portail"
 date: "2019-04-09"
+author: "Florent Appointaire"
+permalink: "/2019/04/09/azure-application-pour-lutilisation-du-portail/"
+summary:
 categories: 
   - "azure"
 tags: 
@@ -8,11 +11,6 @@ tags:
   - "azure"
   - "microsoft"
 ---
-
-![](https://preview.portal.azure.com/Content/5.0.102.950101496557.190405-1932/min/Images/MsPortalFx/CloudConnected.png)
-
-  
-
 Microsoft a rendu disponible, en Preview, une application qui affiche le portail Azure, sans passer par un client web. Vous pouvez télécharger ce logiciel ici: [https://preview.portal.azure.com/app/Download](https://preview.portal.azure.com/app/Download)
 
 Pour commencer, vous devez installer le Framework 3.5, avec la commande suivante:
@@ -29,10 +27,10 @@ Une fois le framework 3.5 installé, lancez l'exécutable pour installer l'appli
 
 Connectez-vous à votre compte Azure:
 
-![](https://i1.wp.com/cloudyjourney.fr/wp-content/uploads/2019/04/AzureApplication03.png?fit=762%2C435&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/04/AzureApplication03.png)
 
 Vous êtes maintenant connecté et vous pouvez utiliser le portail Azure, comme sur votre navigateur web:
 
-![](https://i2.wp.com/cloudyjourney.fr/wp-content/uploads/2019/04/AzureApplication04.png?fit=762%2C433&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/04/AzureApplication04.png)
 
 Attention, comme vous êtes sur le portail preview de Microsoft Azure, vous n'aurez pas vos favoris à gauche, vos dashboard, etc. Sauf si vous utilisez actuellement le portail

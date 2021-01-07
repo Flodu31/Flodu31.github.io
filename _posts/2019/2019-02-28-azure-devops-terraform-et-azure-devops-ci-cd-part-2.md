@@ -1,6 +1,9 @@
 ---
 title: "[Azure DevOps] Terraform et Azure DevOps CI/CD - Part 2"
 date: "2019-02-28"
+author: "Florent Appointaire"
+permalink: "/2019/02/28/azure-devops-terraform-et-azure-devops-ci-cd-part-2/"
+summary:
 categories: 
   - "azure-devops"
 tags: 
@@ -9,22 +12,19 @@ tags:
   - "microsoft"
   - "terraform"
 ---
-
-![](https://cloudyjourney.fr/wp-content/uploads/2019/02/Azure_DevOps_Logo-1024x889.png)
-
 Après avoir vu dans la première partie comment mettre vos sources et les builds avec Azure DevOps, nous allons maintenant voir comment exécuter ces sources Terraform.
 
 Dans votre portail DevOps, sélectionnez **Pipelines > Releases** et cliquez sur **New pipeline**:
 
-![](https://i0.wp.com/cloudyjourney.fr/wp-content/uploads/2019/02/Azure_devops_part2_01.png?fit=762%2C369&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/02/Azure_devops_part2_01.png)
 
 Sélectionnez ensuite **Empty job**:
 
-![](https://i0.wp.com/cloudyjourney.fr/wp-content/uploads/2019/02/Azure_devops_part2_02.png?fit=762%2C264&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/02/Azure_devops_part2_02.png)
 
 Renommez votre pipeline, choisissez la source build pipeline et comme version, sélectionnez la dernière, pour notre intégration CI/CD:
 
-![](https://i1.wp.com/cloudyjourney.fr/wp-content/uploads/2019/02/Azure_devops_part2_03.png?fit=762%2C415&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/02/Azure_devops_part2_03.png)
 
 Cliquez sur l'éclair et activez le **CD (Continuous Deployment)**:
 
@@ -41,7 +41,7 @@ N'oubliez pas de sauvegarder. Ouvrez maintenant votre **Stage 1** et ajoutez les
 
 Attention, **Replace Tokens** et **Run Terraform** doivent être installés depuis le store (gratuit) avant de pouvoir être utilisé.
 
-![](https://i2.wp.com/cloudyjourney.fr/wp-content/uploads/2019/02/Azure_devops_part2_05.png?fit=762%2C415&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/02/Azure_devops_part2_05.png)
 
 Nous allons maintenant configurer les étapes. Pour la première étape, Azure CLI, vous pouvez la renommer, et ensuite, ajouter une subscription, avec un compte de type service principal, qui a les droits de faire des déploiements sur la subscription:
 
@@ -91,7 +91,7 @@ Pour la dernière étape, c'est pareil que pour l'étape 5, sauf pour l'argument
 
 Sauvegardez. Allez dans l'onglet **Variables** et cliquez sur **Add**:
 
-![](https://i2.wp.com/cloudyjourney.fr/wp-content/uploads/2019/02/Azure_devops_part2_13.png?fit=762%2C191&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/02/Azure_devops_part2_13.png)
 
 Ajoutez les variables suivantes, avec les valeurs de votre choix:
 
@@ -104,13 +104,13 @@ Ajoutez les variables suivantes, avec les valeurs de votre choix:
 
 Ma subscription est vide, comme vous pouvez le voir ci-dessous:
 
-![](https://i1.wp.com/cloudyjourney.fr/wp-content/uploads/2019/02/Azure_devops_part2_15.png?fit=762%2C397&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/02/Azure_devops_part2_15.png)
 
 Pour lancer le déploiement, il suffit par exemple, de modifier le fichier de variable, dans le répertoire. Une fois que vous aurez commit, la build va se lancer (CI) et une fois la build terminé, la release va être créée (CD):
 
-![](https://i1.wp.com/cloudyjourney.fr/wp-content/uploads/2019/02/Azure_devops_part2_16.png?fit=762%2C495&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/02/Azure_devops_part2_16.png)
 
-![](https://i2.wp.com/cloudyjourney.fr/wp-content/uploads/2019/02/Azure_devops_part2_17.png?fit=762%2C192&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/02/Azure_devops_part2_17.png)
 
 ![](https://cloudyjourney.fr/wp-content/uploads/2019/02/Azure_devops_part2_18.png)
 
@@ -118,7 +118,7 @@ Pour lancer le déploiement, il suffit par exemple, de modifier le fichier de va
 
 ![](https://cloudyjourney.fr/wp-content/uploads/2019/02/Azure_devops_part2_20.png)
 
-![](https://i2.wp.com/cloudyjourney.fr/wp-content/uploads/2019/02/Azure_devops_part2_21.png?fit=762%2C491&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/02/Azure_devops_part2_21.png)
 
 ![](https://cloudyjourney.fr/wp-content/uploads/2019/02/Azure_devops_part2_22.png)
 

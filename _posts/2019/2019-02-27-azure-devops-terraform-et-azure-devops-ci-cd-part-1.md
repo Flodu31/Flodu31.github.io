@@ -1,6 +1,9 @@
 ---
 title: "[Azure DevOps] Terraform et Azure DevOps CI/CD - Part 1"
 date: "2019-02-27"
+author: "Florent Appointaire"
+permalink: "/2019/02/27/azure-devops-terraform-et-azure-devops-ci-cd-part-1/"
+summary:
 categories: 
   - "azure-devops"
 tags: 
@@ -9,9 +12,6 @@ tags:
   - "microsoft"
   - "terraform"
 ---
-
-![](https://i2.wp.com/cloudyjourney.fr/wp-content/uploads/2019/02/Azure_DevOps_Logo.png?fit=762%2C662&ssl=1)
-
 Azure DevOps (anciennement VSTS) permet le déploiement automatisé de ressources, quelles soient en template ARM (JSON), en PowerShell, CLI, Terraform, etc.
 
 Aujourd'hui, je vais me concentrer sur l'intégration avec Terraform. Attention, je ne rentrerai pas dans les détails Terraform ici, vous devez donc connaitre un minimum la technologie. La tarification concernant Azure DevOps est disponible ici: [https://azure.microsoft.com/en-us/pricing/details/devops/azure-pipelines/](https://azure.microsoft.com/en-us/pricing/details/devops/azure-pipelines/)
@@ -20,11 +20,11 @@ Par défaut, vous avez le droit à 5 utilisateurs de façon gratuite.
 
 Avant de commencer, assurez-vous d'avoir une organisation Azure DevOps dans votre subscription:
 
-![](https://i2.wp.com/cloudyjourney.fr/wp-content/uploads/2019/02/Azure_devops_part1_01.png?fit=762%2C214&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/02/Azure_devops_part1_01.png)
 
 Ouvrez via l'URL votre Azure DevOps et créez un nouveau projet en cliquant sur **Create project:**
 
-![](https://i1.wp.com/cloudyjourney.fr/wp-content/uploads/2019/02/Azure_devops_part1_02.png?fit=762%2C415&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/02/Azure_devops_part1_02.png)
 
 Donnez lui un nom, et cliquez sur **Create**:
 
@@ -32,11 +32,11 @@ Donnez lui un nom, et cliquez sur **Create**:
 
 Une fois le projet créé, vous pouvez inviter des personnes, etc. :
 
-![](https://i1.wp.com/cloudyjourney.fr/wp-content/uploads/2019/02/Azure_devops_part1_04.png?fit=762%2C415&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/02/Azure_devops_part1_04.png)
 
 Sur la gauche, allez dans **Repos > Files** et ajoutez un ou plusieurs fichiers dans le répertoire. Vous pouvez ajouter le **README** par exemple pour initialiser le projet, en cliquant sur **Initialize**:
 
-![](https://i0.wp.com/cloudyjourney.fr/wp-content/uploads/2019/02/Azure_devops_part1_05.png?fit=762%2C436&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/02/Azure_devops_part1_05.png)
 
 Une fois l'initialisation terminée, vous aurez au moins un fichier dans votre répertoire:
 
@@ -124,33 +124,31 @@ variable "subnet_prefixbackend" {
 
 Nous allons maintenant créer la Build, qui permettra de vérifier si les ressources ont été modifiés dans un dossier en particulier, et donc, de créer une nouvelle build pour notre futur release. Cliquez sur **Pipelines > Builds > New pipeline**:
 
-![](https://i0.wp.com/cloudyjourney.fr/wp-content/uploads/2019/02/Azure_devops_part1_08.png?fit=762%2C426&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/02/Azure_devops_part1_08.png)
 
 Ici, choisissez d'où viennent les sources et validez:
 
-![](https://i1.wp.com/cloudyjourney.fr/wp-content/uploads/2019/02/Azure_devops_part1_09.png?fit=762%2C331&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/02/Azure_devops_part1_09.png)
 
 Choisissez ensuite le template, vide dans mon cas:
 
-![](https://i2.wp.com/cloudyjourney.fr/wp-content/uploads/2019/02/Azure_devops_part1_10.png?fit=762%2C331&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/02/Azure_devops_part1_10.png)
 
 Donnez un nom, et choisissez un pool où un agent est installé. Ce pool peut être déployé sur une de vos VMs, pour limiter les coûts:
 
-![](https://i0.wp.com/cloudyjourney.fr/wp-content/uploads/2019/02/Azure_devops_part1_11.png?fit=762%2C334&ssl=1)
-
-  
+![](https://cloudyjourney.fr/wp-content/uploads/2019/02/Azure_devops_part1_11.png)
 
 Ajoutez un job de type **Copy Files**. Donnez un nom, choisissez le dossier que vous avez créé avec vos fichier main et variables dedans, et choisissez de copier tout le contenu. Le dossier cible doit être le suivant: **$(build.artifactstagingdirectory)/Terraform**
 
-![](https://i2.wp.com/cloudyjourney.fr/wp-content/uploads/2019/02/Azure_devops_part1_12.png?fit=762%2C392&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/02/Azure_devops_part1_12.png)
 
 Ajoutez un job de type **Publish Build Artifacts** et laissez le avec les paramètres par défaut:
 
-![](https://i0.wp.com/cloudyjourney.fr/wp-content/uploads/2019/02/Azure_devops_part1_13.png?fit=762%2C487&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/02/Azure_devops_part1_13.png)
 
 Cliquez maintenant sur **Triggers** pour activer le **CI (Continuous Integration)** pour lancer cette build, à chaque modification d'un fichier qu'il y a dans la branch master:
 
-![](https://i0.wp.com/cloudyjourney.fr/wp-content/uploads/2019/02/Azure_devops_part1_14.png?fit=762%2C266&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/02/Azure_devops_part1_14.png)
 
 Sauvegardez et exécutez la build:
 
@@ -160,11 +158,11 @@ Sauvegardez et exécutez la build:
 
 Après quelques secondes, notre build c'est bien exécuté:
 
-![](https://i0.wp.com/cloudyjourney.fr/wp-content/uploads/2019/02/Azure_devops_part1_17.png?fit=762%2C415&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/02/Azure_devops_part1_17.png)
 
 Vous recevez également un mail pour vous signifier que tout c'est bien passé pour votre build:
 
-![](https://i2.wp.com/cloudyjourney.fr/wp-content/uploads/2019/02/Azure_devops_part1_18.png?fit=762%2C466&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/02/Azure_devops_part1_18.png)
 
 Et avec le CI activé, la raison de l'exécution de cette nouvelle build est **Continuous integration:**
 
