@@ -14,7 +14,7 @@ tags:
 ---
 Jouant pas mal avec les blueprints et les polices en ce moment (pour les démos des sessions que je fais), je voulais un moyen simple et rapide d'effacer toutes les polices d'une souscription, pour la démo suivante. Par exemple, j'ai les polices suivantes déployées sur une souscription:
 
-![](https://cloudyjourney.fr/wp-content/uploads/2020/05/AzurePolicy01.png
+![](https://cloudyjourney.fr/wp-content/uploads/2020/05/AzurePolicy01.png)
 
 Pour commencer, connectez vous à votre compte Azure, et sélectionnez la souscription à nettoyer:
 
