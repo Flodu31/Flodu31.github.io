@@ -40,7 +40,7 @@ Allez maintenant dans la partie **Routing > Phone numbers** pour associer votre
 
 Cliquez maintenant sur le téléphone en haut à droite de l'interface. C'est grâce à ça que vous allez pouvoir recevoir des appels. Passez le status à disponible:
 
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/02/AWSConnectFlow05-1.png)](https://cloudyjourney.fr/wp-content/uploads/2018/02/AWSConnectFlow05-1.png)
+[![](https://cloudyjourney.fr/wp-content/uploads/2018/02/AWSConnectFlow05.png)](https://cloudyjourney.fr/wp-content/uploads/2018/02/AWSConnectFlow05.png)
 
 Avec un téléphone, appelez le numéro qui vous a été attribué dans Amazon Connect. Le téléphone sonne sur votre ordinateur. Vous pouvez raccorcher ou accepter l'appel:
 
