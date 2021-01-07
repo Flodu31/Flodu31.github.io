@@ -23,8 +23,10 @@ Pour commencer, vous devez exporter le certificat utilisé par le Connection Bro
 
 Utilisez ensuite les commandes suivantes pour installer le module PowerShell qui va permettre le déploiement:
 
+```
 Install-Module -Name PowerShellGet -Force
 Install-Module -Name RDWebClientManagement
+```
 
 [![](https://cloudyjourney.fr/wp-content/uploads/2018/07/NewRDS02.png)](https://cloudyjourney.fr/wp-content/uploads/2018/07/NewRDS02.png)
 
@@ -38,9 +40,11 @@ Relancez la commande, l'installation va vous demander d'accepter la licence:
 
 Une fois le module PowerShell installé, utilisez les commandes suivantes pour installer la nouvelle interface:
 
+```
 Install-RDWebClientPackage
 Import-RDWebClientBrokerCert C:\\Users\\FAppointaire\\Downloads\\CERFile.cer
 Publish-RDWebClientPackage -Type Production -Latest
+```
 
 [![](https://cloudyjourney.fr/wp-content/uploads/2018/07/NewRDS05.png)](https://cloudyjourney.fr/wp-content/uploads/2018/07/NewRDS05.png)
 
