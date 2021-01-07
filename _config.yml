@@ -275,6 +275,7 @@ defaults:
     values:
       sidebar:
         - text: "[![MVP](/assets/logo/mvpsidebar.png)](https://mvp.microsoft.com/en-us/PublicProfile/5001873?fullName=Florent%20APPOINTAIRE)"
+        - text: "[![FALA Consulting](/assets/logo/FALAconsultingsidebar.jpg)](https://www.falaconsulting.be)"
       layout: single
       classes: wide
       author_profile: true
@@ -292,5 +293,5 @@ defaults:
       classes: wide
       author_profile: true
       read_time: true
-            sidebar:
+      sidebar:
         - text: "[![MVP](/assets/logo/mvpsidebar.png)](https://mvp.microsoft.com/en-us/PublicProfile/5001873?fullName=Florent%20APPOINTAIRE)"
