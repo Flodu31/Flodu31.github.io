@@ -19,7 +19,10 @@ Après avoir réfléchi, je me suis dit que, dans Azure AD, les mots de passes d
 
 Je me suis alors connecté avec un utilisateur de cet AD avec les commandes suivantes (j’ai du mettre à jour le mot de passe car l’ancien ne fonctionnait plus):
 
-`$credentials = Get-Credential automation@domain.onmicrosoft.com Connect-MsolService -Credential $credentials`
+```
+$credentials = Get-Credential automation@domain.onmicrosoft.com 
+Connect-MsolService -Credential $credentials
+```
 
 [![](https://cloudyjourney.fr/wp-content/uploads/2018/01/SNAGHTML291611da_033D20E0.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/SNAGHTML291611da_033D20E0.png)
 
@@ -45,7 +48,7 @@ Remplacez bien entendu par le nombre de jours que vous souhaitez. Mes nouvelles 
 
 Si vous souhaitez que le mot de passe n’expire jamais (comme dans mon cas avec le compte d’automatisation), vous pouvez le faire avec la commande suivante:
 
-`Set-MsolUser -UserPrincipalName [automation@domain.onmicrosoft.com](mailto:automation@domain.onmicrosoft.com) -PasswordNeverExpires $True`
+`Set-MsolUser -UserPrincipalName automation@domain.onmicrosoft.com -PasswordNeverExpires $True`
 
 [![](https://cloudyjourney.fr/wp-content/uploads/2018/01/SNAGHTML2920b935_49BCA199.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/SNAGHTML2920b935_49BCA199.png)
 
