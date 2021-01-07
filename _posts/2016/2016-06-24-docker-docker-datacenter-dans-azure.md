@@ -87,7 +87,9 @@ Pour commencer, connectez vous en SSH sur votre nœud UCP:
 
 Exécutez la commande suivante:
 
-`sudo docker run --rm --name ucp -v /var/run/docker.sock:/var/run/docker.sock docker/ucp dump-certs --cluster --ca`
+```
+sudo docker run --rm --name ucp -v /var/run/docker.sock:/var/run/docker.sock docker/ucp dump-certs --cluster --ca
+```
 
 Après avoir téléchargé l’image **uc-dump-certs** et créé un nouveau conteneur, vous devriez avoir un résultat comme ceci:
 
@@ -111,7 +113,12 @@ Il faut maintenant truster l’UCP depuis le DTR. Dans l’interface du DTR, dan
 
 Nous devons maintenant copier le fichier **dtr-ca.pem** sur chaque nœud de l’UCP (il y en a 7 par défaut). J’ai utilisé un serveur pour me connecter aux autres serveurs en ssh. J’ai alors exécuté les commandes suivantes:
 
-`sudo su - mkdir /etc/docker/certs.d/ mkdir /etc/docker/certs.d/dlbpiplabel.westeurope.cloudapp.azure.com/ vi /etc/docker/certs.d/dlbpiplabel.westeurope.cloudapp.azure.com/ca.crt`
+```
+sudo su - 
+mkdir /etc/docker/certs.d/ 
+mkdir /etc/docker/certs.d/dlbpiplabel.westeurope.cloudapp.azure.com/ 
+vi /etc/docker/certs.d/dlbpiplabel.westeurope.cloudapp.azure.com/ca.crt
+```
 
 Collez le résultat du fichier **dtr-ca.pem.** Redémarrez le service docker avec la commande suivante:
 
@@ -143,7 +150,10 @@ Renseignez les champs et cliquez sur **Save**:
 
 Nous allons maintenant pousser une image sur ce repository. J’ai créé une image qui va faire tourner un site web (sous nginx) avec une page HTML, avec le Dockerfile suivant (les sources sont ici: [https://github.com/Flodu31/Floapp-Cloud](https://github.com/Flodu31/Floapp-Cloud "https://github.com/Flodu31/Floapp-Cloud")):
 
-`FROM nginx MAINTAINER Florent APPOINTAIRE <florent.appointaire@gmail.com> COPY index.html /usr/share/nginx/html/`
+```
+FROM nginx MAINTAINER Florent APPOINTAIRE <florent.appointaire@gmail.com> 
+COPY index.html /usr/share/nginx/html/
+```
 
 Exécutez les commandes suivantes pour "construire" l’image:
 
@@ -165,7 +175,12 @@ Si vous avez l’erreur suivante, effectuez la manipulation suivante:
 
 [![](https://cloudyjourney.fr/wp-content/uploads/2018/01/image_6B9898DE.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/image_6B9898DE.png)
 
-`vi /lib/systemd/system/docker.service #Remplacez ExecStart=/usr/bin/docker daemon -H fd:// par la ligne suivante ExecStart=/usr/bin/docker daemon -H fd:// --insecure-registry dlbpiplabel.westeurope.cloudapp.azure.com #Sauvegardez systemctl daemon-reload service docker restart ps aux | grep docker`
+```
+vi /lib/systemd/system/docker.service 
+#Remplacez ExecStart=/usr/bin/docker daemon -H fd:// par la ligne suivante ExecStart=/usr/bin/docker daemon -H fd:// --insecure-registry dlbpiplabel.westeurope.cloudapp.azure.com #Sauvegardez 
+systemctl daemon-reload service docker restart 
+ps aux | grep docker
+```
 
 [![](https://cloudyjourney.fr/wp-content/uploads/2018/01/image_26EBFE9D.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/image_26EBFE9D.png)
 
