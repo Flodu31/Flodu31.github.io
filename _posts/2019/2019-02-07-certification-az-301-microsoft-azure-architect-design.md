@@ -1,6 +1,9 @@
 ---
 title: "[Certification] AZ-301: Microsoft Azure Architect Design"
 date: "2019-02-07"
+author: "Florent Appointaire"
+permalink: "/2019/02/07/certification-az-301-microsoft-azure-architect-design/"
+summary: 
 categories: 
   - "autres"
 tags: 
@@ -10,9 +13,6 @@ tags:
   - "certification"
   - "microsoft"
 ---
-
-![](https://cloudyjourney.fr/wp-content/uploads/2019/02/exam-az301-600x600.png)
-
 Après avoir passé avec succès la [AZ-300](https://cloudyjourney.fr/2019/01/25/certification-az-300-microsoft-azure-architect-technologies), il étant temps pour moi, pour parvenir à la certification Azure Solutions Architect, de passer la [AZ-301](https://www.microsoft.com/en-us/learning/exam-az-301.aspx). Cette certification est composée des sujets suivants:
 
 - Determine Workload Requirements (10-15%)

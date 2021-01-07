@@ -1,6 +1,9 @@
 ---
 title: "[Conférence] Experts Live Netherlands"
 date: "2019-02-06"
+author: "Florent Appointaire"
+permalink: "/2019/02/06/conference-experts-live-netherlands/"
+summary:
 categories: 
   - "conference"
 tags: 
@@ -9,9 +12,6 @@ tags:
   - "microsoft"
   - "patching"
 ---
-
-![](https://cloudyjourney.fr/wp-content/uploads/2019/02/EL_logo2.png)
-
 Je suis heureux de vous annoncer que je donnerai une session avec mon ami Samuel Erskine, le 6 Juin 2019, à Experts Live Netherlands. Voici le contenu de la session:
 
 > Track, Inventory and patch VMs in Azure (Windows or Linux) without SCCM and with zero infrastructure

@@ -1,15 +1,15 @@
 ---
 title: "[RDS] Erreur à l'ajout d'une RDS Gateway"
 date: "2019-02-26"
+author: "Florent Appointaire"
+permalink: "/2019/02/26/rds-erreur-a-lajout-dune-rds-gateway/"
+summary: 
 categories: 
   - "autres"
 tags: 
   - "microsoft"
   - "rds-gateway"
 ---
-
-![](https://cloudyjourney.fr/wp-content/uploads/2019/02/microsoft-rds-logo.png)
-
 En voulant ajouter un serveur RDS Gateway à une ferme RDS déjà existante, je me suis confronté à l'erreur suivante:
 
 > Unable to configure the RD Gateway server: FLOAPP-HPV02.florentappointaire.cloud. The error is 2147749890.

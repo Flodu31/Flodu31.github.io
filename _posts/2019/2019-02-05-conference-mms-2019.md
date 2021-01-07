@@ -1,6 +1,9 @@
 ---
 title: "[Conférence] MMS 2019"
 date: "2019-02-05"
+author: "Florent Appointaire"
+permalink: "/2019/02/05/conference-mms-2019/"
+summary:
 categories: 
   - "conference"
 tags: 
@@ -9,9 +12,6 @@ tags:
   - "mms"
   - "mmsmoa"
 ---
-
-![](https://cloudyjourney.fr/wp-content/uploads/2019/01/MMSPECIALspeaking.png)
-
 J’ai le plaisir de vous annoncer que je serai speaker lors du MMS à Minneapolis, du Lundi 6 Mai au Vendredi 10 Mai, pour la deuxième année, après 2018.
 
 J’animerai 3 sessions lors de cette édition, une avec Peter De Tender, une avec Samuel Erskine et une avec Dieter Wijckmans:
