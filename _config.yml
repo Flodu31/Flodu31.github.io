@@ -273,6 +273,8 @@ defaults:
       path: ""
       type: posts
     values:
+      sidebar:
+        - text: "[![MVP](/assets/logo/mvpsidebar.png)](https://mvp.microsoft.com/en-us/PublicProfile/5001873?fullName=Florent%20APPOINTAIRE)"
       layout: single
       classes: wide
       author_profile: true
@@ -281,8 +283,6 @@ defaults:
       share: true
       show_date: true
       related: #true
-      sidebar:
-        - text: "[![MVP](/assets/logo/mvpsidebar.png)](https://mvp.microsoft.com/en-us/PublicProfile/5001873?fullName=Florent%20APPOINTAIRE)"
   # _pages
   - scope:
       path: ""
@@ -292,3 +292,5 @@ defaults:
       classes: wide
       author_profile: true
       read_time: true
+            sidebar:
+        - text: "[![MVP](/assets/logo/mvpsidebar.png)](https://mvp.microsoft.com/en-us/PublicProfile/5001873?fullName=Florent%20APPOINTAIRE)"
