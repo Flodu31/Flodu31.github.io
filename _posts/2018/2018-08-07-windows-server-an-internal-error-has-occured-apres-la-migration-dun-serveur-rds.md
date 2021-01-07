@@ -19,8 +19,10 @@ En migrant une VM RDS de On-Premises vers Azure (seul l'adresse IP a changé), j
 
 Après quelques recherches, je suis tombé sur [ce sujet](https://community.spiceworks.com/topic/1272466-remote-desktop-error-an-internal-error-has-occurred?page=2), qui donne la solution suivante, en regénérant le certificat utilisé pour le RDP, avec les commandes suivantes:
 
+```
 New-SelfSignedCertificate -Certstorelocation cert:\\localmachine\\my -Dnsname FQDN-Of-The-Server
 wmic /namespace:\\\\root\\CIMV2\\TerminalServices PATH Win32\_TSGeneralSetting Set SSLCertificateSHA1Hash="Thumbprint of certificate generate before"
+```
 
 [![](https://cloudyjourney.fr/wp-content/uploads/2018/08/RDPInternalError02.png)](https://cloudyjourney.fr/wp-content/uploads/2018/08/RDPInternalError02.png)
 
