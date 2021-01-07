@@ -15,7 +15,6 @@ tags:
   - "microsoft"
 ---
 J'ai le plaisir de vous annoncer, que je présenterai le Mercredi 27 Mars prochain, à 20h, un meetup Online, sur le sujet suivant:
-
 ##### Automatiser Azure avec Azure Automation/Sharepoint Online/PowerApps
 
 Le lien de l'évenement est disponible ici: [https://www.meetup.com/fr-FR/FrenchPSUG/events/258695126/](https://www.meetup.com/fr-FR/FrenchPSUG/events/258695126/)
