@@ -25,7 +25,7 @@ url                      : #https://blog.cloudyjourney.fr # the base hostname & 
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "Flodu31/Flodu31.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/logo/fa-avatar.jpg" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : #"/assets/logo/fa-avatar.jpg" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -102,9 +102,6 @@ author:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:florent.appoiintaire@gmail.com"
-    - label: "FALA Consulting"
-      icon: "fas fa-fw fa-link"
-      url: "https://www.falaconsulting.be"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/florent_app"
@@ -130,13 +127,6 @@ footer:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin-in"
       url: "https://www.linkedin.com/in/florentappointaire/"
-    - label: "FALA Consulting"
-      icon: "fas fa-fw fa-building"
-      url: "https://www.falaconsulting.be"
-    - label: "MVP"
-      icon: "fab fa-fw fa-microsoft"
-      url: "https://mvp.microsoft.com/en-us/PublicProfile/5001873?fullName=Florent%20APPOINTAIRE"
-
 
 # Reading Files
 include:
