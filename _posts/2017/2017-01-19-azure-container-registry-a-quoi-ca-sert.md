@@ -3,7 +3,6 @@ title: "[Azure] Container Registry, à quoi ça sert ?"
 date: "2017-01-19"
 author: "Florent Appointaire"
 permalink: "/2017/01/19/azure-container-registry-a-quoi-ca-sert/"
-summary:
 categories: 
   - "azure-container-registry"
 tags: 
