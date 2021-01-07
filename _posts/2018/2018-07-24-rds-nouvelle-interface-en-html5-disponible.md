@@ -42,7 +42,7 @@ Une fois le module PowerShell installé, utilisez les commandes suivantes pour i
 
 ```
 Install-RDWebClientPackage
-Import-RDWebClientBrokerCert C:\\Users\\FAppointaire\\Downloads\\CERFile.cer
+Import-RDWebClientBrokerCert C:\Users\FAppointaire\Downloads\CERFile.cer
 Publish-RDWebClientPackage -Type Production -Latest
 ```
 
