@@ -273,7 +273,7 @@ defaults:
       read_time: true
       comments: true
       share: true
-      show_date: #true
+      #show_date: true
       related: #true
   # _pages
   - scope:
