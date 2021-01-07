@@ -18,15 +18,14 @@ tags:
 Aujourd'hui, en voulant déployer une WebApp avec Azure Automation et qui déploye automatiquement un projet qui est sur GitHub, je me suis retrouvé avec l'erreur suivante:
 
  ```
-Set-AzureRmResource : {"Code":"NotFound","Message":"Cannot find User with name 
-1003BFFDAXXXX.","Target":null,"Details":\[{"Message":"Cannot find User with name 
-1003BFFDAXXXX."},{"Code":"NotFound"},{"ErrorEntity":{"ExtendedCode":"51004","MessageTemplate":"Cannot find {0} with 
-name {1}.","Parameters":\["User","1003BFFDAXXXX"\],"Code":"NotFound","Message":"Cannot find User with name 
-1003BFFDAXXXX."}}\],"Innererror":null}
+Set-AzureRmResource : {"Code":"NotFound","Message":"Cannot find User with name 1003BFFDAXXXX.","Target":null,"Details":
+[{"Message":"Cannot find User with name 1003BFFDAXXXX."},{"Code":"NotFound"},{"ErrorEntity":{"ExtendedCode":"51004",
+"MessageTemplate":"Cannot find {0} with name {1}.","Parameters":["User","1003BFFDAXXXX"],"Code":"NotFound",
+"Message":"Cannot find User with name 1003BFFDAXXXX."}}],"Innererror":null}
 At line:39 char:5
 +     Set-AzureRmResource -PropertyObject $PropertiesObject -ResourceGr ...
 +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : CloseError: (:) \[Set-AzureRmResource\], ErrorResponseMessageException
+    + CategoryInfo          : CloseError: (:) [Set-AzureRmResource], ErrorResponseMessageException
     + FullyQualifiedErrorId : 
 NotFound,Microsoft.Azure.Commands.ResourceManager.Cmdlets.Implementation.SetAzureResourceCmdlet
 ```
