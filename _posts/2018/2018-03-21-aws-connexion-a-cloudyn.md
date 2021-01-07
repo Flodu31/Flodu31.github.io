@@ -67,9 +67,11 @@ Modifiez la police pour votre bucket:
 
 Renseignez les valeurs correspondantes pour les ARN et le nom de compte de votre bucket (6 modifications au total):
 
-`{ "Version": "2008-10-17", "Id": "Policy1335892530063", "Statement": [ { "Sid": "Stmt1371369161819", "Effect": "Allow", "Principal": { "AWS": "Votre ARN que vous avez créé précédemment" }, "Action": [ "s3:List*", "s3:Get*" ], "Resource": "arn:aws:s3:::Le nom de votre bucket/*" }, { "Sid": "Stmt1335892150622", "Effect": "Allow", "Principal": { "AWS": "l'ARN du compte root qui a accès aux informations de billing" }, "Action": [ "s3:GetBucketAcl", "s3:GetBucketPolicy" ], "Resource": "arn:aws:s3:::Le nom de votre bucket" }, { "Sid": "Stmt1335892526596", "Effect": "Allow", "Principal": { "AWS": "l'ARN du compte root qui a accès aux informations de billing" }, "Action": "s3:PutObject", "Resource": "arn:aws:s3:::Le nom de votre bucket/*" } ] }`
+```
+{ "Version": "2008-10-17", "Id": "Policy1335892530063", "Statement": [ { "Sid": "Stmt1371369161819", "Effect": "Allow", "Principal": { "AWS": "Votre ARN que vous avez créé précédemment" }, "Action": [ "s3:List*", "s3:Get*" ], "Resource": "arn:aws:s3:::Le nom de votre bucket/*" }, { "Sid": "Stmt1335892150622", "Effect": "Allow", "Principal": { "AWS": "l'ARN du compte root qui a accès aux informations de billing" }, "Action": [ "s3:GetBucketAcl", "s3:GetBucketPolicy" ], "Resource": "arn:aws:s3:::Le nom de votre bucket" }, { "Sid": "Stmt1335892526596", "Effect": "Allow", "Principal": { "AWS": "l'ARN du compte root qui a accès aux informations de billing" }, "Action": "s3:PutObject", "Resource": "arn:aws:s3:::Le nom de votre bucket/*" } ] }
+```
 
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/03/CloudynAWS14-1.png)](https://cloudyjourney.fr/wp-content/uploads/2018/03/CloudynAWS14-1.png)
+[![](https://cloudyjourney.fr/wp-content/uploads/2018/03/CloudynAWS14-1.png)](https://cloudyjourney.fr/wp-content/uploads/2018/03/CloudynAWS14.png)
 
 Une fois terminé, allez dans les préférences du compte, et cochez la case **Receive Billing Reports**. Choisissez le S3 bucket où les rapports seront envoyés. Cliquez sur **Verify** pour vérifier les permissions du compte root sur ce bucket. Si les permissions ne sont pas bonnes, la console vous le fera savoir. Cochez les 4 cases pour envoyer les rapports sur le bucket de façon détaillé, toutes les heures:
 
