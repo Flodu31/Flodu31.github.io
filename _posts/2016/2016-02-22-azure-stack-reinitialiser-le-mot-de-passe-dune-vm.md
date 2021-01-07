@@ -24,9 +24,23 @@ J’ai donc décidé de le réinitialiser via le portail, mais cette fonctionnal
 
 Donc, la seule façon de faire ceci est en PowerShell. Assurez-vous de bien avoir l’extension VMAccess installée. Si vous ne l’avez pas, installez la avec le script PowerShell suivant, en changeant les 3 premières variables et exécutez le:
 
-``# Add the Microsoft Azure Stack environment [net.mail.mailaddress]$AadFullMailAddress="whitepaper@azurelabdvo.onmicrosoft.com" $RGName = "Compute" $vmName = "WS2012R2" $AadTenantId=(Invoke-WebRequest -Uri (‘[https://login.windows.net/’+(](https://login.windows.net/%E2%80%99+()$AadFullMailAddress.Host)+’/.well-known/openid-configuration’) -UseBasicParsing|ConvertFrom-Json).token_endpoint.Split(‘/’)[3] # Configure the environment with the Add-AzureRmEnvironment cmdlt Add-AzureRmEnvironment -Name 'Azure Stack' ` -ActiveDirectoryEndpoint ("[https://login.windows.net/](https://login.windows.net/)$AadTenantId/") ` -ActiveDirectoryServiceEndpointResourceId "https://azurestack.local-api/"` -ResourceManagerEndpoint ("[https://api.azurestack.local/")](https://api.azurestack.local/%22)) ` -GalleryEndpoint ("[https://gallery.azurestack.local/")](https://gallery.azurestack.local/%22)) ` -GraphEndpoint "[https://graph.windows.net/"](https://graph.windows.net/%22) # Authenticate a user to the environment (you will be prompted during authentication) $privateEnv = Get-AzureRmEnvironment ‘Azure Stack’ $privateAzure = Add-AzureRmAccount -Environment $privateEnv -Verbose Select-AzureRmProfile -Profile $privateAzure``
-
-`$extensionName = "VMAccessAgent" $publisher = "Microsoft.Compute" $version = "2.0" Set-AzureRmVMExtension -ExtensionName $extensionName -Publisher $publisher -Version $version -ExtensionType $extensionName -Location local -ResourceGroupName $RGName -VMName $vmName –Verbose`
+```
+# Add the Microsoft Azure Stack environment 
+[net.mail.mailaddress]$AadFullMailAddress="whitepaper@azurelabdvo.onmicrosoft.com" 
+$RGName = "Compute" 
+$vmName = "WS2012R2" 
+$AadTenantId=(Invoke-WebRequest -Uri ('[https://login.windows.net/'+(](https://login.windows.net/%E2%80%99+()$AadFullMailAddress.Host)+'/.well-known/openid-configuration') -UseBasicParsing|ConvertFrom-Json).token_endpoint.Split('/')[3] 
+# Configure the environment with the Add-AzureRmEnvironment cmdlt 
+Add-AzureRmEnvironment -Name 'Azure Stack' -ActiveDirectoryEndpoint ("[https://login.windows.net/](https://login.windows.net/)$AadTenantId/") -ActiveDirectoryServiceEndpointResourceId "https://azurestack.local-api/" -ResourceManagerEndpoint ("[https://api.azurestack.local/")](https://api.azurestack.local/%22)) -GalleryEndpoint ("[https://gallery.azurestack.local/")](https://gallery.azurestack.local/%22)) -GraphEndpoint "[https://graph.windows.net/"](https://graph.windows.net/%22) 
+# Authenticate a user to the environment (you will be prompted during authentication) 
+$privateEnv = Get-AzureRmEnvironment 'Azure Stack'
+$privateAzure = Add-AzureRmAccount -Environment $privateEnv -Verbose 
+Select-AzureRmProfile -Profile $privateAzure
+$extensionName = "VMAccessAgent" 
+$publisher = "Microsoft.Compute" 
+$version = "2.0" 
+Set-AzureRmVMExtension -ExtensionName $extensionName -Publisher $publisher -Version $version -ExtensionType $extensionName -Location local -ResourceGroupName $RGName -VMName $vmName –Verbose
+```
 
 [![](https://cloudyjourney.fr/wp-content/uploads/2018/01/image_181D1122.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/image_181D1122.png)
 
@@ -38,7 +52,10 @@ Après quelques minutes, votre extension est installée:
 
 Vous pouvez maintenant réinitialiser le mot de passe de la VM. Exécutez le script suivant avec le nom d’utilisateur de la VM en question, pour moi Florent:
 
-`$cred = Get-Credential "Florent" –Message "Name of the current account and the new password" Set-AzureRmVMAccessExtension -ResourceGroupName $RGName -VMName $vmName -Name $extensionName -UserName $cred.GetNetworkCredential().Username -Password $cred.GetNetworkCredential().Password -Location local`
+```
+$cred = Get-Credential "Florent" –Message "Name of the current account and the new password" 
+Set-AzureRmVMAccessExtension -ResourceGroupName $RGName -VMName $vmName -Name $extensionName -UserName $cred.GetNetworkCredential().Username -Password $cred.GetNetworkCredential().Password -Location local
+```
 
 [![](https://cloudyjourney.fr/wp-content/uploads/2018/01/image_3622D129.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/image_3622D129.png)
 
