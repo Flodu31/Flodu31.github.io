@@ -151,7 +151,8 @@ Renseignez les champs et cliquez sur **Save**:
 Nous allons maintenant pousser une image sur ce repository. J’ai créé une image qui va faire tourner un site web (sous nginx) avec une page HTML, avec le Dockerfile suivant (les sources sont ici: [https://github.com/Flodu31/Floapp-Cloud](https://github.com/Flodu31/Floapp-Cloud "https://github.com/Flodu31/Floapp-Cloud")):
 
 ```
-FROM nginx MAINTAINER Florent APPOINTAIRE <florent.appointaire@gmail.com> 
+FROM nginx 
+MAINTAINER Florent APPOINTAIRE <florent.appointaire@gmail.com> 
 COPY index.html /usr/share/nginx/html/
 ```
 
