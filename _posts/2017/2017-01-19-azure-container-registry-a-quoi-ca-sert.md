@@ -41,13 +41,28 @@ Sur mon ACS, je vais créer un Dockerfile et un index.html :
 
 **Dockerfile:**
 
-`FROM nginx` `MAINTAINER Florent APPOINTAIRE [florent.appointaire@gmail.com](mailto:florent.appointaire@gmail.com)` `COPY index.html /usr/share/nginx/html/`
+```
+FROM nginx
+MAINTAINER Florent APPOINTAIRE [florent.appointaire@gmail.com]
+COPY index.html /usr/share/nginx/html/
+```
 
 **Index.html**
 
-`<html>` `  <head>` `    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">` `   <title>FlorentAppointaire.cloud</title>` `  </head>` `  <body>` `    <div class="container">` `      <h1>Hello from ACS & Docker Registry</h1>` `      <p>You are running this container on Azure Container Service and this image has been deployed from Azure Container Registry:)</p>` `    </div>` `  </body>` `</html>`
-
- 
+```
+<html>
+<head>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+<title>FlorentAppointaire.cloud</title>
+</head>
+<body>
+<div class="container">
+<h1>Hello from ACS & Docker Registry</h1>
+<p>You are running this container on Azure Container Service and this image has been deployed from Azure Container Registry:)</p>
+</div>
+</body>
+</html>
+``` 
 
 La première étape va être de se connecter à notre docker registry. Pour effectuer ceci, récupérer l’URL de connexion, que vous avez récupéré dans la partie **Access key**. Pour ma part, c’est **floappregistry-on.azurecr.io**.
 
@@ -65,7 +80,7 @@ Nous allons maintenant compiler ce Dockerfile et ensuite, l’envoyer sur notre 
 
 [![](https://cloudyjourney.fr/wp-content/uploads/2018/01/pastedimage1484733904475v8.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/pastedimage1484733904475v8.png)
 
-docker -H 172.16.0.5:2375 images
+`docker -H 172.16.0.5:2375 images`
 
 [![](https://cloudyjourney.fr/wp-content/uploads/2018/01/pastedimage1484733913365v9.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/pastedimage1484733913365v9.png)
 
