@@ -1,0 +1,16 @@
+Florent Appointaire:
+  name     : "Florent Appointaire"
+  avatar   : "/assets/images/fa-avatar.jpg"
+  bio      : "Freelance, Microsoft MVP Azure."
+  location : "Belgium"
+  email    : "florent.appointaire@gmail.com"
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/florent_app"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url: "https://facebook.com/FlorentAppointaireFr"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Flodu31"
