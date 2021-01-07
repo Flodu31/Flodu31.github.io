@@ -17,7 +17,10 @@ tags:
 
 Depuis le mois de Décembre 2015, Microsoft a rendu disponible le fait de pouvoir créer ses propres rôles RBAC. Je vais vous montrer comment faire ceci aujourd’hui. Tout d’abord, connectez-vous via PowerShell à Azure RM et sélectionnez votre suscription:
 
-`Login-AzureRm Select-AzureRmSubscription -SubscriptionId XXXXXXXXXXXXXXXXXXXXX`
+```
+Login-AzureRm 
+Select-AzureRmSubscription -SubscriptionId XXXXXXXXXXXXXXXXXXXXX
+```
 
 Une fois connecté, vous pouvez avoir la liste des Resource Provider qui sont disponibles avec la commande suivante:
 
@@ -51,7 +54,9 @@ Pour pouvoir stocker les cartes réseaux, il faut que l’utilisateur puisse éc
 
 Maintenant que nous avons toutes nos actions, nous pouvons créer le fichier JSON suivant:
 
-`{ "Name": "Admin Network Card", "Id": "67794e3b-eeeb-4e5c-a98b-27cc053a0b35", "IsCustom": true, "Description": "Can create and delete Network Interfaces.", "Actions": [ "Microsoft.Network/networkInterfaces/read", "Microsoft.Network/networkInterfaces/write", "Microsoft.Network/networkInterfaces/delete", "Microsoft.Network/networkSecurityGroups/read", "Microsoft.Network/networkSecurityGroups/join/action", "Microsoft.Network/virtualNetworks/read", "Microsoft.Network/virtualNetworks/subnets/read", "Microsoft.Network/virtualNetworks/subnets/join/action", "Microsoft.Resources/deployments/read", "Microsoft.Resources/deployments/write", "Microsoft.Authorization/*/read", "Microsoft.Resources/subscriptions/resourceGroups/read", "Microsoft.Support/*" ], "NotActions": [` `], "AssignableScopes": [ "/subscriptions/XXXXXXXXXXXXXXXXXXX” ] }`
+```
+{ "Name": "Admin Network Card", "Id": "67794e3b-eeeb-4e5c-a98b-27cc053a0b35", "IsCustom": true, "Description": "Can create and delete Network Interfaces.", "Actions": [ "Microsoft.Network/networkInterfaces/read", "Microsoft.Network/networkInterfaces/write", "Microsoft.Network/networkInterfaces/delete", "Microsoft.Network/networkSecurityGroups/read", "Microsoft.Network/networkSecurityGroups/join/action", "Microsoft.Network/virtualNetworks/read", "Microsoft.Network/virtualNetworks/subnets/read", "Microsoft.Network/virtualNetworks/subnets/join/action", "Microsoft.Resources/deployments/read", "Microsoft.Resources/deployments/write", "Microsoft.Authorization/*/read", "Microsoft.Resources/subscriptions/resourceGroups/read", "Microsoft.Support/*" ], "NotActions": [` `], "AssignableScopes": [ "/subscriptions/XXXXXXXXXXXXXXXXXXX” ] }
+```
 
 Bien sur, modifiez les XXXXXXXXXXX avec le numéro de la suscription pour laquelle il sera possible d’utiliser ce rôle. Vous pouvez ajouter plusieurs suscriptions. Vous pouvez également adapter la partie Name, Description:
 
