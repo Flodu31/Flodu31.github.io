@@ -37,7 +37,9 @@ Eteignez la VM via l'interface Azure, puis allez dans la partie disque. Agrandis
 Rallumez la VM et initialisez les disques, sans oublier d'étendre le disque OS. Adaptez la time zone en fonction de votre fuseau horaire, et désactivez le **IE Enhanced Security Configuration**. Vous pouvez maintenant installer des prérequis pour gagner du temps par la suite:
 
 ```
-Add-WindowsFeature Hyper-V, Failover-Clustering, Web-Server -IncludeManagementTools` `Add-WindowsFeature RSAT-AD-PowerShell, RSAT-ADDS -IncludeAllSubFeature` `Install-PackageProvider nuget -Verbose
+Add-WindowsFeature Hyper-V, Failover-Clustering, Web-Server -IncludeManagementTools
+Add-WindowsFeature RSAT-AD-PowerShell, RSAT-ADDS -IncludeAllSubFeature
+Install-PackageProvider nuget -Verbose
 ```
 
 Redémarrez le serveur:
@@ -51,7 +53,8 @@ Vous pouvez maintenant télécharger Azure Stack: [https://azure.microsoft.com/
 Une fois extrait, montez le disque **CloudBuilder.vhdx** et copiez les dossiers **CloudDeployment**, **fwupdate** et **tools**dans votre disque C. Vous pouvez éjecter le disque **CloudBuiler.** Ouvrez une console PowerShell puis faite:
 
 ```
-cd C:\CloudDeployment\Setup` `.\InstallAzureStackPOC.ps1 -InfraAzureDirectoryTenantName yourdirectory.onmicrosoft.com -NATIPv4Subnet 172.16.0.0/24 -NATIPv4Address 172.16.0.2 -NATIPv4DefaultGateway 172.16.0.1 -Verbose
+cd C:\CloudDeployment\Setup
+.\InstallAzureStackPOC.ps1 -InfraAzureDirectoryTenantName yourdirectory.onmicrosoft.com -NATIPv4Subnet 172.16.0.0/24 -NATIPv4Address 172.16.0.2 -NATIPv4DefaultGateway 172.16.0.1 -Verbose
 ```
 
 Pour les IPs adresses, utilisez des IPs qui ne sont pas utilisées sur votre VNet Azure ni pas Azure Stack. Vous allez avoir une première erreur qui vous dit que votre serveur n'est pas un serveur physique. Pas de panique. Il suffit de modifier le fichier **C:\\CloudDeployment\\Roles\\PhysicalMachines\\Tests\\BareMetal.Tests.ps1** et de rechercher **$isVirtualizedDeployment.** Cette variable est présente 3 fois dans le fichier. Retirez le **\-not** devant chaque variable. Relancez l'installation avec la commande suivante:
@@ -69,7 +72,8 @@ Enable-WSManCredSSP -Role Server
 Sur le serveur Hyper-V, exécutez les commandes suivantes:
 
 ```
-Set-Item wsman:localhost\client\trustedhosts -Value *` `Enable-WSManCredSSP -Role Client -DelegateComputer *
+Set-Item wsman:localhost\client\trustedhosts -Value *
+Enable-WSManCredSSP -Role Client -DelegateComputer *
 ```
 
 Puis, ouvrez la console **gpedit.msc**, allez dans **Local Computer Policy > Computer Configuration > Administrative Templates > System > Credential Delegation.**
@@ -79,7 +83,10 @@ Activez **Allow Delegating Fresh Credentials with NTLM-only Server Authenticati
 Une fois la VM **BGPNAT** déployée, exécutez le script suivant pour créer un nouveau virtual switch qui donne accès à Internet à la VM, en adaptant avec l'adresse IP que vous avez utilisé lors du lancement du script:
 
 ```
-New-VMSwitch -Name "NATSwitch" -SwitchType Internal -Verbose` `$NIC=Get-NetAdapter|Out-GridView -PassThru` `New-NetIPAddress -IPAddress 172.16.0.1 -PrefixLength 24 -InterfaceIndex $NIC.ifIndex` `New-NetNat -Name "NATSwitch" -InternalIPInterfaceAddressPrefix "172.16.0.0/24" -Verbose
+New-VMSwitch -Name "NATSwitch" -SwitchType Internal -Verbose
+$NIC=Get-NetAdapter|Out-GridView -PassThru
+New-NetIPAddress -IPAddress 172.16.0.1 -PrefixLength 24 -InterfaceIndex $NIC.ifIndex
+New-NetNat -Name "NATSwitch" -InternalIPInterfaceAddressPrefix "172.16.0.0/24" -Verbose
 ```
 
 Allez dans les paramètres de la VM BGPNAT et changez le virtual switch de la carte **NAT**de **PublicSwitch** vers **NATSwitch:**
