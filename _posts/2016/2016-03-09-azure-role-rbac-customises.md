@@ -12,9 +12,6 @@ tags:
   - "microsoft"
   - "rbac"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/pastedimage1482154059354v1.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/pastedimage1482154059354v1.png)
-
 Depuis le mois de Décembre 2015, Microsoft a rendu disponible le fait de pouvoir créer ses propres rôles RBAC. Je vais vous montrer comment faire ceci aujourd’hui. Tout d’abord, connectez-vous via PowerShell à Azure RM et sélectionnez votre suscription:
 
 ```
