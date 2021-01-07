@@ -13,9 +13,6 @@ tags:
   - "microsoft"
   - "powershell"
 ---
-
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/PowerShell.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/PowerShell.png)
-
 Voulant faire un VPN S2S avec ma suscription Azure, et n’ayant pas d’IP fixe chez moi sur mon lab, j’ai cherché sur internet et j’ai trouvé ce sujet, qui traité ce problème: [https://www.vnext.be/2013/12/01/windows-azure-s2s-vpn-with-dynamic-public-ip/](https://www.vnext.be/2013/12/01/windows-azure-s2s-vpn-with-dynamic-public-ip/)
 
 Le seul souci ici, c’est que ce script est adapté pour Azure classique et non pas Azure Resource Manager.
