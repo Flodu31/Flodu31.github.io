@@ -63,16 +63,16 @@ google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
 # SEO Related
-google_site_verification :
+google_site_verification : "hSMxqLBb-Ovqy9IudxE1YZJfxWfvPIn2enMnzVFL5uE"
 bing_site_verification   :
 yandex_site_verification :
 naver_site_verification  :
 
 # Social Sharing
 twitter:
-  username               : florent_app
+  username               : &twitter "florent_app"
 facebook:
-  username               : FlorentAppointaireFr
+  username               : &facebook "FlorentAppointaireFr"
   app_id                 :
   publisher              :
 og_image                 : # Open Graph/Twitter default site image
@@ -88,7 +88,7 @@ analytics:
   provider               : google-universal # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
     tracking_id          : G-6F0CMDMZVY
-    anonymize_ip         : # true, false (default)
+    anonymize_ip         : false
 
 
 # Site Author
@@ -274,18 +274,17 @@ defaults:
       type: posts
     values:
       layout: single
-      classes: wide
       author_profile: true
       read_time: true
       comments: true
       share: true
       show_date: true
       related: #true
+  # _pages
   - scope:
       path: ""
       type: pages
     values:
       layout: single
-      classes: wide
       author_profile: true
       read_time: true
