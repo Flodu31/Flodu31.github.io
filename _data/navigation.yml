@@ -3,9 +3,9 @@ main:
     url: /posts/
   - title: "Catégories"
     url: /categories/
-  - title: "Tags"
-    url: /tags/
   - title: "À Propos"
     url: /about/
   - title: "FALA Consulting"
     url: /falaconsulting/
+  - title: "Tags"
+    url: /tags/
