@@ -1,6 +1,9 @@
 ---
 title: "[Azure] ExpressRoute et Application Gateway/WAF"
 date: "2019-07-22"
+author: "Florent Appointaire"
+permalink: "/2019/07/22/azure-expressroute-et-application-gateway-waf/"
+summary:
 categories: 
   - "azure"
 tags: 
@@ -10,12 +13,9 @@ tags:
   - "microsoft"
   - "waf"
 ---
-
-![](https://cloudyjourney.fr/wp-content/uploads/2018/01/Azure.png)
-
 Souci étrange aujourd'hui chez un de mes clients au moment d'implémenter l'Application Gateway sur un VNet qui contient une VNet Gateway et un Express Route. J'ai en effet eu, à chaque essai de déploiement, le message d'erreur suivant:
 
-![](https://i2.wp.com/cloudyjourney.fr/wp-content/uploads/2019/07/AppGW-ER-01.png?fit=762%2C950&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/07/AppGW-ER-01.png)
 
 Après avoir contacté Microsoft pour savoir d'où provenait l'erreur, il s'avère que lorsque votre Express Route annonce une Default Gateway, cette dernière n'est pas supporté par le déploiement d'un Application Gateway/WAF sur ce même VNet.
 

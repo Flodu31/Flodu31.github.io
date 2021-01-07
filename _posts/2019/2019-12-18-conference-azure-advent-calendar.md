@@ -1,6 +1,9 @@
 ---
 title: "[Conférence] Azure Advent Calendar"
 date: "2019-12-18"
+author: "Florent Appointaire"
+permalink: "/2019/12/18/conference-azure-advent-calendar/"
+summary:
 categories: 
   - "azure"
   - "conference"
@@ -11,9 +14,6 @@ tags:
   - "microsoft"
   - "waf"
 ---
-
-![](https://cloudyjourney.fr/wp-content/uploads/2019/11/AzureAdventCalendar_Logo.jpg)
-
 \----- Version Française plus bas -----
 
 This is the first line in English on my blog. Today I'm happy to present a session for the Azure Advent Calendar, an online event, created by Gregor Suttie and Richard Hooper.

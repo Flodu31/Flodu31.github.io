@@ -1,6 +1,9 @@
 ---
 title: "[Azure] Application  Gateway - Fonctionnement"
 date: "2019-07-30"
+author: "Florent Appointaire"
+permalink: "/2019/07/30/azure-application-gateway-fonctionnement/"
+summary:
 categories: 
   - "azure"
 tags: 
@@ -9,9 +12,6 @@ tags:
   - "microsoft"
   - "waf"
 ---
-
-![](https://cloudyjourney.fr/wp-content/uploads/2018/01/Azure.png)
-
 Si vous souhaitez migrer des serveurs IIS/Apache vers Azure, et exposer les sites de façon publique, il va bien entendu falloir protéger ces sites, comme vous le faites On-Premises. Pour faire ceci, Microsoft a fourni un service PaaS, l'Application Gateway, qui permet de load-balancer le trafic sur les ports Web que sont 80 et 443, directement vers un ou plusieurs serveurs. Basé sur une URL, qui pointera vers l'IP publique de l'App Gateway, le listener qui sera configuré, permettra de rediriger le trafic, en fonction d'une règle définie, vers une VM, un serveur On-Premises ou un VMSS:
 
 ![Application Gateway conceptual](https://docs.microsoft.com/en-us/azure/application-gateway/media/overview/figure1-720.png)
@@ -24,39 +24,40 @@ L'avantage de cette solution est que c'est simple à mettre en place,e t simple 
 
 Ici, on va juste déployer un App Gateway + WAF. Dans l'article suivant, on verra la configuration de ce dernier. J'ai déjà déployé un serveur IIS, qui écoute sur le port 8081, en HTTP:
 
-![](https://i1.wp.com/cloudyjourney.fr/wp-content/uploads/2019/07/AppGW11.png?fit=762%2C493&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/07/AppGW11.png)
 
 Dans le portail Azure, chercher Application Gateway dans les service, et créez un nouvel App Gateway. Ici, je vais choisir le tier **WAF V2** car ce dernier présente le fait d'appliquer les changements beaucoup plus rapidement que la v1, entre autre. Je désactive ici l'auto scaling, et je renseigne 2 noeuds, ce qui est le minimum. Choisissez ensuite un réseau virtuel où sera lié votre App Gateway :
 
-![](https://i1.wp.com/cloudyjourney.fr/wp-content/uploads/2019/07/AppGW01.png?fit=762%2C621&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/07/AppGW01.png)
 
 Il faut ensuite créer une publique IP si le site doit être exposé publiquement, mais vous pouvez aussi utiliser une IP privée:
 
-![](https://i0.wp.com/cloudyjourney.fr/wp-content/uploads/2019/07/AppGW02.png?fit=762%2C419&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/07/AppGW02.png)
 
 Créez ensuite votre premier Backend pool qui contiendra un ou plusieurs serveurs où le site web est hébergé:
 
-![](https://i2.wp.com/cloudyjourney.fr/wp-content/uploads/2019/07/AppGW03.png?fit=762%2C334&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/07/AppGW03.png)
 
 Il faut ensuite ajouter une règle de routage. Donnez lui un nom (j'ai pour habitude de donner le nom du site qui va être utilisé par cette règle). Dans cette règle, il y aura un listener, sur le port 443 en HTTPS, avec un certificat (PFX obligatoire), de type multi site:
 
-![](https://i1.wp.com/cloudyjourney.fr/wp-content/uploads/2019/07/AppGW04.png?fit=762%2C1006&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/07/AppGW04.png)
 
 Dans la partie Backend target, je créais un nouveau HTTP setting, vers le port 8081, en HTTP. Ce sera ce port qui discutera avec le site web:
 
-![](https://i2.wp.com/cloudyjourney.fr/wp-content/uploads/2019/07/AppGW05.png?fit=762%2C995&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/07/AppGW05.png)
 
 Enfin, pour terminer, choisissez le backend que vous avez créé auparavant ainsi que le HTTP Setting créé juste avant:
 
-![](https://i0.wp.com/cloudyjourney.fr/wp-content/uploads/2019/07/AppGW07.png?fit=762%2C897&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/07/AppGW06.png)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/07/AppGW07.png)
 
 Vous avez maintenant tout ce qu'il vous faut pour passer à la suite du déploiement:
 
-![](https://i0.wp.com/cloudyjourney.fr/wp-content/uploads/2019/07/AppGW08.png?fit=762%2C218&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/07/AppGW08.png)
 
 Vous pouvez déployer votre App Gateway/WAF:
 
-![](https://i1.wp.com/cloudyjourney.fr/wp-content/uploads/2019/07/AppGW09.png?fit=762%2C733&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/07/AppGW09.png)
 
 Pour résumer, voici les éléments importants ici:
 
@@ -68,11 +69,11 @@ Pour résumer, voici les éléments importants ici:
 
 L'App Gateway est déployé et configuré. J'ai créé mon enregistrement **azure.florentappointaire.cloud** dans mon DNS, en le faisant pointer sur l'IP publique du WAF.
 
-![](https://i1.wp.com/cloudyjourney.fr/wp-content/uploads/2019/07/AppGW10.png?fit=762%2C515&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/07/AppGW10.png)
 
 Si je navigue maintenant sur https://azure.florentappointaire.cloud je devrais être redirigé sur mon serveur IIS:
 
-![](https://i2.wp.com/cloudyjourney.fr/wp-content/uploads/2019/07/AppGW12.png?fit=762%2C422&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/07/AppGW12.png)
 
 Ici, je suis bien en HTTPS, alors que mon site est configuré en HTTP. À noter que si vous avez des NSGs qui sont appliqués sur vos subnets/cartes réseaux, vous devrez ouvrir le port 8081 par exemple dans le NSG du serveur IIS et 443 dans celui de l'App Gateway.
 

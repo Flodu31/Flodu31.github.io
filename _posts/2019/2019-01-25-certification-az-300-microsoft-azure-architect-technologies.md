@@ -1,6 +1,9 @@
 ---
 title: "[Certification] AZ-300: Microsoft Azure Architect Technologies"
 date: "2019-01-25"
+author: "Florent Appointaire"
+permalink: "/2019/01/25/certification-az-300-microsoft-azure-architect-technologies/"
+summary:
 categories: 
   - "autres"
 tags: 
@@ -10,9 +13,6 @@ tags:
   - "certification"
   - "microsoft"
 ---
-
-![](https://cloudyjourney.fr/wp-content/uploads/2019/01/exam-az300-600x600.png)
-
 Après avoir passé la [AZ-102](https://cloudyjourney.fr/2018/10/16/certification-az-102-microsoft-azure-administrator-certification-transition-exam/) et la [AZ-900](https://cloudyjourney.fr/2019/01/24/certification-az-900-microsoft-azure-fundamentals/) avec succès, je me suis attaqué à l'examen le plus haut sur la partie Azure, pour devenir [Azure Solutions Architect](https://www.microsoft.com/en-us/learning/azure-solutions-architect.aspx).
 
 Cette certification est divisé en 2 certifications (ou un seul si vous aviez la 70-535 => AZ-302):
@@ -32,6 +32,6 @@ Pour préparer cet examen, je me suis surtout appuyé sur mes connaissances que 
 
 J'ai donc réussi cet examen, au premier coup, avec le score de 796/1000:
 
-![](https://i1.wp.com/cloudyjourney.fr/wp-content/uploads/2019/01/AZ300_scorereport.jpg?fit=762%2C653&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/01/AZ300_scorereport.jpg)
 
 Si vous avez des questions, n'hésitez pas à me contacter. Pour moi, la prochaine étape est la AZ-301, pour arriver à mon but, devenir Azure Solution Architect.

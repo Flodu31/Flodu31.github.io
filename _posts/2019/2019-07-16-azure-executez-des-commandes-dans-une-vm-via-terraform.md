@@ -1,6 +1,9 @@
 ---
 title: "[Azure] Exécutez des commandes dans une VM via Terraform"
 date: "2019-07-16"
+author: "Florent Appointaire"
+permalink: "/2019/07/16/azure-executez-des-commandes-dans-une-vm-via-terraform/"
+summary:
 categories: 
   - "azure"
   - "terraform"
@@ -10,9 +13,6 @@ tags:
   - "provider"
   - "terraform"
 ---
-
-![](https://cloudyjourney.fr/wp-content/uploads/2019/05/terraform_logo.jpg)
-
 Après mes 2 premiers articles sur [le déploiement de ressources dans Azure](https://cloudyjourney.fr/2019/05/15/azure-deployer-des-ressources-avec-terraform/) et [l'utilisation d'un keyvault](https://cloudyjourney.fr/2019/05/22/azure-recuperer-une-valeur-dans-un-keyvault-pour-terraform/) pour stocker les mots de passes, nous allons voir comment exécuter des commandes directement au moment du déploiement de la ressource.
 
 Pour faire de la configuration de VM, vous pouvez par exemple utiliser des outils comme Ansible, DSC, etc. Avec Terraform, vous pouvez utiliser des **Provisioners**: [https://www.terraform.io/docs/provisioners/index.html](https://www.terraform.io/docs/provisioners/index.html)
@@ -63,11 +63,11 @@ provisioner "remote-exec" {
 
 Exécutez votre Terraform, et une fois que la VM est déployée, les scripts de démarrage exécutés, le provider réussi à se connecter et à exécuter la commande PowerShell:
 
-![](https://i0.wp.com/cloudyjourney.fr/wp-content/uploads/2019/07/Terraform_Provisionners01.png?fit=762%2C983&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/07/Terraform_Provisionners01.png)
 
 Si vous accédez à l'IP de l'output de Terraform, vous devriez voir votre serveur Web IIS:
 
-![](https://i1.wp.com/cloudyjourney.fr/wp-content/uploads/2019/07/Terraform_Provisionners02.png?fit=762%2C481&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/07/Terraform_Provisionners02.png)
 
 Le code complet se trouve ici:
 
