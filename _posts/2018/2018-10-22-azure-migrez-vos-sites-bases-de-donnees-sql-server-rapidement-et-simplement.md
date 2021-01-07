@@ -29,7 +29,7 @@ Il faut ensuite, avant de lancer le logiciel, vérifier quelques points pour eff
 La première chose à vérifier, c'est de savoir si votre SQL Server est supérieur à 2005. Ensuite, le Recovery Model de votre base de données doit être en Full ou Bulk-logged. Vous pouvez vérifier ceci, avec la requête suivante:
 
 ```
-SELECT name, recovery\_model\_desc
+SELECT name, recovery_model_desc
   FROM sys.databases
     WHERE name = 'learningsql';
 GO
@@ -44,7 +44,7 @@ Il faut également une sauvegarde full de la base de données. Exécutez la requ
 ```
 SELECT count(type) as result
   FROM msdb.dbo.backupset bk
-    WHERE bk.database\_name = 'learningsql' AND type = 'D';
+    WHERE bk.database_name = 'learningsql' AND type = 'D';
 ```
 
 [![](https://cloudyjourney.fr/wp-content/uploads/2018/10/PaaS-Migration-SQL-03.png)](https://cloudyjourney.fr/wp-content/uploads/2018/10/PaaS-Migration-SQL-03.png)
@@ -55,9 +55,9 @@ Un autre point important est que, si les tables n'ont pas de clés primaires, vo
 
 ```
 USE learningsql;
-SELECT is\_tracked\_by\_cdc, name AS TableName
-  FROM sys.tables WHERE type = 'U' and is\_ms\_shipped = 0 AND
-  OBJECTPROPERTY(OBJECT\_ID, 'TableHasPrimaryKey') = 0;
+SELECT is_tracked_by_cdc, name AS TableName
+  FROM sys.tables WHERE type = 'U' and is_ms_shipped = 0 AND
+  OBJECTPROPERTY(OBJECT_ID, 'TableHasPrimaryKey') = 0;
 ```
 
 [![](https://cloudyjourney.fr/wp-content/uploads/2018/10/PaaS-Migration-SQL-04.png)](https://cloudyjourney.fr/wp-content/uploads/2018/10/PaaS-Migration-SQL-04.png)
@@ -69,7 +69,7 @@ Enfin, pour terminer les prérequis, il faut vérifier que le service **SQL Ser
 ```
 USE master;
 DECLARE @installed int;
-EXEC @installed = sys.sp\_MS\_replication\_installed;
+EXEC @installed = sys.sp_MS_replication_installed;
 SELECT @installed as installed;
 ```
 
@@ -86,7 +86,7 @@ Revérifiez voir si l'installation est bien détectée:
 Regardez ensuite si le rôle de distribution est configuré, avec la commande suivante:
 
 ```
-EXEC sp\_get\_distributor;
+EXEC sp_get_distributor;
 ```
 
 [![](https://cloudyjourney.fr/wp-content/uploads/2018/10/PaaS-Migration-SQL-08.png)](https://cloudyjourney.fr/wp-content/uploads/2018/10/PaaS-Migration-SQL-08.png)
