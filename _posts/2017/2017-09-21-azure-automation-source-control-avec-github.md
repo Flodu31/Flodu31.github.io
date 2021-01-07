@@ -42,8 +42,6 @@ Dans la partie **Runbook Folder Path**, spécifiez si les scripts sont stockés 
 
 ![](https://cloudyjourney.fr/wp-content/uploads/2018/01/6735.AASCG07.png)
 
- 
-
 Quand la configuration est terminée, cliquez sur **OK**:
 
 [![](https://cloudyjourney.fr/wp-content/uploads/2018/01/0550.AASCG08.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/0550.AASCG08.png)
@@ -51,8 +49,6 @@ Quand la configuration est terminée, cliquez sur **OK**:
 Si un script existe dans votre dossier Github, cliquez sur **Sync** pour l'importer:
 
 [![](https://cloudyjourney.fr/wp-content/uploads/2018/01/0550.AASCG09.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/0550.AASCG09.png)
-
- 
 
 Quand c'est terminé, le status passe à **Completed**:
 
