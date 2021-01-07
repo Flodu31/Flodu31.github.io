@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "default" #"dark" # "air", "aqua", "contrast", "defau
 locale                   : "fr-FR"
 title                    : "Cloudy Journey Blog"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "Blog autour des solutions Cloud de Microsoft (Azure) & Amazon (AWS)." # site tagline that appears below site title in masthead
 name                     : "Florent Appointaire"
 description              : "Blog autour des solutions Cloud de Microsoft (Azure) & Amazon (AWS)."
 url                      : #https://blog.cloudyjourney.fr # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
