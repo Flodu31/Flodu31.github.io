@@ -23,16 +23,16 @@ Sur le Dashboard, récupérez le SID et le token ainsi que le numéro qui vous a
 
 Adaptez le script suivant avec les informations que vous avez récupéré et importez le dans Azure Automation:
 
+```
 param
 (
-\[Parameter (Mandatory=$false)\]
-\[object\] $WebhookData
+[Parameter (Mandatory=$false)]
+[object] $WebhookData
 )
 
 function Send-SmsViaTwilio
 {
-param($RecipientNumber,
-$SMSText )
+param($RecipientNumber,$SMSText )
 
 $TwilioSID = "YourTwilioSID"
 $TwilioToken = "YourTwilioToken"
@@ -61,6 +61,7 @@ $Result = Send-SmsViaTwilio -RecipientNumber "YourNumber" -SMSText $WebhookBody.
 write-host $Result
 
 }
+```
 
 [![](https://cloudyjourney.fr/wp-content/uploads/2018/05/Twilio02.png)](https://cloudyjourney.fr/wp-content/uploads/2018/05/Twilio02.png)
 
