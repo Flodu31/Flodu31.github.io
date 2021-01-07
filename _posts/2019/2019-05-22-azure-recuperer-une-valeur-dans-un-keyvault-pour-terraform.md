@@ -46,6 +46,6 @@ Vous pouvez maintenant faire un **terraform init** et **terraform plan**. Vous d
 
 Ceci est normal. En effet, vous devez donner les droits **Get** et **List** sur les **secret** à l'application qui est utilisé pour déployer les ressources dans Azure via Terraform, dans le keyvault. Vous pouvez refaire un **terraform plan** et **terraform** **apply** pour déployer vos ressources, de façon sécurisé. Notez ce message d'erreur, qui disparaitra lors de la mise à jour vers la version 2 du provider, mais où vous devrez adapter le code:
 
-![](https://cloudyjourney.fr/wp-content/uploads/2019/05/Terraform_Keyvualt03.png)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/05/Terraform_Keyvault03.png)
 
 Tout ce code est disponible sur mon Github: [https://github.com/Flodu31/Terraform/tree/master/Deploy\_New\_Environment](https://github.com/Flodu31/Terraform/tree/master/Deploy_New_Environment_Keyvault)[\_Keyvault](https://github.com/Flodu31/Terraform/tree/master/Deploy_New_Environment_Keyvault)
