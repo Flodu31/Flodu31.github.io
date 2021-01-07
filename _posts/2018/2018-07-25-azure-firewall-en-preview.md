@@ -15,23 +15,29 @@ Microsoft a rendu disponible en Preview, une nouvelle feature sur Azure, Azure F
 
 Pour commencer, il faut activer le RP qui va nous permettre d'utiliser Azure Firewall, avec les commandes suivantes:
 
+```
 Connect-AzureRmAccount
 
 Register-AzureRmProviderFeature -FeatureName AllowRegionalGatewayManagerForSecureGateway -ProviderNamespace Microsoft.Network
 
 Register-AzureRmProviderFeature -FeatureName AllowAzureFirewall -ProviderNamespace Microsoft.Network
+```
 
 [![](https://cloudyjourney.fr/wp-content/uploads/2018/07/AzureFirewall01.png)](https://cloudyjourney.fr/wp-content/uploads/2018/07/AzureFirewall01.png)
 
 Après plus ou moins 30 minutes, vous pouvez vérifier que la Preview a bien été activée (Registered) avec les commandes suivantes:
 
+```
 Get-AzureRmProviderFeature -FeatureName AllowRegionalGatewayManagerForSecureGateway -ProviderNamespace Microsoft.Network
 
 Get-AzureRmProviderFeature -FeatureName AllowAzureFirewall -ProviderNamespace Microsoft.Network
+```
 
 Et de réactiver le RP réseau :
 
+```
 Register-AzureRmResourceProvider -ProviderNamespace Microsoft.Network
+```
 
 [![](https://cloudyjourney.fr/wp-content/uploads/2018/07/AzureFirewall02.png)](https://cloudyjourney.fr/wp-content/uploads/2018/07/AzureFirewall02.png)
 
