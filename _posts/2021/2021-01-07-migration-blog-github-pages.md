@@ -1,9 +1,8 @@
 ---
 title: "Migration vers Github Pages"
 date: "2021-01-07"
-author: "Florent Appointaire"
 permalink: "/2021/01/07/migration-blog-github-pages/"
-summary: 
+summary:
 categories: 
   - "autres"
 tags:
