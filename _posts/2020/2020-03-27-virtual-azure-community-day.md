@@ -24,4 +24,4 @@ Je serai présent sur la track 3, avec la France. Le live sera disponible ici: [
 
 Plus d'informations seront disponibles avant l'évenement, comme le lien pour rejoindre le live.
 
-![](https://cloudyjourney.fr/wp-content/uploads/2020/03/virtualazurecommunityday-1024x283.png)
+![](https://cloudyjourney.fr/wp-content/uploads/2020/03/virtualazurecommunityday.png)
