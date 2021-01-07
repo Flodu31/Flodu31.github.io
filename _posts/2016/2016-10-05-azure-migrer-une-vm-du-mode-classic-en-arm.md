@@ -21,15 +21,29 @@ J’ai alors suivi les explications qui sont disponibles ici: [https://azure.mi
 
 Pour commencer, il faut arrêter toutes les VMS. Ensuite, il faut executer le script suivant, en adaptant avec vos paramètres:
 
-`Select-AzureSubscription "ClientSub" ` `# VHD blob to copy #` `$blobName = "NomduVHD.vhd"` </`code>`
+```
+Select-AzureSubscription "ClientSub"
+# VHD blob to copy #
+$blobName = "NomduVHD.vhd"
 
-\# Source Storage Account Information # `$sourceStorageAccountName = "nom du compte de stockage classic"` `$sourceKey = "la clé primaire associée"` `$sourceContext = New-AzureStorageContext –StorageAccountName $sourceStorageAccountName -StorageAccountKey $sourceKey  ` `$sourceContainer = "vhds"`
+# Source Storage Account Information # 
+$sourceStorageAccountName = "nom du compte de stockage classic"
+$sourceKey = "la clé primaire associée"
+$sourceContext = New-AzureStorageContext –StorageAccountName $sourceStorageAccountName -StorageAccountKey $sourceKey 
+$sourceContainer = "vhds"
 
-`# Destination Storage Account Information #` `$destinationStorageAccountName = "nom du compte de stockage sur RM"` `$destinationKey = "la clé primaire associée"` `$destinationContext = New-AzureStorageContext –StorageAccountName $destinationStorageAccountName -StorageAccountKey $destinationKey` 
+# Destination Storage Account Information #
+$destinationStorageAccountName = "nom du compte de stockage sur RM"
+$destinationKey = "la clé primaire associée"
+$destinationContext = New-AzureStorageContext –StorageAccountName $destinationStorageAccountName -StorageAccountKey $destinationKey
 
-`# Create the destination container #` `$destinationContainerName = "vhds"` `New-AzureStorageContainer -Name $destinationContainerName -Context $destinationContext` 
+# Create the destination container #
+$destinationContainerName = "vhds"
+New-AzureStorageContainer -Name $destinationContainerName -Context $destinationContext
 
-`# Copy the blob # ` ``$blobCopy = Start-AzureStorageBlobCopy -DestContainer $destinationContainerName ` `` ``                        -DestContext $destinationContext ` `` ``                        -SrcBlob $blobName ` `` ``                        -Context $sourceContext ` `` `                        -SrcContainer $sourceContainer`
+# Copy the blob #
+$blobCopy = Start-AzureStorageBlobCopy -DestContainer $destinationContainerName -DestContext $destinationContext -SrcBlob $blobName -Context $sourceContext -SrcContainer $sourceContainer
+```
 
 En validant la dernière ligne, ceci va initier la copie:
 
