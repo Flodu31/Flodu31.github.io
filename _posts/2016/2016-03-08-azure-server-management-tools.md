@@ -99,13 +99,18 @@ Avant d’ajouter mon serveur Nano, parce que je suis en WorkGroup, j’ai besoi
 
 `Set-Item -Path WSMan:\localhost\client\TrustedHosts -Value 'NANO01' –Force`
 
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/image_39DC2883.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/image_39DC2883.png) Je vais maintenant ajouter mon serveur Nano et le lier à une passerelle existante:
+[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/image_39DC2883.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/image_39DC2883.png) 
+
+Je vais maintenant ajouter mon serveur Nano et le lier à une passerelle existante:
 
 [![](https://cloudyjourney.fr/wp-content/uploads/2018/01/image_598B024B.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/image_598B024B.png)
 
 Je vais ajouter mon nom d’utilisateur/mot de passe qui a les droits administrateurs pour gérer mon serveur Nano, en cliquant sur **Manage as**:
 
-[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/image_1B91718D.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/image_1B91718D.png)[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/image_46D89945.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/image_46D89945.png) Je peux m’y connecter au travers de Azure:
+[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/image_1B91718D.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/image_1B91718D.png)
+[![](https://cloudyjourney.fr/wp-content/uploads/2018/01/image_46D89945.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/image_46D89945.png) 
+
+Je peux m’y connecter au travers de Azure:
 
 [![](https://cloudyjourney.fr/wp-content/uploads/2018/01/image_61A4BF51.png)](https://cloudyjourney.fr/wp-content/uploads/2018/01/image_61A4BF51.png)
 
