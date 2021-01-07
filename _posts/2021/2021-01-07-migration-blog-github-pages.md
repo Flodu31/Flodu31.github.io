@@ -27,6 +27,8 @@ Après ça, je n'ai eu qu'à configurer les quelques options du thème, mais aus
 
 Il m'aura fallu +/- 4 heures pour faire tout ceci, et migrer les 136 articles de l'ancienne plateforme, vers la nouvelle.
 
+Seul point négatif, je n'ai pas réussi à migrer vos différents commentaires :(
+
 N'hésitez pas à poser vos questions si vous avez besoin d'aide, mais aussi donner votre avis :)
 
 ![](/assets/images/2021/githubpages.jpg)
