@@ -1,6 +1,9 @@
 ---
 title: "[Meetup] NextGen Datacenter"
 date: "2019-04-10"
+author: "Florent Appointaire"
+permalink: "/2019/04/23/azure-integration-des-serveurs-pour-le-monitoring-depuis-wac/"
+summary:
 categories: 
   - "conference"
 tags: 

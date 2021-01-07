@@ -1,6 +1,9 @@
 ---
 title: "[Azure] Windows Virtual Desktop - Publication d'applications"
 date: "2019-04-25"
+author: "Florent Appointaire"
+permalink: "/2019/04/25/azure-windows-virtual-desktop-publication-dapplications/"
+summary:
 categories: 
   - "azure"
 tags: 
@@ -10,9 +13,6 @@ tags:
   - "remote-desktop-services"
   - "windows-virtual-desktop"
 ---
-
-![](https://cloudyjourney.fr/wp-content/uploads/2018/01/Azure.png)
-
 Après avoir vu [comment déployer Windows Virtual Desktop](https://cloudyjourney.fr/2019/04/24/azure-windows-virtual-desktop/), en mode session, nous allons voir comment déployer des applications.
 
 Utilisant l'image de base, je n'ai que les applications de base à publier. Si vous souhaitez déployer des applications personnalisées, il vous faudra créer une image, et l'utiliser comme image de base pour votre déploiement.
@@ -45,7 +45,7 @@ New-RdsRemoteApp FlorentAppointaire FLOAPP-WVD "RemoteApp Application Group" -Na
 New-RdsRemoteApp FlorentAppointaire FLOAPP-WVD "RemoteApp Application Group" -Name "Wordpad" -AppAlias "wordpad"
 ```
 
-![](https://i2.wp.com/cloudyjourney.fr/wp-content/uploads/2019/04/WVD1-03.png?fit=762%2C666&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/04/WVD1-03.png)
 
 Vous pouvez vérifier que les applications ont bien été publiées:
 
@@ -61,19 +61,19 @@ Il faut ensuite assigner ce groupe à un utilisateur. Attention, pour le moment,
 Add-RdsAppGroupUser FlorentAppointaire FLOAPP-WVD "RemoteApp Application Group" -UserPrincipalName florent.appointaire@florentappointaire.cloud
 ```
 
-![](https://i1.wp.com/cloudyjourney.fr/wp-content/uploads/2019/04/WVD1-05.png?fit=762%2C51&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/04/WVD1-05.png)
 
 En vous connectant avec cet utilisateur, vous pouvez voir les applications qui ont été publiées sur le portail:
 
-![](https://i1.wp.com/cloudyjourney.fr/wp-content/uploads/2019/04/WVD1-06.png?fit=762%2C123&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/04/WVD1-06.png)
 
-![](https://i1.wp.com/cloudyjourney.fr/wp-content/uploads/2019/04/WVD1-07.png?fit=762%2C557&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/04/WVD1-07.png)
 
 Ou depuis l'application:
 
-![](https://i1.wp.com/cloudyjourney.fr/wp-content/uploads/2019/04/WVD1-08.png?fit=762%2C487&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/04/WVD1-08.png)
 
-![](https://i2.wp.com/cloudyjourney.fr/wp-content/uploads/2019/04/WVD1-09.png?fit=762%2C382&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/04/WVD1-09.png)
 
 A noter que des raccourcis sont apparus dans le menu démarrer:
 

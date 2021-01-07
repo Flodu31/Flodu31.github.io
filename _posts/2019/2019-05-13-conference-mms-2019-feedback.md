@@ -1,6 +1,9 @@
 ---
 title: "[Conférence] MMS 2019 : Feedback"
 date: "2019-05-13"
+author: "Florent Appointaire"
+permalink: "/2019/05/13/conference-mms-2019-feedback/"
+summary:
 categories: 
   - "conference"
 tags: 
@@ -8,9 +11,6 @@ tags:
   - "mmsmoa"
   - "speaker"
 ---
-
-![](https://cloudyjourney.fr/wp-content/uploads/2019/05/MMSLogo-1024x360.png)
-
 La semaine dernière, je me suis rendu pour la 2ème fois au MMSMOA, pour cette édition 2019, en tant que speaker. Cette conférence est organisée sur 4 jours, avec des sessions qui commencent à 8h le matin et qui terminent à 18h45, une grosse semaine donc en perspective. Le dimanche midi, je suis allé m’enregistré, et j’ai récupéré mes deux chemises pour reconnaitre facilement les speakers ainsi que mon badge. Pour rappel, cette conférence accueille 750 personnes du monde entier:
 
 ![](https://cloudyjourney.fr/wp-content/uploads/2019/05/MMS2019_Badge-576x1024.jpeg)
@@ -24,15 +24,15 @@ Durant ces 4 jours, j'ai donné 3 sessions (avec des MVPs et des personnes du Pr
 - [Track, Inventory and Patch VMs in Azure (Windows or Linux) without ConfigMgr and with Zero Infrastructure](https://mms2019.sched.com/event/N6er/track-inventory-and-patch-vms-in-azure-windows-or-linux-without-configmgr-and-with-zero-infrastructure#)
 - [Azure Stack Panel Discussion – (400)](https://mms2019.sched.com/event/N6hE/azure-stack-panel-discussion-400#)
 
-![](https://i2.wp.com/cloudyjourney.fr/wp-content/uploads/2019/05/MMS2019_02.jpg?fit=762%2C572&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/05/MMS2019_02.jpg)
 
-![](https://i0.wp.com/cloudyjourney.fr/wp-content/uploads/2019/05/MMS2019_03.jpg?fit=762%2C572&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/05/MMS2019_03.jpg)
 
-![](https://i2.wp.com/cloudyjourney.fr/wp-content/uploads/2019/05/MMS2019_04.jpeg?fit=762%2C370&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/05/MMS2019_04.jpg)
 
-![](https://i2.wp.com/cloudyjourney.fr/wp-content/uploads/2019/05/MMS2019_04.jpg?fit=762%2C460&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/05/MMS2019_05.jpg)
 
-![](https://i2.wp.com/cloudyjourney.fr/wp-content/uploads/2019/05/MMS2019_05.jpg?fit=762%2C572&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/05/MMS2019_06.jpg)
 
 Pour résumer, encore une super semaine, avec une super organisation, de supers speakers, bref, je ne peux que vous recommander cette conférence, en espérant y retourner en 2020, en tant que speaker bien sur mais pour l’heure, il est temps de rentrer et de continuer à accompagner les entreprises vers leur transformation vers le Cloud.
 

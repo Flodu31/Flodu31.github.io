@@ -1,6 +1,9 @@
 ---
 title: "[Azure] Déployer des ressources avec Terraform"
 date: "2019-05-15"
+author: "Florent Appointaire"
+permalink: "/2019/05/15/azure-deployer-des-ressources-avec-terraform/"
+summary:
 categories: 
   - "terraform"
 tags: 
@@ -9,9 +12,6 @@ tags:
   - "microsoft"
   - "terraform"
 ---
-
-![](https://cloudyjourney.fr/wp-content/uploads/2019/05/terraform_logo.jpg)
-
 Nous parlons beaucoup en ce moment, de IaC, Infrastructure As Code. Ceci vous donne la possibilité, de déployer une infrastructure, de 0, à partir de code, tout ça sans être un grand développeur (si si, je vous assure, moi et le code, ce n'est pas une grande histoire d'amour :) ). Vous avez actuellement, les outils suivants pour faire de l'IaC:
 
 - PowerShell DSC
@@ -43,7 +43,7 @@ Une fois installé, nous allons créer plusieurs fichiers:
         - un fichier **1-virtual-machine.tf**
         - un fichier **variables.tf**
 
-![](https://i0.wp.com/cloudyjourney.fr/wp-content/uploads/2019/05/Terraform01.png?fit=762%2C104&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/05/Terraform01.png)
 
 Je vais utiliser des modules. L'avantage d'utiliser des modules est le fait que vous pouvez réutiliser des modules dans d'autres projets par la suite, sans refaire le code. Voici mon fichier **provider.tf** qui contient les informations pour se connecter à l'environnement (si vous souhaitez préciser la version du provider Azure RM à utiliser, insérez version = "=1.22.0", sinon ne mettez rien pour utiliser la dernière version):
 
@@ -272,7 +272,7 @@ Exécutez ensuite un **terraform plan** pour voir ce qu'il va être effectuer su
 - Une NIC
 - Une VM Windows
 
-![](https://i2.wp.com/cloudyjourney.fr/wp-content/uploads/2019/05/Terraform03.png?fit=762%2C954&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/05/Terraform03.png)
 
 Pour lancer le déploiement, faites **terraform apply** et confirmez le déploiement avec **yes:**
 
@@ -280,9 +280,9 @@ Pour lancer le déploiement, faites **terraform apply** et confirmez le déploie
 
 Après quelques minutes, les ressources ont été déployées:
 
-![](https://i1.wp.com/cloudyjourney.fr/wp-content/uploads/2019/05/Terraform05.png?fit=762%2C749&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/05/Terraform05.png)
 
-![](https://i0.wp.com/cloudyjourney.fr/wp-content/uploads/2019/05/Terraform06.png?fit=762%2C339&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/05/Terraform06.png)
 
 L'avantage de Terraform est le fait de pouvoir modifier seulement ce dont on a besoin. Par exemple, si je rajoute dans mon fichier **1-virtual-machine.tf:**
 
@@ -295,7 +295,7 @@ resource "azurerm_resource_group" "rg_compute" {
 
 Et que je fais **terraform plan** il va comparer ce qui a été fait par le passé (ceci est stocké dans un fichier **terraform.tfstate**) avec ce qu'on doit faire maintenant. Dans notre cas, il va ajouter une ressource. C'est pareil pour ce qui est de la modification/suppression:
 
-![](https://i0.wp.com/cloudyjourney.fr/wp-content/uploads/2019/05/Terraform07.png?fit=762%2C422&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/05/Terraform07.png)
 
 Si vous souhaitez supprimer ce qui a été fait, exécutez la commande **terraform destroy**:
 
@@ -303,7 +303,7 @@ Si vous souhaitez supprimer ce qui a été fait, exécutez la commande **terrafo
 
 Après quelques instants, tout a été supprimé:
 
-![](https://i1.wp.com/cloudyjourney.fr/wp-content/uploads/2019/05/Terraform09.png?fit=762%2C296&ssl=1)
+![](https://cloudyjourney.fr/wp-content/uploads/2019/05/Terraform09.png)
 
 Tout ce code est disponible sur mon Github: [https://github.com/Flodu31/Terraform/tree/master/Deploy\_New\_Environment](https://github.com/Flodu31/Terraform/tree/master/Deploy_New_Environment)
 
