@@ -15,11 +15,11 @@ Si vous souhaitez déployer un petit site web, avec une base de données MySQL, 
 Le problème maintenant, va être de trouver/utiliser la connection string.
 Pour commencer, vous devez activer la fonctionnalité, dans la Web App:
 
-![](/assets/images/2021/mysqlinapp01.jpg)
+![](/assets/images/2021/mysqlinapp01.png)
 
 MySQL in App est maintenant activé. Vous pouvez importer une DB, depuis un compte de stockage. De même pour l'export:
 
-![](/assets/images/2021/mysqlinapp02.jpg)
+![](/assets/images/2021/mysqlinapp02.png)
 
 Créons maintenant 2 fichiers, à la racine de notre site, pour vérifier les informations de connexion à la base de données MySQL in App:
 
@@ -60,15 +60,15 @@ phpinfo();
 ?>
 ```
 
-![](/assets/images/2021/mysqlinapp03.jpg)
+![](/assets/images/2021/mysqlinapp03.png)
 
 Naviguez sur votre URL, en ajoutant le fichier **phpinfo.php** à la fin de l'URL. Descendez jusqu'à la catégorie **Environment** et cherchez la ligne **MYSQLCONNSTR_localdb**. Vous verrez donc la connection string, avec le nom de la database, le hostname, le user et le mot de passe:
 
-![](/assets/images/2021/mysqlinapp04.jpg)
+![](/assets/images/2021/mysqlinapp04.png)
 
 Si vous allez sur l'url **mysql_in_app_infos.php**, vous aurez les informations suivantes:
 
-![](/assets/images/2021/mysqlinapp05.jpg)
+![](/assets/images/2021/mysqlinapp05.png)
 
 Si vous utilisez par exemple Wordpress, vous pouvez utiliser le code suivant pour ne pas avoir à vous occuper de la connexion string dans le fichier **wp-config.php**:
 
