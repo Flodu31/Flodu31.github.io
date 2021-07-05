@@ -15,7 +15,7 @@ Bonjour à tous,
 
 J'ai le plaisir de vous annoncer que pour la sixième année consécutive, j’ai reçu le titre de MVP, dans la catégorie Microsoft Azure :)
 
-![](/assets/images/2021/mvp_2021.png)
+![](/assets/images/2021/MVP_2021.PNG)
 
 Cette année, comme vous le savez, a été assez spécial avec le COVID, et donc tous les évenements où j'ai présenté étaient en ligne. C'est une nouvelle expérience, où il manque pas mal de relation humaine, et la découverte de nouveaux lieux également.
 
@@ -26,3 +26,5 @@ Pour cette nouvelle année, je ne sais encore trop quoi faire, à part continuer
 Encore merci à tous.
 
 Florent
+
+![](/assets/images/2021/mvp.png)
