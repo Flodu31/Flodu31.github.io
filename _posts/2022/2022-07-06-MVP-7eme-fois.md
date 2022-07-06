@@ -15,7 +15,7 @@ Bonjour à tous,
 
 J'ai le plaisir de vous annoncer que pour la septième année consécutive, j’ai reçu le titre de MVP, dans la catégorie Microsoft Azure :)
 
-![](/assets/images/2022/MVP_2022.PNG)
+![](/assets/images/MVP_2022.PNG)
 
 Une année où j'ai essayé d'aider un maximum la communauté, comme à mon habitude.
 
