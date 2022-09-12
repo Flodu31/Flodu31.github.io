@@ -14,7 +14,7 @@ tags:
 
 Petit article aujourd'hui pour vous partager un script que j'ai rapidement créer, pour exporter les roles qui sont assignés aux ressources d'une souscription Azure, et les exporter en CSV. Le script est ici:
 
-<a href="[/assets/images/2022/Get-IAMResources.ps1](https://github.com/Flodu31/Flodu31.github.io/blob/master/assets/images/2022/Get-IAMResources.ps1)" target="_blank">Get-IAMResources.ps1</a>
+<a href="https://github.com/Flodu31/Flodu31.github.io/blob/master/assets/images/2022/Get-IAMResources.ps1" target="_blank">Get-IAMResources.ps1</a>
 
 Pour l'exécuter, il suffit juste d'exécuter le script en lui passant la souscription que vous souhaitez analyser:
 
