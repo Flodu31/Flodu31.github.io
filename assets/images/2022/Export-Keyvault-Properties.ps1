@@ -1,4 +1,5 @@
 Connect-AzAccount
+$mgmtGroupName = "MgmtGroupId"
 $csvFile = "Keyvault.csv"
 if (Test-Path $csvFile){
 	Remove-Item $csvFile -Force
@@ -7,7 +8,7 @@ if (Test-Path $csvFile){
 	New-Item -ItemType File -Name $csvFile
 }
 
-$response = Get-AzManagementGroup -GroupId UAZC -Expand -Recurse -WarningAction:SilentlyContinue
+$response = Get-AzManagementGroup -GroupId $mgmtGroupName -Expand -Recurse -WarningAction:SilentlyContinue
 
 foreach ($sub in $response.Children){
 
